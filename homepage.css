@@ -1157,7 +1157,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 33px;
+  gap: 11px;
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
@@ -1178,6 +1178,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   letter-spacing: -0.64px;
   text-align: center;
   line-height: 1.1;
+  margin-bottom: 20px;
 }
 
 .listings-widget-wrap {
