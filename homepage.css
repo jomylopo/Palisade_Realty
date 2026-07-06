@@ -1749,15 +1749,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .footer-mls-badge {
-  width: 120px;
-  height: 60px;
-  background: var(--f2);
-  border-radius: 6px;
+  width: 110px;
+  height: auto;
+  background: transparent;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
+.footer-mls-badge img { width: 100%; height: auto; }
 .footer-mls-badge span {
   font-family: var(--font-label);
   font-size: 10px;
