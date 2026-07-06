@@ -1552,7 +1552,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .cta-banner-bg-dark {
   position: absolute;
   inset: 0;
-  background: var(--black);
+  background: rgba(10, 0, 5, 0.55);
 }
 .cta-banner-bg-overlay {
   position: absolute;

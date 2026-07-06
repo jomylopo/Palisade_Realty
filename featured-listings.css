@@ -13,26 +13,27 @@
   padding: 72px 56px 36px;
   background: #fff;
   border-top: 1px solid rgba(0,0,0,0.06);
+  text-align: center;
 }
 
 .fl-header-eyebrow {
   display: block;
   font-family: var(--font-label, 'Inter', sans-serif);
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.42em;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #b89a5e;
+  color: var(--brand, #58172a);
   margin: 0 0 14px;
 }
 
 .fl-header-title {
   font-family: var(--font-display, 'Playfair Display', serif);
-  font-size: clamp(28px, 3.5vw, 48px);
+  font-size: clamp(36px, 5vw, 64px);
   font-weight: 400;
-  color: #58172a;
+  color: var(--near-black, #1a1a1a);
   letter-spacing: -0.02em;
-  line-height: 1.05;
+  line-height: 1.0;
   margin: 0;
 }
 
