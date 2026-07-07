@@ -1405,9 +1405,38 @@ via IntersectionObserver). No separate scroll-reveal script needed.
 
 ## Completed Community Detail Pages
 
-| Page | Status | File |
-|---|---|---|
-| Downtown San Diego | ✅ Complete | `communities/downtown-san-diego-real-estate.html` |
+| Page | Status | File | Region | Median Price |
+|---|---|---|---|---|
+| Downtown San Diego | ✅ Complete | `communities/downtown-san-diego-real-estate.html` | Coastal | $875K |
+| Mission Hills | ✅ Complete | `communities/mission-hills-real-estate.html` | Coastal | $1.3M |
+
+### Mission Hills — Map Config
+
+```js
+window.SD_COMMUNITY_CONFIG = {
+  city:          "Mission Hills",
+  subtitle:      "San Diego County · California",
+  lng:           -117.1855,
+  lat:            32.7375,
+  heroZoom:       14.2,
+  lifestyleZoom:  13.8,
+  boundary: [
+    [-117.207, 32.748], [-117.163, 32.748],
+    [-117.161, 32.732], [-117.168, 32.725],
+    [-117.185, 32.722], [-117.203, 32.727],
+    [-117.208, 32.737], [-117.207, 32.748]
+  ],
+  pois: [
+    { name: "Mission Hills Nursery",        desc: "San Diego's beloved garden center — a neighborhood landmark since 1910",        lng: -117.1845, lat: 32.7380, icon: "🌱" },
+    { name: "Pioneer Park",                  desc: "Heart of Mission Hills — shaded lawn, community events, historic core",         lng: -117.1894, lat: 32.7362, icon: "🌳" },
+    { name: "Presidio Park",                 desc: "1,500-acre hilltop park — birthplace of California, sweeping city views",       lng: -117.1943, lat: 32.7537, icon: "⛰️" },
+    { name: "Goldfinch Street",              desc: "Mission Hills' village strip — boutique coffee, dining, and neighborhood life", lng: -117.1831, lat: 32.7340, icon: "☕" },
+    { name: "Old Town State Historic Park",  desc: "California's first settlement — living history, adobe buildings, great food",   lng: -117.1942, lat: 32.7537, icon: "🏛️" }
+  ]
+};
+```
+
+Location map road highlight: Washington Street (gold `#b89a5e`) replaces Harbor Drive for this page.
 
 ---
 
