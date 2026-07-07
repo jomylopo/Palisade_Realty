@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -484,9 +484,31 @@
 
   /* ── 15. CTA ── */
   #community-cta {
+    position: relative;
     padding: 120px var(--pad-x, 56px);
-    background: var(--cd-dark);
     text-align: center;
+    overflow: hidden;
+  }
+  #community-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/hero-background/hero-2.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(1.05) saturate(0.9);
+    z-index: 0;
+  }
+  #community-cta::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(245, 245, 245, 0.88);
+    z-index: 1;
+  }
+  #community-cta .cta-inner {
+    position: relative;
+    z-index: 2;
   }
   .cta-inner { max-width: 680px; margin: 0 auto; }
   .cta-title { font-family: var(--cd-serif); font-size: clamp(40px, 5vw, 72px); font-weight: 400; color: var(--cd-cream); letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 24px; }
