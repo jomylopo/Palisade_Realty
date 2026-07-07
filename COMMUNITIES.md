@@ -30,64 +30,154 @@ object.
 
 ## File Inventory
 
+Everything you need to touch when replicating the pattern.
+
 ```
-palm-springs.html          ← Community page (one per city, 9 total)
-palm-desert.html
-rancho-mirage.html
-indian-wells.html
-la-quinta.html
+── HTML (one per city + a home + a gated hub) ─────────────────────────
+palm-springs.html          Community page (one per city, 9 total)
+palm-desert.html           ↑ palm-desert / la-quinta / indio /
+rancho-mirage.html          cathedral-city / desert-hot-springs /
+indian-wells.html           coachella ALSO include a #new-construction
+la-quinta.html              section between #parks-rec and #schools
 indio.html
 cathedral-city.html
 desert-hot-springs.html
 coachella.html
+behind-the-gates.html      Hub page linking out to gated communities
+gated/*.html               21+ per-gated-community detail pages linked
+                             from each community page's Behind the Gates
+                             dropdown
+index.html                 Homepage — hosts the valley-overview map that
+                             each community page's #valley-location links
+                             back to
 
-community.css              ← Shared styles for all 9 pages (~4,400 lines)
-community-map.js           ← Shared Mapbox 3D map init (reads CV_MAP_CONFIG)
-images/                    ← Page images (most pages rely on map visuals + CTAs)
+── Shared front-end ───────────────────────────────────────────────────
+community.css              Shared styles for all 9 pages (4,368 lines)
+community-map.js           Shared Mapbox 3D map init (reads CV_MAP_CONFIG)
+ylopo-tracking.js          Site-wide YLOPO click tracking — appends UTM
+                             params to every YLOPO-domain link and fires
+                             a gtag `idx_property_click` event
+blog/community-posts.js    Injects a "Recent from the Blog" section into
+                             each community page by fetching
+                             /api/blog/posts?city=<slug>&limit=3
 
-MAPS.md                    ← Full Mapbox reference (boundaries, roads, palette)
+── Server side (Vercel Node runtime) ──────────────────────────────────
+api/community.ts           GET /api/community?slug=<city> — reads Sanity
+                             overrides used by the CMS-sync inline script
+lib/sanity.ts              Sanity client + CommunityOverride schema
+
+── Reference docs ─────────────────────────────────────────────────────
+MAPS.md                    Full Mapbox reference (boundaries, roads, palette)
+COMMUNITIES.md             This file
+
+── Not needed to touch, but linked from community pages ───────────────
+blog/index.html            Blog listing (visited from the community-posts.js
+                             section on each page)
+blog/post.html             Individual post viewer
 ```
 
 Each city page is a standalone, fully-rendered HTML file (~1,000 lines).
-The site is static — no build step — so the page you ship is the page you
-serve. Vercel auto-deploys on `git push` to `main`.
+The **community pages themselves have no build step** — the HTML you
+edit is the HTML you serve. But the CMS-override endpoint
+(`/api/community`) is TypeScript that Vercel compiles server-side, so a
+new site replicating this pattern needs a Vercel deployment with the
+Node.js runtime enabled (any modern Vercel project has this by default).
+Vercel auto-deploys on `git push` to `main`.
 
 ---
 
 ## Page Anatomy — Top to Bottom
 
-Every community page is structured as the same 14 sections in the same
-order. The IDs below are real `<section id="…">` anchors used in the HTML
-and styled by `community.css`.
+Every community page uses the same **15 `<section>` blocks** in the same
+order, wrapped by a shared `<nav>` at the top and `<footer>` at the
+bottom. The IDs below are real `<section id="…">` anchors used in the
+HTML and styled by `community.css`.
 
 | # | Section ID | What it does | Per-city content |
 |---|---|---|---|
-| 1 | `<nav>` | Sticky top nav with Communities dropdown + phone CTA | None — identical across pages |
-| 2 | `community-hero` | Full-bleed 3D map with city name overlay + 4 hero stats | City name, 4 stats (listings count, median price, property types, "Updated") |
-| 3 | `valley-location` | Smaller orientation map showing this city highlighted in the valley + 4 drive-time cards | Drive-time facts (e.g. "~30 min to Palm Desert via Hwy 111") |
-| 4 | `overview` | Two-column layout: 3-paragraph editorial intro + "At a Glance" quick facts sidebar | Editorial copy, 8 quick-fact pairs |
-| 5 | `demographics` | Single row of 5 census-style stats with `Source: U.S. Census Bureau` note | Pop, median age, avg income, households, ownership rate |
-| 6 | `highlights` | 6-card grid — "What makes it special" | 6 icon + title + 1-paragraph items |
-| 7 | `neighborhoods` | Compact grid of neighborhood cards with price range + tags | 8–12 neighborhood cards |
-| 8 | `city-stats` | Decorative row of 5 SVG-icon stats (sunny days, pools, golf, etc.) | 5 number + label pairs |
-| 9 | `listings` | YLOPO MLS widget showing 12 live listings + "View All" link | None — widget config drives data |
-| 10 | `hoa-fees` | Two-column: HOA fee table + "What HOAs cover" bullets | Fee ranges by community type |
-| 11 | `parks-rec` | 3+ park cards with address, size, amenity bullets | Park names, addresses, amenities |
-| 12 | `schools` | Tabbed (Public / Private & Charter) school tables with disclaimer | School name, grades, district |
-| 13 | `nearby-communities` | Comparison table linking out to the other 8 city pages | "Why consider" one-liners |
-| 14 | `faq` | 6–10 accordion FAQ items written for AEO/featured-snippet capture | The questions buyers actually ask |
-| 15 | `lifestyle` | Two-column: editorial copy + interactive lazy-loaded 3D map | Lifestyle bullets (events, attractions) |
-| 16 | `community-cta` | Final pitch with phone + email buttons | None — identical |
-| 17 | `<footer>` | Brand, communities list, quick links, social, MLS disclaimer | None — identical |
+| — | `<nav>` (top) | Sticky top nav — logo + 4 dropdowns + phone CTA. See **Nav** below for details | None — identical across pages |
+| 1 | `community-hero` | Full-bleed 3D map with city name overlay + 4 hero stats | City name, 4 stats (listings count, median price, property types, "Updated") |
+| 2 | `valley-location` | Smaller orientation map showing this city highlighted in the valley + 4 drive-time cards | Drive-time facts (e.g. "~30 min to Palm Desert via Hwy 111") |
+| 3 | `overview` | Two-column layout: 3-paragraph editorial intro + "At a Glance" quick facts sidebar | Editorial copy, 8 quick-fact pairs |
+| 4 | `demographics` | Single row of 5 census-style stats with `Source: U.S. Census Bureau` note | Pop, median age, avg income, households, ownership rate |
+| 5 | `highlights` | 6-card grid — "What makes it special" | 6 icon + title + 1-paragraph items |
+| 6 | `neighborhoods` | Compact grid of neighborhood cards with price range + tags | 8–12 neighborhood cards |
+| 7 | `city-stats` | Decorative row of 5 SVG-icon stats (sunny days, pools, golf, etc.) | 5 number + label pairs |
+| 8 | `listings` | YLOPO MLS widget showing 12 live listings + "View All" link | None — widget config drives data |
+| 9 | `hoa-fees` | Two-column: HOA fee table + "What HOAs cover" bullets | Fee ranges by community type |
+| 10 | `parks-rec` | 3+ park cards with address, size, amenity bullets | Park names, addresses, amenities |
+| 10a | `new-construction` | **On 6 of 9 pages** — builder cards for active new-home communities. See section below. Present on: Palm Desert · La Quinta · Indio · Cathedral City · Desert Hot Springs · Coachella | Builder name, development name, price range, links |
+| 11 | `schools` | Tabbed (Public / Private & Charter) school tables with disclaimer | School name, grades, district |
+| 12 | `nearby-communities` | Comparison table linking out to the other 8 city pages | "Why consider" one-liners |
+| 13 | `faq` | 6–10 accordion FAQ items written for AEO/featured-snippet capture | The questions buyers actually ask |
+| 14 | `lifestyle` | Two-column: editorial copy + interactive lazy-loaded 3D map | Lifestyle bullets (events, attractions) |
+| — | `community-blog-posts` **(runtime-injected)** | 3 most-recent city-tagged blog posts. Injected by `/blog/community-posts.js` BEFORE `#community-cta` on load. Nothing to put in the HTML — the script builds the section | None — fetched from `/api/blog/posts?city=<slug>&limit=3` |
+| 15 | `community-cta` | Final pitch with phone + email buttons | None — identical |
+| — | `<footer>` (bottom) | Brand, communities list, quick links, social, MLS disclaimer | None — identical |
 
 The order matters. It moves the reader through *orientation* (where is
 this place?) → *desirability* (why live here?) → *practical info*
-(neighborhoods, fees, schools) → *live inventory* → *common objections*
-(FAQ) → *call to action*.
+(neighborhoods, fees, new construction, schools) → *live inventory* →
+*common objections* (FAQ) → *recent content* → *call to action*.
 
 ---
 
-## Hero — Section 2 (`#community-hero`)
+## Nav
+
+Every community page (and the homepage) uses an identical sticky `<nav>`
+with 4 dropdown menus and a phone-number CTA on the right. Copy it
+wholesale from any community page — only the highlighted-active-link
+CSS changes per page (and CSS handles that via `body[data-page=…]`).
+
+```html
+<nav>
+  <a href="/" class="nav-logo"><img src="/images/C&B-logo+R.png" alt="…" /></a>
+  <ul class="nav-links">
+    <!-- Dropdown 1: all city pages -->
+    <li class="nav-communities">
+      <span class="nav-communities-trigger">Communities</span>
+      <div class="communities-dropdown">
+        <a href="/palm-springs.html">Palm Springs</a>
+        <!-- + 8 more -->
+      </div>
+    </li>
+
+    <!-- Dropdown 2: external YLOPO search + featured listings anchor -->
+    <li class="nav-properties">
+      <a href="https://search.<yoursubdomain>.com/search" class="nav-properties-trigger" target="_blank">Properties</a>
+      <div class="properties-dropdown">
+        <a href="/#featured-properties">Featured Properties</a>
+      </div>
+    </li>
+
+    <!-- Dropdown 3: gated/luxury community subpages + View All -->
+    <li class="nav-gated">
+      <a href="/behind-the-gates.html" class="nav-gated-trigger">Behind the Gates</a>
+      <div class="gated-dropdown">
+        <a href="/gated/pga-west.html">PGA West</a>
+        <!-- 10 more -->
+        <a href="/behind-the-gates.html" style="color:var(--bronze)">View All Communities →</a>
+      </div>
+    </li>
+
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#about">About Shana</a></li>
+    <li><a href="/#search-listings">Search</a></li>
+  </ul>
+  <a href="tel:7602324054" class="nav-cta">760.232.4054</a>
+</nav>
+```
+
+**Per-agent things to swap when replicating:**
+- Logo image path
+- All 9 city pages in the Communities dropdown
+- YLOPO search subdomain in the Properties link
+- Gated-community subpages OR delete the whole Behind the Gates dropdown if the market has no gated-community angle
+- Phone number in the top-right CTA
+
+---
+
+## Hero — Section 1 (`#community-hero`)
 
 The most distinctive element on the page. A 100vh map fills the
 background; an overlay div darkens it; an oversized serif title + 4
@@ -122,18 +212,27 @@ The map at `#hero-map` is initialized by `community-map.js` — see
 
 ---
 
-## Valley Location — Section 3 (`#valley-location`)
+## Valley Location — Section 2 (`#valley-location`)
 
 A standalone "where is this city" orientation map. Smaller than the hero
 map, shows all 9 CV cities with the current one highlighted in yellow,
 plus the I-10 and Hwy 111 roads colored. Below the map: four drive-time
 "to X via Y" cards.
 
-The script for this map is **inlined per-page** (not in
-`community-map.js`) because the highlighting needs to know which city is
-"current" — see lines 888–954 of any community HTML file for the
-reference implementation. Each page has its own copy with
-`CURRENT_SLUG` set to the matching city slug.
+The script for this map is **inlined per-page** (roughly lines 894–960
+of any community HTML file — search for `valley-context-map`) because
+the highlighting needs to know which city is "current." Each page has
+its own copy with `CURRENT_SLUG` set to the matching city slug.
+
+**Style divergence worth knowing:** this map uses
+`mapbox://styles/mapbox/dark-v11` — NOT the Standard style + `night`
+light preset that the hero + lifestyle maps use. That's intentional
+(flatter overview look, no lit 3D buildings competing with the yellow
+current-city highlight), but it means the Mapbox access token is
+**duplicated inline in every community page** in addition to the copy
+in `community-map.js`. If you ever rotate the token, you need to update
+~10 places, not 1. Consider hoisting the token into a `<meta>` tag or a
+tiny shared config script if you build a v2.
 
 ```html
 <section id="valley-location">
@@ -159,7 +258,7 @@ reference implementation. Each page has its own copy with
 
 ---
 
-## Overview + Quick Facts — Section 4 (`#overview`)
+## Overview + Quick Facts — Section 3 (`#overview`)
 
 The most visited block on the page. Three paragraphs of warm,
 specific-to-this-city editorial copy on the left; a 2-col "At a Glance"
@@ -199,15 +298,20 @@ The sidebar facts use a consistent set of labels across all pages so the
 </section>
 ```
 
-### Quick-fact labels actually used (case-sensitive for the CMS sync)
+### Quick-fact labels actually used
 
 `City Type` · `County` · `Population` · `Median Home Price` · `Architecture` · `Known For` · `Elevation` · `Golf Courses` · `Airport` · `Drive to LA`
 
 (Not every page uses every label; pages choose ~8 that fit best.)
 
+The CMS-sync script matches labels **case-insensitively** (`.toLowerCase()`
+on both sides), so a Sanity edit like `Median home price` will still find
+`Median Home Price` on the page. Labels are trimmed before matching.
+See the **CMS Overrides** section for the full sync behavior.
+
 ---
 
-## Highlights, Neighborhoods, City Stats — Sections 6–8
+## Highlights, Neighborhoods, City Stats — Sections 5–7
 
 These three are pure HTML — no JS, no APIs.
 
@@ -225,7 +329,7 @@ Round numbers that read like trivia (350 sunny days, 8,000+ pools,
 
 ---
 
-## Listings — Section 9 (`#listings`)
+## Listings — Section 8 (`#listings`)
 
 The MLS data block. This is a YLOPO widget — drop in a `<div>` with a
 `data-search` JSON attribute and the YLOPO script renders a 12-listing
@@ -277,9 +381,9 @@ See `CLAUDE.md` (YLOPO Widget System) for the full `data-search` schema.
 
 ---
 
-## HOA Fees, Parks, Schools — Sections 10–12
+## HOA Fees, Parks — Sections 9–10
 
-All three are table-driven content blocks.
+Both are content blocks with no dynamic data.
 
 **`#hoa-fees`** — A monthly-HOA-by-community-type table + a "What HOAs
 typically cover" bullet list. Keep the values realistic for the market.
@@ -288,16 +392,59 @@ typically cover" bullet list. Keep the values realistic for the market.
 a real street address, an acreage chip, and an amenities bullet list.
 Real addresses and acreages signal local authority.
 
-**`#schools`** — A tabbed component with a `Public` panel and a
-`Private & Charter` panel. The HTML has inline `onclick="switchTab(…)"`
-handlers; the toggle script is at the bottom of the page (see
-**Inline JavaScript** below). Always include a school-zoning disclaimer
-at the bottom — school assignments are address-specific and federal Fair
-Housing rules limit how agents can talk about them.
+---
+
+## New Construction — Section 10a (`#new-construction`, 6 of 9 pages)
+
+**This section is only on the 6 growth-market pages** — Palm Desert, La
+Quinta, Indio, Cathedral City, Desert Hot Springs, and Coachella. Palm
+Springs, Rancho Mirage, and Indian Wells don't have meaningful active
+new-construction so the section is intentionally omitted there.
+
+A `.builders-grid` of `.builder-card` items — each represents an active
+new-home development. Fields:
+
+```html
+<section id="new-construction">
+  <p class="section-eyebrow reveal">New Home Construction</p>
+  <h2 class="section-title reveal">Brand-New Homes<br>in <em>Palm Desert</em></h2>
+  <div class="builders-grid">
+    <div class="builder-card reveal">
+      <div class="builder-name">GHA Communities</div>
+      <div class="builder-development">Shadow Ridge Estates</div>
+      <div class="builder-specs">From $700K · 3–4 BR · 1,800–2,400 sq ft</div>
+      <p class="builder-desc">Gated collection of 42 single-family homes …</p>
+      <a class="builder-link" href="…" target="_blank" rel="noopener">Visit Builder →</a>
+    </div>
+    <!-- 3–6 more cards -->
+  </div>
+</section>
+```
+
+Class reference: `.builders-grid` · `.builder-card` · `.builder-name` ·
+`.builder-development` · `.builder-specs` · `.builder-desc` ·
+`.builder-link` — all styled in `community.css` (~line 1577).
+
+When replicating on a new market: only include this section for cities
+that actually have active new-home inventory. In stable/mature markets
+it looks weird ("New Homes: none currently") — better to skip.
 
 ---
 
-## Nearby Communities — Section 13 (`#nearby-communities`)
+## Schools — Section 11 (`#schools`)
+
+A tabbed component with a `Public` panel and a `Private & Charter`
+panel. The HTML has inline `onclick="switchTab(…)"` handlers; the toggle
+script is at the bottom of the page (see **Inline JavaScript** below).
+
+**Always include a school-zoning disclaimer** at the bottom — school
+assignments are address-specific and federal Fair Housing rules limit
+how agents can talk about them. The disclaimer is boilerplate but
+non-optional.
+
+---
+
+## Nearby Communities — Section 12 (`#nearby-communities`)
 
 A 7-row table linking to the other 8 city pages. Each row: city name,
 starting price, a 1-sentence "Why consider" pitch, and a → arrow. This
@@ -316,7 +463,7 @@ bouncing.
 
 ---
 
-## FAQ — Section 14 (`#faq`)
+## FAQ — Section 13 (`#faq`)
 
 This is the AEO (answer-engine optimization) workhorse. 6–10 accordion
 items, each posed as the question a buyer *would actually type into
@@ -351,20 +498,36 @@ Each answer should mention Shana by name at least once across the set
 
 ---
 
-## Lifestyle + CTA + Footer — Sections 15–17
+## Lifestyle + Recent Blog + CTA + Footer — Sections 14–15 + injected
 
-**`#lifestyle`** — Two-column. Left: 2 paragraphs of vibe-y editorial
+**`#lifestyle` (14)** — Two-column. Left: 2 paragraphs of vibe-y editorial
 copy + a 5-bullet list of can't-miss events/attractions. Right: an
 interactive 3D Mapbox map (52° pitch, navigation controls) that
 lazy-loads when scrolled into view.
 
-**`#community-cta`** — Final pitch. Big "Ready to find your X home?"
+**`#community-blog-posts` (runtime-injected)** — A "Recent from the
+Blog" section that's **not in the HTML you edit**. `/blog/community-posts.js`
+(loaded near the bottom of every community page) fetches
+`/api/blog/posts?city=<slug>&limit=3`, filters posts by matching city
+metadata, and injects a new `<section id="community-blog-posts">` before
+`#community-cta` at page-load time. If the fetch fails or returns
+nothing, no section appears. Styled via `.cbp-*` classes in
+`community.css` (~line 2117).
+
+**`#community-cta` (15)** — Final pitch. Big "Ready to find your X home?"
 title, phone button + email button. Identical across all 9 pages except
 the eyebrow line.
 
 **`<footer>`** — Same on every page. Brand block, communities column,
 quick links, social row, and the legally-required MLS attribution +
 DRE/CalDRE disclaimer.
+
+> **Bug worth flagging for replication:** the "Quick Links" `<ul>` in
+> the footer currently contains an accidentally-pasted copy of the
+> `<li class="nav-properties">` markup (with its whole dropdown) as a
+> list item. It renders OK because CSS handles the dropdown position,
+> but it's messy HTML. If you're building a new site from scratch,
+> clean that up — put a simple `<li><a href="/properties/…">Properties</a></li>` there instead.
 
 ---
 
@@ -421,61 +584,224 @@ a new page, copy the IIFE wholesale and change one line: `var CURRENT_SLUG = 'pa
 
 ## CMS Overrides (Sanity)
 
-Each community page has a small inline `fetch` block at the bottom that
-hits `/api/community?slug=<city-slug>` and overlays any CMS-edited values
-on top of the hardcoded HTML defaults. This is what lets Shana update
-stats via the AI Content Assistant without redeploying.
+Each community page has an inline `fetch` block near the bottom that
+hits `/api/community?slug=<city-slug>` and overlays any CMS-edited
+values on top of the hardcoded HTML defaults. This is what lets Shana
+update stats via the AI Content Assistant without redeploying.
 
-The sync script matches **by label text**:
+### Sanity setup
+
+| Item | Value |
+|---|---|
+| Project ID | `ll3zy5cp` |
+| Dataset | `production` |
+| Document type | `communityPage` |
+| Env vars (Vercel) | `SANITY_PROJECT_ID`, `SANITY_DATASET`, `SANITY_WRITE_TOKEN` |
+| Public read | via `apicdn.sanity.io` (no auth needed for the runtime fetch) |
+| Client library | `@sanity/client` (in `lib/sanity.ts`) |
+
+**No Sanity Studio required.** Documents get created on first write via
+the AI Content Assistant — you don't need to stand up a Studio UI for
+Shana to edit stats.
+
+### Schema — 7 fields defined, only 2 wired up
+
+`lib/sanity.ts` defines the `CommunityOverride` type with **7 override
+fields**:
+
+```ts
+interface CommunityOverride {
+  quickStats?:     Array<{ key: string; value: string }>
+  heroImage?:      { asset: { url: string } } | null
+  sectionImages?:  Array<{ role: string; image: { asset: { url: string } } }>
+  heroHeadline?:   string
+  heroSubheadline?: string
+  overviewTitle?:  string
+  metaTitle?:      string
+  metaDescription?: string
+}
+```
+
+**But the inline sync script on each community page only reads `quickStats`
+and `heroImage`.** The other 5 fields (`sectionImages`, `heroHeadline`,
+`heroSubheadline`, `overviewTitle`, `metaTitle`, `metaDescription`) are
+defined in Sanity but not wired to the frontend. Two options if you
+want them live:
+
+1. **Extend the inline sync script** on each community page to consume
+   the extra fields. Straightforward — the API already returns them.
+2. **Leave them as latent capacity** — they're harmless when unread and
+   useful the day you decide to build a headless CMS view.
+
+### What actually gets synced today
 
 ```js
 fetch('/api/community?slug=palm-springs')
   .then(r => r.json())
   .then(doc => {
-    if (!doc?.quickStats) return
-    doc.quickStats.forEach(stat => {
-      // Match .hero-stat by .hero-stat-label
-      // Match .quick-fact by .fact-label
-      // Update the matching .hero-stat-value / .fact-value
-    })
-    // Optional: doc.heroImage replaces the 3D map with a real photo overlay
+    if (!doc || (!doc.quickStats && !doc.heroImage)) return
+
+    // 1. quickStats — array of { key, value }. Match by case-insensitive
+    //    label text against every .hero-stat-label and .fact-label on the
+    //    page. Overwrite the matching .hero-stat-value / .fact-value.
+    if (doc.quickStats?.length) {
+      doc.quickStats.forEach(stat => {
+        const keyLower = stat.key.toLowerCase()
+        document.querySelectorAll('.hero-stat').forEach(el => {
+          const lbl = el.querySelector('.hero-stat-label')
+          const val = el.querySelector('.hero-stat-value')
+          if (lbl && val && lbl.textContent.trim().toLowerCase() === keyLower) {
+            val.textContent = stat.value
+          }
+        })
+        document.querySelectorAll('.quick-fact').forEach(el => {
+          const lbl = el.querySelector('.fact-label')
+          const val = el.querySelector('.fact-value')
+          if (lbl && val && lbl.textContent.trim().toLowerCase() === keyLower) {
+            val.textContent = stat.value
+          }
+        })
+      })
+    }
+
+    // 2. heroImage — if set, REPLACES the 3D Mapbox hero with a real photo
+    //    (a solid background-image overlay div). The hero map stays in the
+    //    DOM but is hidden. This is how Shana can override the map with a
+    //    curated photograph on any city page.
+    if (doc.heroImage?.asset?.url) {
+      const heroSection = document.getElementById('community-hero')
+      const heroMap = document.getElementById('hero-map')
+      if (heroSection && heroMap) {
+        const overlay = document.createElement('div')
+        overlay.style.cssText = 'position:absolute;inset:0;background-image:url(' +
+          doc.heroImage.asset.url + ');background-size:cover;background-position:center;z-index:1;'
+        heroSection.insertBefore(overlay, heroMap.nextSibling)
+        heroMap.style.display = 'none'
+      }
+    }
   })
+  .catch(() => {})  // silent fallback — HTML defaults win if anything errors
 ```
 
-Falls back silently if the API returns nothing or the doc has no stats —
-so the HTML defaults are the authoritative source if Sanity is offline
-or unconfigured.
+### Key details
 
-If you replicate this on another site, you have three choices:
+- **Match is case-insensitive** — `.toLowerCase()` on both sides. A
+  Sanity edit like `median home price` will still find the page's
+  `Median Home Price` label.
+- **Label match is trimmed** — trailing/leading whitespace is stripped
+  before comparison.
+- **Silent fallback** — if the fetch fails, the API returns 404, or
+  the doc has no `quickStats`/`heroImage`, the page keeps its HTML
+  defaults. This is important: **the HTML is always the source of truth
+  in the worst case.** Nothing on the page depends on Sanity being up.
+- **Hero image REPLACES the map** — it doesn't overlay a transparent
+  image on top. If you set `heroImage`, you're telling the site
+  "show a photo here instead of the 3D map." Use with intent (e.g. a
+  city that has a famous skyline photo that outperforms the map).
 
-1. **Keep the Sanity sync** — port `api/community.ts`, `lib/sanity.ts`,
-   and the Sanity project setup over. Worth it if the client wants to
+### API endpoint (`/api/community`)
+
+Simple Node route in `api/community.ts` that:
+1. Reads the `slug` query param
+2. Calls the Sanity CDN client to fetch the `communityPage` doc where `slug.current == $slug`
+3. Returns the raw override doc as JSON
+4. Sets `Cache-Control: public, s-maxage=60, stale-while-revalidate=300`
+   — Sanity edits appear on the site within ~1 minute; stale content
+   served up to 5 minutes if the CDN is warm
+
+### Replication options
+
+If you're building a new site and want CMS overrides, three paths:
+
+1. **Keep the Sanity sync** — port `api/community.ts` and `lib/sanity.ts`,
+   create a new Sanity project (free tier is enough), swap the project
+   ID, add the env vars in Vercel. Worth it if the client will actually
    edit stats themselves.
-2. **Remove the sync** — delete the inline fetch script and just edit the
-   HTML directly. Simplest. Suits sites with a developer in the loop.
+2. **Remove the sync entirely** — delete the inline fetch script and
+   just edit the HTML directly when stats need to change. Simplest
+   option. Suits sites where a developer touches the code anyway.
 3. **Swap the data source** — point the fetch at a different endpoint
-   (Google Sheets via API, Airtable, Webflow CMS, whatever). The
-   matching-by-label logic doesn't care where the data comes from.
+   (Google Sheets via API, Airtable, Webflow CMS, a simple JSON file
+   in `public/`, whatever). The matching-by-label logic doesn't care
+   where the data comes from — it just needs `{ quickStats: [{key,
+   value}], heroImage: {asset:{url}} }` shape back.
 
 ---
 
-## Tracking, SEO, and Other Head Content
+## Head Content (Full Order)
 
-Every community page has the same `<head>` boilerplate in this order:
+Every community page's `<head>` follows this exact order. Order matters
+for the tracking pixels — they need to fire before anything heavy loads:
 
-1. **Marketing tracking pixels** — RAEK, OIR/Aggle, MM (added by the
-   `Start RAEK Code` … `End RAEK Code` blocks — see commit `d34ac37`)
-2. **Google Analytics 4 gtag**
-3. **Meta charset + viewport**
-4. **Favicon**
-5. **Title + description** — `<city> Homes For Sale | <agent> — <market>`
-6. **Google Fonts preconnect + load** — Cormorant Garamond + Jost
-7. **Mapbox GL CSS**
-8. **`community.css`**
-9. **YLOPO config**
-10. **Canonical URL injection** (small inline script)
+```
+1.  <!DOCTYPE html> / <html lang="en"> / <head>
+2.  RAEK tracking pixel  ← 3rd-party, per-agent ID
+3.  OIR / Aggle tracking pixel  ← 3rd-party, per-agent ID
+4.  MM (mm-uxrv) tracking pixel  ← 3rd-party, per-agent ID
+5.  Google Analytics 4 gtag script + config
+6.  <meta charset="UTF-8">
+7.  <meta name="viewport" ...>
+8.  <link rel="icon" href="/images/favcon.png">  ← note: "favcon" is a typo, keep for consistency
+9.  <title>City Homes For Sale | Agent — Market</title>
+10. <meta name="description" ...>
+11. Google Fonts preconnect + Cormorant Garamond + Jost stylesheet
+12. Mapbox GL CSS (v3.4.0)
+13. <link rel="stylesheet" href="community.css">
+14. YLOPO widget config (var YLOPO_HOSTNAME + window.YLOPO_WIDGETS)
+15. Canonical URL injector (small inline IIFE)
+</head>
+```
 
-Title pattern that works for these pages:
+Details for the pieces that are per-agent secrets or hidden gotchas:
+
+### Marketing tracking pixels (block #2–4)
+
+Three 3rd-party pixels, dropped in at the very top of `<head>` so they
+fire before anything else. **Every ID here is per-agent and must be
+swapped when replicating.** Verbatim copy from `palm-springs.html:4–35`:
+
+```html
+<!-- Start RAEK Code for www.shanasells.com -->
+<script>
+(function(window, document, id){
+    var script = document.createElement('script');
+    script.id = 'raekTag';
+    script.type = 'text/javascript';
+    script.src = 'https://cdn.raek.net/js/raek.min.js?id='+id;
+    script.async = true;
+    document.getElementsByTagName('head')[0].appendChild(script);
+})(window, document, "6767…YOUR_128_CHAR_RAEK_SITE_ID_HERE…070");
+</script>
+<!-- End RAEK Code -->
+
+<!-- OIR / Aggle -->
+<script type='text/javascript'>!function(e) { e._oirtrk = e._oirtrk || []; }(window);</script>
+<script type="text/javascript">
+  !(function (s) {
+    let o = s.createElement('script'), u = s.getElementsByTagName('script')[0];
+    o.src = 'https://cdn.aggle.net/oir/oir.min.js';
+    o.async = !0
+    o.setAttribute('oirtyp', 'YOUR_OIR_TYP_HERE')     // e.g. '6311ae17'
+    o.setAttribute('oirid',  'YOUR_OIR_ID_HERE')       // e.g. 'PP3977C5P'
+    u.parentNode.insertBefore(o, u)
+  })(document);
+</script>
+
+<!-- MM (mm-uxrv) -->
+<script async="async" src="https://mm-uxrv.com/js/mm_YOUR_MM_UUID_HERE.js"></script>
+```
+
+Per-agent IDs to swap:
+- **RAEK** — 128-char site ID (from the RAEK dashboard, one per site)
+- **OIR** — `oirtyp` (site type) + `oirid` (account ID)
+- **MM** — UUID inside the JS filename
+- **GA4** — `G-XXXXXXXXXX` measurement ID (in the gtag block, block #5)
+
+There's no shared config — all four are hardcoded in every one of the
+47 public HTML pages on the site. Use find-and-replace across the repo
+when swapping.
+
+### Title + description pattern
 
 ```html
 <title>Palm Springs Homes For Sale | Shana Gates — Coachella Valley Real Estate</title>
@@ -485,16 +811,106 @@ Title pattern that works for these pages:
 Always 50–60 chars title, 140–160 chars description, city + "Homes For
 Sale" leading, agent + brokerage trailing.
 
----
+### Canonical URL injector (block #15)
 
-## Inline JavaScript
-
-Three tiny scripts live at the bottom of every page. Keep them inline —
-they're small and removing the network round-trip helps perceived
-performance.
+Small IIFE that adds a `<link rel="canonical">` tag pointing at the
+production domain, regardless of which host the page is being served
+from (Vercel preview URL, Vercel alias, custom domain, etc.):
 
 ```html
-<!-- FAQ accordion + Schools tabs -->
+<script>
+!function(){
+  var p = location.pathname.replace(/\/index\.html$/,'/')
+  var s = p.indexOf('post.html') !== -1 ? location.search : ''
+  var l = document.createElement('link')
+  l.rel = 'canonical'
+  l.href = 'https://www.shanasells.com' + p + s
+  document.head.appendChild(l)
+}()
+</script>
+```
+
+**Domain is hardcoded** — swap `https://www.shanasells.com` when
+replicating. This is the same string in every one of the 47 pages.
+
+### Favicon
+
+Path is `/images/favcon.png` — note the "favcon" spelling (missing an
+`i`, historical typo). Keep it consistent with the actual filename in
+the `images/` directory rather than "fixing" it, since dozens of pages
+reference it.
+
+---
+
+## Body Content Load Order
+
+Scripts near `</body>` load in this order — order matters because
+`community-map.js` needs `mapboxgl` and `CV_MAP_CONFIG` already
+present:
+
+```html
+<!-- 1. YLOPO listing widget — renders the MLS grid -->
+<script src="https://search.<yoursubdomain>.com/build/js/widgets-1.0.0.js" defer></script>
+
+<!-- 2. Blog-posts injector — adds #community-blog-posts before #community-cta -->
+<script src="/blog/community-posts.js" defer></script>
+
+<!-- 3. Mapbox library -->
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.js"></script>
+
+<!-- 4. Per-page config for community-map.js -->
+<script>window.CV_MAP_CONFIG = { /* per-city — see Shared Map System below */ }</script>
+
+<!-- 5. Shared map init — creates the hero + lifestyle 3D maps -->
+<script src="/community-map.js"></script>
+
+<!-- 6. Per-page valley-context inline map (highlights current city in the overview) -->
+<script>(function(){ /* see Valley Location section — ~60 lines */ })()</script>
+
+<!-- 7. FAQ accordion + Schools tabs -->
+<script>
+  function toggleFaq(btn) { /* … */ }
+  function switchTab(tab, panelId) { /* … */ }
+</script>
+
+<!-- 8. CMS override sync — see CMS Overrides section -->
+<script>(function(){ fetch('/api/community?slug=<city>').then(/* … */) })()</script>
+
+<!-- 9. YLOPO click tracking — appends UTM params + fires idx_property_click gtag events -->
+<script src="/ylopo-tracking.js" defer></script>
+```
+
+### `/ylopo-tracking.js`
+
+A tiny site-wide script that:
+1. Finds every anchor pointing at the YLOPO search subdomain
+2. Appends UTM parameters (`utm_source=<agent-site>`, etc.) to those links
+3. Fires a `gtag('event', 'idx_property_click', {...})` on click so the
+   click can be attributed in GA4
+
+Loaded on every community page (and the homepage). It's not
+community-page-specific — swap the YLOPO domain and UTM values when
+replicating.
+
+### `/blog/community-posts.js`
+
+Runs on every community page. Reads the page slug from the URL, fetches
+`/api/blog/posts?city=<slug>&limit=3`, and if it gets back matching
+posts, injects a `<section id="community-blog-posts">` before
+`#community-cta` with three post cards. If the fetch returns empty, the
+section simply doesn't appear.
+
+Styled via `.cbp-*` classes in `community.css` around line 2117. The
+blog post URL structure (`/blog/post/<slug>`) and the API endpoint
+(`/api/blog/posts?city=…`) must exist on the destination site — this
+depends on the blog pipeline (see `BLOG.md`).
+
+### FAQ + Schools inline handlers
+
+The two tiniest scripts — inline because they're small and removing the
+network round-trip helps perceived performance:
+
+```html
 <script>
   function toggleFaq(btn) {
     var item = btn.parentElement
@@ -513,10 +929,13 @@ performance.
 </script>
 ```
 
-Scroll-reveal animations (the slide-in-on-scroll effect for elements with
-`.reveal`) are handled by `community-map.js` — anything with the
+### Scroll-reveal animations
+
+The slide-in-on-scroll effect for elements with `.reveal` is handled by
+`community-map.js` (bottom of the file, `~line 224`). Anything with the
 `.reveal` class gets a `visible` class added when it crosses into the
-viewport.
+viewport. No per-page setup needed — just add `class="reveal"` to
+whatever should animate in.
 
 ---
 
@@ -553,10 +972,18 @@ real-estate brands — it makes the night-mode 3D map feel native.
 ## How to Add a 10th CV Community Page (Same Project)
 
 1. Pick the slug (e.g. `bermuda-dunes.html`)
-2. Copy any existing community HTML file as the starting template
-3. **Update the `<head>`:** title, description, canonical URL
-4. **Update the nav** in *every other community page* to add a Communities-dropdown link to the new one. Also update the footer Communities list everywhere.
-5. **Update content for each of the 14 sections:**
+2. Copy any existing community HTML file as the starting template. Pick
+   one that reflects whether the new city has `#new-construction`
+   (Palm Desert / La Quinta / Indio / Cathedral City / Desert Hot
+   Springs / Coachella) or not (Palm Springs / Rancho Mirage / Indian
+   Wells).
+3. **Update the `<head>`:** title, description, canonical URL. Leave the
+   4 tracking-pixel blocks and the GA4 gtag ID alone — those are the
+   same across all pages.
+4. **Update the nav** in every other community page's Communities dropdown
+   AND in the footer Communities column. This means opening 9 files and
+   adding one line to each. Same for the homepage.
+5. **Update content for each of the 15 sections:**
    - Hero: city name, 4 hero stats
    - Valley location: drive-time cards
    - Overview: 3 editorial paragraphs + 8 quick-facts
@@ -565,14 +992,17 @@ real-estate brands — it makes the night-mode 3D map feel native.
    - Neighborhoods: 8–12 cards
    - City stats: 5 SVG-icon stats
    - Listings: YLOPO `data-search` `city` param + the "View All" URL
-   - HOA fees, Parks, Schools: as researched
+   - HOA fees, Parks: as researched
+   - New Construction: 3–5 builder cards (or delete the section if the
+     market doesn't have active new-home inventory)
+   - Schools: public + private lists + disclaimer
    - Nearby communities: row order updated to reflect proximity
    - FAQ: 6–10 city-specific Q&As
    - Lifestyle bullets
 6. **Update `CV_MAP_CONFIG`** at the bottom — center lng/lat, zoom levels,
    boundary polygon, 4–6 POIs (see MAPS.md for the polygon format)
 7. **Update the valley-location inline script** — change `CURRENT_SLUG`
-   to the new slug
+   to the new slug and add the new city to the `CITIES` array
 8. **Update `sitemap.xml`** + `index.html`'s communities grid + the
    homepage `COMMUNITIES` array in `index.html` (boundary polygon
    duplicated there — keep in sync)
@@ -588,7 +1018,9 @@ agent:
 
 ### Phase 1 — Strip + Rebrand
 
-1. Copy `community.css`, `community-map.js`, **MAPS.md**, **COMMUNITIES.md** to the new project.
+1. Copy `community.css`, `community-map.js`, `ylopo-tracking.js`,
+   `blog/community-posts.js`, `api/community.ts`, `lib/sanity.ts`,
+   **MAPS.md**, and **COMMUNITIES.md** to the new project.
 2. Pick a representative community HTML file (e.g. `palm-springs.html`) and copy it as your template.
 3. Replace **brand tokens** in `community.css`: `--bronze`, `--cream*`, and the two font references in `--serif`/`--sans`.
 4. Replace **agent strings** site-wide: name, brokerage, phone, email, CalDRE, contact address, social handles.
@@ -602,7 +1034,8 @@ The map system is geo-agnostic — it just needs new coordinates.
 7. **Get boundary polygons.** For each city you'll cover, build a closed `[lng,lat]` polygon. Sources: OpenStreetMap → export, US Census TIGER shapefiles → convert with `mapshaper`, or hand-draw in `geojson.io` for approximate ones (good enough for visual purposes — these aren't legal boundaries).
 8. **Pick POIs per city** — 4–6 named landmarks with `name`, `desc`, `lng`, `lat`, and an emoji icon.
 9. Update the **homepage valley-overview map** (in `index.html`) — same boundary polygons, same road lines, but flat (`pitch: 0`) and zoomed out to fit all cities. Lay each city polygon as a clickable layer that navigates to its page.
-10. Update the **per-page valley-location inline script** — same data, but highlight just the current city in yellow.
+10. Update the **per-page valley-location inline script** — same data, but highlight just the current city in yellow. Also decide if you want to keep the Mapbox `dark-v11` style used here or switch to Standard/night for consistency with the hero + lifestyle maps.
+11. **Get a new Mapbox access token** for the new site (public token, safe to commit) and swap it in `community-map.js` AND in every page's inline valley-context map. There are ~10 copies — use find-and-replace.
 
 ### Phase 3 — Content for each city page
 
@@ -616,6 +1049,7 @@ For each city, gather:
 - 5 city-stat trivia numbers
 - HOA fee ranges + standard "what HOAs cover" bullets
 - 3+ park cards with real addresses and amenities
+- (Optional) 3–5 active new-home builder cards if the market has meaningful new construction
 - Public + private school lists (then add the zoning disclaimer)
 - 6–10 FAQs written as the question buyers actually type into Google
 - 5 lifestyle bullets
@@ -627,37 +1061,78 @@ content reads instantly as AI slop and fails both search and AEO.
 
 ### Phase 4 — Plumbing
 
-11. Wire up the **YLOPO widget** (or whatever IDX provider the new agent uses — same pattern: a div with a JSON config attribute + a CDN script tag).
-12. **Tracking pixels** — see commit `d34ac37` in this repo for the RAEK/OIR/MM block. Drop equivalents into the new site's `<head>`.
-13. **Sanity CMS overrides** — decide whether to port them. If yes: new Sanity project, port `lib/sanity.ts` + `api/community.ts`, update the inline sync script's API endpoint. If no: delete the sync script block.
-14. **Vercel deploy.** Static HTML, no build step needed. Push to GitHub, connect Vercel, done.
+12. Wire up the **YLOPO widget** (or whatever IDX provider the new agent uses — same pattern: a div with a JSON config attribute + a CDN script tag). Update `YLOPO_HOSTNAME` in the head config to the agent's specific YLOPO subdomain. YLOPO only renders on domains registered to that agent's account — the widget will appear empty on localhost and Vercel preview URLs (expected).
+13. **Update `ylopo-tracking.js`** — this script watches for clicks on
+    the YLOPO subdomain and appends UTM parameters + fires
+    `idx_property_click` gtag events. Swap the hostname it watches for
+    and any hardcoded UTM values.
+14. **Tracking pixels** — swap all 4 IDs when replicating:
+    - **RAEK** — 128-char site ID (get it from the agent's RAEK
+      dashboard)
+    - **OIR** — `oirtyp` + `oirid` values from OIR/Aggle
+    - **MM** — the UUID inside the mm-uxrv script filename
+    - **GA4** — `G-XXXXXXXXXX` measurement ID
+    
+    Every one of these is repeated in every public HTML page.
+    Bulk find-and-replace across the repo before shipping. Delete any
+    pixel block the new agent doesn't use.
+15. **Canonical URL injector** — swap the hardcoded
+    `https://www.shanasells.com` in every page's canonical script to
+    the new site's production domain.
+16. **Sanity CMS overrides** — decide whether to port them. If yes:
+    create a new Sanity project (free tier is enough), port
+    `lib/sanity.ts` + `api/community.ts`, swap the project ID, add
+    `SANITY_PROJECT_ID` / `SANITY_DATASET` / `SANITY_WRITE_TOKEN` env
+    vars in Vercel. If no: delete the inline `fetch('/api/community…')`
+    IIFE from every community page.
+17. **Blog integration** — if the new site has the same blog pipeline
+    (see `BLOG.md`), `/blog/community-posts.js` will inject the "Recent
+    from the Blog" section automatically. If the new site doesn't have
+    that blog structure, delete the `<script src="/blog/community-posts.js" defer>` include from each page.
+18. **Vercel deploy.** Community HTML has no build step. The
+    `api/community.ts` and any other TS routes are compiled by Vercel's
+    Node runtime automatically. Push to GitHub, connect Vercel, done.
 
 ---
 
 ## What Holds Up Across Markets vs. What Breaks
 
 **Holds up well** (use as-is):
-- The 14-section page anatomy
+- The 15-section page anatomy
 - The CSS file structure and reveal animations
 - The Mapbox Standard / night-preset visual treatment
 - The FAQ accordion + Schools tabs JS
-- The YLOPO widget integration pattern
+- The YLOPO widget integration pattern (`community-map.js` +
+  `ylopo-tracking.js`)
 - The footer structure and disclaimer placement
 - The CMS-overlay-by-label sync pattern
+- The runtime blog-post injector (`/blog/community-posts.js`) — as long
+  as the destination site has a similar `/api/blog/posts?city=` endpoint
 
 **Needs market-specific work**:
 - All road lines (`I-10`, `HWY111`) — only relevant to CV
 - All city boundary polygons
 - POI sets per city
-- The "drive-time cards" (section 3) — destinations are CV-specific
+- The "drive-time cards" (section 2) — destinations are CV-specific
 - The Nearby Communities table — needs your actual neighboring cities
+- The Behind the Gates dropdown + `gated/*.html` pages — CV-specific
+  luxury/gated communities. Delete if the new market doesn't have this
+  angle
+- New Construction section presence — include only in cities that have
+  active builder inventory (was 6/9 for CV)
 - The HOA fee ranges, school district names, park names — obviously
 - The brand color palette and fonts
+- All 4 tracking pixel IDs (RAEK, OIR, MM, GA4)
+- The canonical-URL injector's hardcoded production domain
+- Mapbox access token (get a new one from the agent's own Mapbox account
+  — token is public, safe to commit)
 
 **Needs editorial work, not just copy/paste**:
 - All editorial copy across all sections
 - The FAQ — must match how *your* buyers in *your* market actually search
 - The Lifestyle bullets — locally-specific events and attractions
+- Neighborhoods, HOA fee tables, park cards, school lists, new-home
+  builder cards — each needs real local research
 
 ---
 
@@ -666,11 +1141,14 @@ content reads instantly as AI slop and fails both search and AEO.
 | If you're touching… | Also check… |
 |---|---|
 | A new POI on the city map | `MAPS.md` (POI schema + how to add) |
-| A boundary polygon change | `MAPS.md` (boundary format) + `index.html` (homepage map has a duplicate copy) |
-| A new community page | `sitemap.xml`, `index.html` communities grid + COMMUNITIES array, all 9 existing community pages' nav dropdowns + footer Communities column |
+| A boundary polygon change | `MAPS.md` (boundary format) + `index.html` (homepage map has a duplicate copy) + the per-page valley-context inline script (each page has its own copy of every polygon) |
+| A new community page | `sitemap.xml`, `index.html` communities grid + `COMMUNITIES` array, all 9 existing community pages' nav dropdowns + footer Communities column |
 | The Sanity stat sync logic | `api/community.ts`, `lib/sanity.ts`, `CLAUDE.md` (AI Content Assistant section) |
-| The YLOPO widget config | `CLAUDE.md` (YLOPO Widget System section) |
+| The YLOPO widget config | `CLAUDE.md` (YLOPO Widget System section), `ylopo-tracking.js` |
+| The runtime blog-post injector | `/blog/community-posts.js`, `/api/blog/posts.ts`, `BLOG.md` |
 | Tracking pixel changes | All 47 public HTML pages — use the same bulk-sed pattern from commit `d34ac37` |
+| Rotating the Mapbox token | `community-map.js:17` + every community page's inline valley-context map (~10 copies) |
+| Canonical URL / production domain change | Every community page's inline canonical script (~10 copies) + the same string in the CMS-sync IIFE where article URLs get built |
 
 ---
 
