@@ -676,13 +676,19 @@
 
   var ARROW_SVG = '<svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h8"/><path d="M6 2.5L9.5 6 6 9.5"/></svg>';
 
+  function extOf(p) {
+    var m = decodeURIComponent(p).match(/\.(jpe?g|png|webp|gif)(\?|$)/i);
+    return m ? ('.' + m[1].toLowerCase().replace('jpeg', 'jpg')) : '.jpg';
+  }
+
   function makeCard(name, imgPath, slug, title, isLeader) {
+    var src = 'assets/images/agents/' + slug + extOf(imgPath);
     var el = document.createElement('article');
     el.className = 'agent-card' + (isLeader ? ' agent-card--leader' : '');
     el.setAttribute('data-name', name.toLowerCase());
     el.innerHTML =
       '<div class="agent-card-img-wrap">' +
-        '<img class="agent-card-img" src="' + SQ + imgPath + '" alt="' + name + ', ' + title + ' at Palisade Realty" loading="lazy" width="300" height="400">' +
+        '<img class="agent-card-img" src="' + src + '" alt="' + name + ', ' + title + ' at Palisade Realty" loading="lazy" width="300" height="400">' +
       '</div>' +
       '<div class="agent-card-body">' +
         '<div class="agent-card-name">' + name + '</div>' +
