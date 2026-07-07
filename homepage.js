@@ -810,3 +810,28 @@ function initBlogCarousel() {
   update();
   window.addEventListener('resize', update, { passive: true });
 }
+
+/* ── COMMUNITIES NAV DROPDOWN ───────────────────────────────── */
+(function () {
+  var dd = document.querySelector('.nav-dropdown');
+  if (!dd) return;
+  var trigger = dd.querySelector('.nav-dropdown-trigger');
+  var closeTimer;
+  function openDD()  { clearTimeout(closeTimer); dd.classList.add('is-open'); trigger.setAttribute('aria-expanded', 'true'); }
+  function closeDD() { closeTimer = setTimeout(function () { dd.classList.remove('is-open'); trigger.setAttribute('aria-expanded', 'false'); }, 120); }
+  dd.addEventListener('mouseenter', openDD);
+  dd.addEventListener('mouseleave', closeDD);
+  trigger.addEventListener('focus', openDD);
+  trigger.addEventListener('blur', function (e) { if (!dd.contains(e.relatedTarget)) closeDD(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { dd.classList.remove('is-open'); trigger.setAttribute('aria-expanded', 'false'); } });
+
+  var mToggle = document.getElementById('mobile-communities-toggle');
+  var mList   = document.getElementById('mobile-communities-list');
+  if (mToggle && mList) {
+    mToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      var isOpen = mList.classList.toggle('open');
+      mToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  }
+}());
