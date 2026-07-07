@@ -158,10 +158,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .btn-outline-brand {
   border: 1px solid var(--brand);
-  color: var(--white);
+  color: var(--brand);
   padding: 14px 56px;
   font-weight: 500;
 }
+.btn-outline-brand:hover { background: var(--brand); color: #fff; opacity: 1; }
 
 .btn-dark {
   background: var(--near-black);
