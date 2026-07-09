@@ -1,0 +1,147 @@
+{
+  "la-jolla": {
+    "name": "La Jolla",
+    "highlights": [
+      {
+        "icon": "◆",
+        "title": "World-Class Coastline",
+        "body": "La Jolla Cove, Children's Pool, and Torrey Pines Beach put some of Southern California's most dramatic coastline within walking distance of most homes."
+      },
+      {
+        "icon": "◆",
+        "title": "Village Culture & Dining",
+        "body": "Prospect Street and Girard Avenue offer an exceptional concentration of acclaimed restaurants, independent galleries, boutique shops, and weekend farmers markets."
+      },
+      {
+        "icon": "◆",
+        "title": "Research & Innovation Hub",
+        "body": "UC San Diego, the Salk Institute, and Scripps Research anchor a world-renowned concentration of biotech and research institutions that drives strong long-term property values."
+      }
+    ],
+    "schoolDistrict": "San Diego Unified School District",
+    "schools": {
+      "public": [
+        { "name": "La Jolla High School", "grades": "9–12", "type": "SDUSD" },
+        { "name": "Muirlands Middle School", "grades": "6–8", "type": "SDUSD" },
+        { "name": "La Jolla Elementary", "grades": "K–5", "type": "SDUSD" },
+        { "name": "Bird Rock Elementary", "grades": "K–5", "type": "SDUSD" }
+      ],
+      "private": [
+        { "name": "The Bishop's School", "grades": "6–12", "type": "Independent" },
+        { "name": "La Jolla Country Day", "grades": "PreK–12", "type": "Independent" },
+        { "name": "Our Lady of the Sacred Heart", "grades": "K–8", "type": "Catholic" }
+      ]
+    },
+    "parks": [
+      {
+        "name": "Torrey Pines State Natural Reserve",
+        "size": "2,000 acres",
+        "amenities": ["Coastal hiking trails", "Gliderport access", "Wildlife observation", "Pacific overlooks"]
+      },
+      {
+        "name": "La Jolla Shores Beach",
+        "amenities": ["Swimming beach", "Kayak launch", "Scuba diving", "Picnic areas"]
+      },
+      {
+        "name": "Ellen Browning Scripps Park",
+        "amenities": ["Ocean-view lawn", "La Jolla Cove access", "Wedding venue", "Concierge seating"]
+      }
+    ]
+  },
+  "coronado": {
+    "name": "Coronado",
+    "highlights": [
+      {
+        "icon": "◆",
+        "title": "Island Living, City Access",
+        "body": "Coronado Island offers a peaceful, small-town atmosphere while remaining minutes from downtown San Diego by bridge or ferry — the best of both worlds."
+      },
+      {
+        "icon": "◆",
+        "title": "Pristine Beach & Village",
+        "body": "Consistently ranked among the nation's best beaches, Coronado Beach stretches for miles alongside a charming village of independent shops, acclaimed restaurants, and the legendary Hotel del Coronado."
+      },
+      {
+        "icon": "◆",
+        "title": "Safety & Community",
+        "body": "One of San Diego County's safest communities, Coronado boasts top-rated schools, strong civic pride, and a tight-knit neighborhood culture that draws buyers who plan to stay."
+      }
+    ],
+    "schoolDistrict": "Coronado Unified School District",
+    "schools": {
+      "public": [
+        { "name": "Coronado High School", "grades": "9–12", "type": "CUSD" },
+        { "name": "Coronado Middle School", "grades": "6–8", "type": "CUSD" },
+        { "name": "Village Elementary School", "grades": "K–5", "type": "CUSD" },
+        { "name": "Silver Strand Elementary", "grades": "K–5", "type": "CUSD" }
+      ],
+      "private": [
+        { "name": "Sacred Heart Parish School", "grades": "K–8", "type": "Catholic" },
+        { "name": "Coronado Montessori", "grades": "PreK–6", "type": "Montessori" }
+      ]
+    },
+    "parks": [
+      {
+        "name": "Coronado Beach",
+        "size": "1.5 miles",
+        "amenities": ["Swimming", "Volleyball courts", "Dog beach", "Lifeguard service"]
+      },
+      {
+        "name": "Tidelands Park",
+        "amenities": ["Baseball diamonds", "Tennis courts", "Picnic shelters", "Bay views"]
+      },
+      {
+        "name": "Centennial Park",
+        "amenities": ["Bay-front promenade", "Ferry landing access", "Bike paths", "Waterfront dining nearby"]
+      }
+    ]
+  },
+  "rancho-santa-fe": {
+    "name": "Rancho Santa Fe",
+    "highlights": [
+      {
+        "icon": "◆",
+        "title": "The Covenant Lifestyle",
+        "body": "Rancho Santa Fe's historic Covenant — the original planned community stretching across 6,400 acres — preserves strict architectural standards and mature eucalyptus groves that give the village its unmistakable character."
+      },
+      {
+        "icon": "◆",
+        "title": "Equestrian & Recreational Culture",
+        "body": "Miles of private riding trails, the RSF Golf Club, tennis and paddle facilities, and easy access to Del Mar's racetrack make this one of Southern California's most active luxury communities."
+      },
+      {
+        "icon": "◆",
+        "title": "Privacy & Estate Acreage",
+        "body": "Minimum lot sizes of one to two acres throughout The Covenant ensure privacy, mature landscaping, and the kind of estate-scale living that's increasingly rare in coastal Southern California."
+      }
+    ],
+    "schoolDistrict": "Rancho Santa Fe School District / San Dieguito Union High School District",
+    "schools": {
+      "public": [
+        { "name": "San Dieguito High School Academy", "grades": "9–12", "type": "SDUHSD" },
+        { "name": "Santa Fe Christian Schools", "grades": "K–12", "type": "Charter" },
+        { "name": "Rancho Santa Fe Elementary", "grades": "K–6", "type": "RSFD" }
+      ],
+      "private": [
+        { "name": "The Bishop's School", "grades": "6–12", "type": "Independent" },
+        { "name": "Torrey Pines Christian Academy", "grades": "K–12", "type": "Christian" },
+        { "name": "Rhoades School", "grades": "PreK–8", "type": "Independent" }
+      ]
+    },
+    "parks": [
+      {
+        "name": "Covenant Trails",
+        "size": "60+ miles",
+        "amenities": ["Equestrian trails", "Hiking", "Mountain biking", "Nature observation"]
+      },
+      {
+        "name": "RSF Golf Club",
+        "amenities": ["18-hole championship course", "Tennis & paddle", "Swim & fitness center", "Member dining"]
+      },
+      {
+        "name": "San Dieguito River Park",
+        "amenities": ["Coastal rail trail", "Birdwatching", "Nature center", "Group picnic areas"]
+      }
+    ]
+  }
+}

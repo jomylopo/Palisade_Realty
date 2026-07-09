@@ -23,7 +23,7 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="homepage.css">
-  <link rel="stylesheet" href="featured-listings.css">
+  <!-- featured-listings.css removed — replaced by #featured-properties carousel below -->
 
   <!-- Supplemental layout styles -->
   <style>
@@ -297,7 +297,7 @@
 
   <!-- Right Nav -->
   <nav class="nav-links nav-links--right" aria-label="Primary navigation right">
-    <a href="#fl-section">Properties</a>
+    <a href="#featured-properties">Properties</a>
     <a href="team.html">Team</a>
     <a href="blog.html">Blog</a>
     <a href="contact.html">Contact</a>
@@ -337,7 +337,7 @@
     <a href="communities/el-cajon-real-estate.html">El Cajon</a>
   </div>
   <a href="testimonials.html">Testimonials</a>
-  <a href="#fl-section">Properties</a>
+  <a href="#featured-properties">Properties</a>
   <a href="team.html">Team</a>
   <a href="blog.html">Blog</a>
   <a href="contact.html">Contact</a>
@@ -660,6 +660,417 @@
   </div>
 
 </section>
+
+<!-- ============================================================
+     FEATURED PROPERTIES — carousel driven by /data/featured-properties.json
+     ============================================================ -->
+<style>
+  /* CSS variables for this section (community.css not loaded on homepage) */
+  #featured-properties {
+    --fp-dark:   #0d0d0d;
+    --fp-cream:  #faf7f2;
+    --fp-bronze: #eeca00;
+    --fp-serif:  'Playfair Display', Georgia, serif;
+    --fp-sans:   'Manrope', system-ui, sans-serif;
+  }
+
+  #featured-properties {
+    position: relative;
+    background: #111;
+    padding: 80px 0 100px;
+    overflow: hidden;
+  }
+  #featured-properties .section-header {
+    max-width: 1400px;
+    margin: 0 auto 36px;
+    padding: 0 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .fp-carousel {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 48px;
+  }
+  .fp-stage {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    background: #000;
+    overflow: hidden;
+  }
+  .fp-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.45s ease;
+    pointer-events: none;
+  }
+  .fp-slide.active { opacity: 1; pointer-events: auto; }
+  .fp-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .fp-overlay-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.15) 35%, rgba(0,0,0,0) 60%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .fp-info {
+    position: absolute;
+    left: 48px;
+    bottom: 48px;
+    max-width: 640px;
+    color: #fff;
+    text-shadow: 0 2px 14px rgba(0,0,0,0.45);
+    z-index: 3;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+  }
+  .fp-eyebrow {
+    font-family: var(--fp-sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.92);
+    margin: 0 0 14px;
+  }
+  .fp-address {
+    font-family: var(--fp-serif);
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 0 0 14px;
+    color: #fff;
+  }
+  .fp-stats-inline {
+    font-family: var(--fp-serif);
+    font-style: italic;
+    font-size: clamp(15px, 1.5vw, 19px);
+    font-weight: 300;
+    color: rgba(255,255,255,0.92);
+    margin: 0;
+  }
+
+  .fp-hover-card {
+    position: absolute;
+    left: 48px;
+    bottom: 48px;
+    display: grid;
+    grid-template-columns: minmax(280px, 360px) minmax(220px, 280px);
+    max-width: 640px;
+    font-family: var(--fp-serif);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+    z-index: 4;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+  }
+  .fp-slide.has-hover:hover .fp-hover-card,
+  .fp-slide.has-hover:focus-within .fp-hover-card {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .fp-slide.has-hover:hover .fp-info,
+  .fp-slide.has-hover:focus-within .fp-info {
+    opacity: 0;
+    transform: translateY(-12px);
+    pointer-events: none;
+  }
+  .fp-card-tagline {
+    background: var(--fp-cream);
+    color: #1a1814;
+    padding: 28px 30px;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .fp-card-stats {
+    background: var(--fp-dark);
+    color: #fff;
+    padding: 20px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    font-family: var(--fp-serif);
+  }
+  .fp-card-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid rgba(200,200,200,0.35);
+    padding: 8px 0;
+  }
+  .fp-card-stat:last-child { border-bottom: 0; }
+  .fp-card-stat strong { font-weight: 600; font-size: 17px; letter-spacing: 0.01em; }
+  .fp-card-stat .label { font-style: italic; font-size: 14px; color: rgba(255,255,255,0.65); }
+  .fp-price strong { font-size: 22px; }
+  .fp-pricecut {
+    font-family: var(--fp-sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: #e8b04a;
+    padding: 6px 0 10px;
+    border-bottom: 1px solid rgba(200,200,200,0.35);
+    margin-top: -4px;
+  }
+  .fp-openhouse {
+    display: inline-block;
+    font-family: var(--fp-sans);
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #fff;
+    background: #58172a;
+    padding: 7px 14px;
+    margin-bottom: 16px;
+    font-style: normal;
+  }
+
+  .fp-cta {
+    position: absolute;
+    right: 48px;
+    bottom: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fp-sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(88,23,42,0.55);
+    border: 1.5px solid rgba(255,255,255,0.85);
+    padding: 14px 32px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  .fp-cta:hover {
+    background: #58172a;
+    border-color: #58172a;
+    color: #fff;
+  }
+
+  .fp-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 0;
+    border: 1.5px solid rgba(255,255,255,0.85);
+    background: rgba(0,0,0,0.35);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 5;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  .fp-arrow:hover { background: #58172a; border-color: #58172a; color: #fff; }
+  .fp-arrow:disabled { opacity: 0.35; cursor: default; }
+  .fp-arrow:disabled:hover { background: rgba(0,0,0,0.35); border-color: rgba(255,255,255,0.85); color: #fff; }
+  .fp-arrow svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.5; }
+  .fp-prev { left: 96px; }
+  .fp-next { right: 96px; }
+
+  .fp-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 28px;
+  }
+  .fp-dot {
+    width: 36px;
+    height: 2px;
+    background: rgba(255,255,255,0.25);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s;
+  }
+  .fp-dot.active { background: var(--fp-bronze); }
+  .fp-dot:hover { background: #ffd633; }
+
+  @media (max-width: 900px) {
+    #featured-properties .section-header { padding: 0 20px; flex-direction: column; align-items: flex-start; }
+    .fp-carousel { padding: 0 16px; }
+    .fp-stage { aspect-ratio: 4 / 5; }
+    .fp-info { left: 24px; right: 24px; bottom: 88px; max-width: none; }
+    .fp-eyebrow { font-size: 10px; margin-bottom: 10px; }
+    .fp-address { letter-spacing: 0.03em; }
+    .fp-stats-inline { font-size: 14px; }
+    .fp-hover-card { display: none; }
+    .fp-cta { right: 24px; bottom: 24px; padding: 11px 22px; font-size: 10px; }
+    .fp-prev { left: 8px; }
+    .fp-next { right: 8px; }
+    .fp-arrow { width: 44px; height: 44px; }
+  }
+</style>
+
+<section id="featured-properties">
+  <div class="section-header reveal">
+    <div>
+      <p class="section-eyebrow">Curated Selection</p>
+      <h2 class="section-title">Featured Properties</h2>
+    </div>
+    <a href="https://search.palisaderealty.com/search" class="view-all-link" target="_blank" rel="noopener">View All Listings &rarr;</a>
+  </div>
+
+  <div class="fp-carousel">
+    <div class="fp-stage" id="fp-stage" aria-roledescription="carousel">
+      <!-- slides injected by JS -->
+    </div>
+    <button class="fp-arrow fp-prev" id="fp-prev" aria-label="Previous property">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <button class="fp-arrow fp-next" id="fp-next" aria-label="Next property">
+      <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+    <div class="fp-dots" id="fp-dots"></div>
+  </div>
+</section>
+
+<script>
+  window.__featuredProperties = [{"slug":"la-jolla-prospect","address":"1247 Prospect Street","city":"La Jolla","state":"CA","zip":"92037","lat":32.8478,"lng":-117.2763,"neighborhood":"La Jolla Village","communitySlug":"la-jolla","price":2495000,"priceDisplay":"$2,495,000","beds":4,"baths":3,"sqft":3200,"lotSize":"6,534 sq ft","yearBuilt":2018,"mls":"240012345SD","ylopoDetailUrl":"https://search.palisaderealty.com/search","tagline":"A coastal contemporary masterpiece steps from La Jolla Cove, with sweeping Pacific views and refined interiors.","description":"Set in the heart of La Jolla Village, this coastal contemporary residence pairs clean architectural lines with curated finishes and panoramic Pacific views. Floor-to-ceiling glass in the great room frames endless ocean horizons, while the chef’s kitchen opens to a covered terrace designed for seamless indoor-outdoor living.\n\nThe primary suite occupies the entire upper floor, offering a private ocean-view deck, a spa-style bath with soaking tub, and dual walk-in closets. Three additional bedrooms and a dedicated home office provide flexible space for families and remote workers alike.","heroImage":"https://placehold.co/1600x1000/58172a/ffffff?text=La+Jolla+Property","gallery":["https://placehold.co/1600x1000/58172a/ffffff?text=La+Jolla+Property"],"status":"active","hasDetailPage":true,"listedBy":{"agent":"Hedda Parashos","brokerage":"Palisade Realty"}},{"slug":"coronado-ocean","address":"890 Ocean Boulevard","city":"Coronado","state":"CA","zip":"92118","lat":32.6787,"lng":-117.1793,"neighborhood":"Coronado Village","communitySlug":"coronado","price":3200000,"priceDisplay":"$3,200,000","beds":4,"baths":4,"sqft":3800,"lotSize":"7,840 sq ft","yearBuilt":2020,"mls":"240023456SD","ylopoDetailUrl":"https://search.palisaderealty.com/search","tagline":"A rare beachside estate on one of Coronado Island’s most prestigious streets, with white-water views and resort-caliber amenities.","description":"Positioned on Coronado’s iconic Ocean Boulevard, this newly constructed estate delivers the island’s most coveted combination: white-water views, direct beach access, and a level of finish rarely seen outside of custom development.\n\nThe open-plan main level flows from a formal living room to a professional-grade kitchen and a dining area that seats twelve. Glass pocket doors dissolve the boundary between living spaces and a broad ocean-facing terrace.","heroImage":"https://placehold.co/1600x1000/58172a/ffffff?text=Coronado+Property","gallery":["https://placehold.co/1600x1000/58172a/ffffff?text=Coronado+Property"],"status":"active","hasDetailPage":true,"listedBy":{"agent":"Hedda Parashos","brokerage":"Palisade Realty"}},{"slug":"rancho-santa-fe-via","address":"6832 Via de la Valle","city":"Rancho Santa Fe","state":"CA","zip":"92067","lat":33.0112,"lng":-117.2042,"neighborhood":"The Covenant","communitySlug":"rancho-santa-fe","price":4150000,"priceDisplay":"$4,150,000","beds":5,"baths":5,"sqft":5500,"lotSize":"2.1 acres","yearBuilt":2016,"mls":"240034567SD","ylopoDetailUrl":"https://search.palisaderealty.com/search","tagline":"A private Covenant estate on 2.1 acres of lush grounds, blending Spanish Colonial architecture with contemporary luxury.","description":"Set behind private gates in Rancho Santa Fe’s storied Covenant, this Spanish Colonial estate commands 2.1 acres of mature-canopied grounds. The great room’s vaulted, exposed-beam ceiling soars above wide-plank white oak floors and a double-sided fireplace.\n\nThe kitchen is equipped for serious entertaining: a 60-inch La Canche range, twin dishwashers, a separate prep kitchen, and a walk-in pantry. Outdoors, a resort pool with grotto, a full outdoor kitchen with wood-fired pizza oven, a sport court, and a four-stall stable.","heroImage":"https://placehold.co/1600x1000/58172a/ffffff?text=Rancho+Santa+Fe+Estate","gallery":["https://placehold.co/1600x1000/58172a/ffffff?text=Rancho+Santa+Fe+Estate"],"status":"active","hasDetailPage":true,"listedBy":{"agent":"Hedda Parashos","brokerage":"Palisade Realty"}}];
+</script>
+<script>
+  (function () {
+    'use strict'
+    function formatStat (n) { return typeof n === 'number' ? n.toLocaleString('en-US') : n }
+
+    function renderCarousel (props) {
+        var active = props.filter(function (p) { return p.status === 'active' })
+        if (!active.length) return
+
+        var stage = document.getElementById('fp-stage')
+        var dotsContainer = document.getElementById('fp-dots')
+        var prevBtn = document.getElementById('fp-prev')
+        var nextBtn = document.getElementById('fp-next')
+
+        stage.innerHTML = active.map(function (p, i) {
+          var inline = []
+          if (p.priceDisplay) inline.push(p.priceDisplay)
+          if (p.beds)  inline.push(p.beds + (p.beds === 1 ? ' Bed' : ' Beds'))
+          if (p.baths) inline.push(p.baths + (p.baths === 1 ? ' Bath' : ' Baths'))
+          if (p.sqft)  inline.push(formatStat(p.sqft) + ' Sq.Ft.')
+          var inlineStats = inline.length ? inline.join(' &nbsp;|&nbsp; ') : (p.city + ', ' + p.state)
+
+          var hoverStats = ''
+          if (p.priceDisplay) {
+            hoverStats += '<div class="fp-card-stat fp-price"><strong>' + p.priceDisplay + '</strong><span class="label">Price</span></div>'
+          }
+          if (p.priceCut) {
+            hoverStats += '<div class="fp-pricecut">&#x2193; ' + p.priceCut.amountDisplay + ' price reduction &middot; ' + p.priceCut.dateDisplay + '</div>'
+          }
+          if (p.beds)  hoverStats += '<div class="fp-card-stat"><strong>' + p.beds + '</strong><span class="label">Beds</span></div>'
+          if (p.baths) hoverStats += '<div class="fp-card-stat"><strong>' + p.baths + '</strong><span class="label">Baths</span></div>'
+          if (p.sqft)  hoverStats += '<div class="fp-card-stat"><strong>' + formatStat(p.sqft) + '</strong><span class="label">Sq.Ft.</span></div>'
+          if (!hoverStats) {
+            hoverStats = '<div class="fp-card-stat"><strong>Active Listing</strong><span class="label">' + (p.city || 'San Diego') + '</span></div>' +
+                         (p.mls ? '<div class="fp-card-stat"><strong>MLS ' + p.mls + '</strong><span class="label">Listing</span></div>' : '')
+          }
+
+          var openHouseBadge = ''
+          if (p.openHouse) {
+            openHouseBadge = '<div class="fp-openhouse">Open House &middot; ' + p.openHouse.displayShort + '</div>'
+          }
+
+          var hoverDesc = ''
+          if (p.description) {
+            var d = p.description.replace(/\s+/g, ' ').trim()
+            hoverDesc = d.length > 240 ? d.slice(0, 240).replace(/\s\S*$/, '') + '…' : d
+          } else if (p.tagline) {
+            hoverDesc = p.tagline
+          }
+          var showHoverCard = !!hoverDesc
+
+          var ctaHref = p.hasDetailPage ? '/properties/' + p.slug + '.html' : (p.ylopoDetailUrl || '#')
+          var ctaTarget = p.hasDetailPage ? '' : ' target="_blank" rel="noopener"'
+          var ctaLabel = p.hasDetailPage ? 'Learn More' : 'View on MLS'
+
+          return '<div class="fp-slide' + (i === 0 ? ' active' : '') + (showHoverCard ? ' has-hover' : '') + '" data-index="' + i + '">' +
+            '<img src="' + p.heroImage + '" alt="' + p.address + ', ' + p.city + '"' + (i === 0 ? '' : ' loading="lazy"') + ' />' +
+            '<div class="fp-overlay-gradient"></div>' +
+            '<div class="fp-info">' +
+              '<p class="fp-eyebrow">Featured Listing</p>' +
+              '<h3 class="fp-address">' + p.address + '</h3>' +
+              '<p class="fp-stats-inline">' + inlineStats + '</p>' +
+            '</div>' +
+            (showHoverCard
+              ? '<div class="fp-hover-card" aria-hidden="true">' +
+                  '<div class="fp-card-tagline">' + openHouseBadge + hoverDesc + '</div>' +
+                  '<div class="fp-card-stats">' + hoverStats + '</div>' +
+                '</div>'
+              : '') +
+            '<a class="fp-cta" href="' + ctaHref + '"' + ctaTarget + '>' + ctaLabel + '</a>' +
+          '</div>'
+        }).join('')
+
+        dotsContainer.innerHTML = active.map(function (_, i) {
+          return '<button class="fp-dot' + (i === 0 ? ' active' : '') + '" data-index="' + i + '" aria-label="Go to slide ' + (i + 1) + '"></button>'
+        }).join('')
+
+        var slides = stage.querySelectorAll('.fp-slide')
+        var dots = dotsContainer.querySelectorAll('.fp-dot')
+        var current = 0
+
+        function go (i) {
+          var n = slides.length
+          current = ((i % n) + n) % n
+          slides.forEach(function (s, idx) { s.classList.toggle('active', idx === current) })
+          dots.forEach(function (d, idx) { d.classList.toggle('active', idx === current) })
+          prevBtn.disabled = nextBtn.disabled = (slides.length <= 1)
+        }
+
+        prevBtn.addEventListener('click', function () { go(current - 1) })
+        nextBtn.addEventListener('click', function () { go(current + 1) })
+        dots.forEach(function (d, i) { d.addEventListener('click', function () { go(i) }) })
+        if (slides.length <= 1) {
+          prevBtn.disabled = true
+          nextBtn.disabled = true
+        }
+
+        document.addEventListener('keydown', function (e) {
+          var rect = stage.getBoundingClientRect()
+          var inView = rect.top < window.innerHeight && rect.bottom > 0
+          if (!inView) return
+          if (e.key === 'ArrowLeft')  go(current - 1)
+          if (e.key === 'ArrowRight') go(current + 1)
+        })
+    }
+
+    var inlineData = window.__featuredProperties
+    if (inlineData && inlineData.length) {
+      renderCarousel(inlineData)
+    } else {
+      fetch('/data/featured-properties.json')
+        .then(function (r) { return r.json() })
+        .then(renderCarousel)
+        .catch(function (err) { console.error('[featured properties carousel]', err) })
+    }
+  })()
+</script>
 
 <!-- ============================================================
      FEATURED LISTINGS — YLOPO IDX WIDGET
@@ -1326,8 +1737,7 @@
 <!-- Ylopo Widget Script -->
 <script src="https://search.palisaderealty.com/build/js/widgets-1.0.0.js" defer></script>
 
-<!-- Featured Listings Carousel -->
-<script src="featured-listings.js"></script>
+<!-- featured-listings.js removed — replaced by #featured-properties carousel -->
 
 <!-- Homepage JavaScript -->
 <script src="homepage.js"></script>

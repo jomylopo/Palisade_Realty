@@ -1,0 +1,137 @@
+[
+  {
+    "slug": "la-jolla-prospect",
+    "address": "1247 Prospect Street",
+    "city": "La Jolla",
+    "state": "CA",
+    "zip": "92037",
+    "lat": 32.8478,
+    "lng": -117.2763,
+    "neighborhood": "La Jolla Village",
+    "communitySlug": "la-jolla",
+    "price": 2495000,
+    "priceDisplay": "$2,495,000",
+    "beds": 4,
+    "baths": 3,
+    "sqft": 3200,
+    "lotSize": "6,534 sq ft",
+    "yearBuilt": 2018,
+    "mls": "240012345SD",
+    "ylopoDetailUrl": "https://search.palisaderealty.com/search",
+    "tagline": "A coastal contemporary masterpiece steps from La Jolla Cove, with sweeping Pacific views and refined interiors.",
+    "description": "Set in the heart of La Jolla Village, this coastal contemporary residence pairs clean architectural lines with curated finishes and panoramic Pacific views. Floor-to-ceiling glass in the great room frames endless ocean horizons, while the chef's kitchen — appointed with Thermador appliances, quartzite countertops, and custom cabinetry — opens to a covered terrace designed for seamless indoor-outdoor living.\n\nThe primary suite occupies the entire upper floor, offering a private ocean-view deck, a spa-style bath with soaking tub, and dual walk-in closets. Three additional bedrooms and a dedicated home office provide flexible space for families and remote workers alike. The rear courtyard features a resort-caliber pool, a built-in outdoor kitchen, and low-maintenance drought-tolerant landscaping.\n\nSteps from La Jolla Cove, the village's acclaimed dining scene, world-class galleries, and UC San Diego, this is one of Southern California's most coveted addresses.",
+    "features": [
+      "Panoramic Pacific Ocean views",
+      "Chef's kitchen with Thermador appliances and quartzite counters",
+      "Primary suite with private ocean-view deck",
+      "Resort-style pool and built-in outdoor kitchen",
+      "Three-car attached garage with EV charging",
+      "Solar array with battery backup",
+      "Smart home system (lighting, climate, security)",
+      "Walking distance to La Jolla Cove and Village"
+    ],
+    "heroImage": "https://placehold.co/1600x1000/58172a/ffffff?text=La+Jolla+Property",
+    "gallery": [
+      "https://placehold.co/1600x1000/58172a/ffffff?text=La+Jolla+Property",
+      "https://placehold.co/1600x1000/3d0f1d/ffffff?text=Living+Room",
+      "https://placehold.co/1600x1000/2a0a14/ffffff?text=Kitchen",
+      "https://placehold.co/1600x1000/1a0810/ffffff?text=Primary+Suite"
+    ],
+    "status": "active",
+    "hasDetailPage": true,
+    "listedBy": {
+      "agent": "Hedda Parashos",
+      "brokerage": "Palisade Realty"
+    }
+  },
+  {
+    "slug": "coronado-ocean",
+    "address": "890 Ocean Boulevard",
+    "city": "Coronado",
+    "state": "CA",
+    "zip": "92118",
+    "lat": 32.6787,
+    "lng": -117.1793,
+    "neighborhood": "Coronado Village",
+    "communitySlug": "coronado",
+    "price": 3200000,
+    "priceDisplay": "$3,200,000",
+    "beds": 4,
+    "baths": 4,
+    "sqft": 3800,
+    "lotSize": "7,840 sq ft",
+    "yearBuilt": 2020,
+    "mls": "240023456SD",
+    "ylopoDetailUrl": "https://search.palisaderealty.com/search",
+    "tagline": "A rare beachside estate on one of Coronado Island's most prestigious streets, with white-water views and resort-caliber amenities.",
+    "description": "Positioned on Coronado's iconic Ocean Boulevard, this newly constructed estate delivers the island's most coveted combination: white-water views, direct beach access, and a level of finish rarely seen outside of custom development. The open-plan main level flows from a formal living room with a statement fireplace to a professional-grade kitchen and a dining area that seats twelve.\n\nGlass pocket doors dissolve the boundary between the living spaces and a broad ocean-facing terrace, where a heated pool, built-in barbecue station, and fire pit create a year-round outdoor room. The second-floor primary suite is a private retreat — the bedroom opens to a dedicated ocean-view deck, and the bath features an oversized steam shower, freestanding soaking tub, and his-and-her dressing rooms.\n\nCoronado Village, with its award-winning restaurants, boutique shops, and the legendary Hotel del Coronado, is blocks away. San Diego's business districts are a short ferry or bridge commute.",
+    "features": [
+      "Direct beach access and white-water Pacific views",
+      "Professional-grade kitchen with La Cornue range",
+      "Heated saltwater pool and outdoor fire pit",
+      "Primary suite with dedicated ocean-view deck",
+      "Home theater and temperature-controlled wine room",
+      "Four-car garage with car-lift capability",
+      "Lutron whole-home smart lighting and AV",
+      "Two blocks from Hotel del Coronado"
+    ],
+    "heroImage": "https://placehold.co/1600x1000/58172a/ffffff?text=Coronado+Property",
+    "gallery": [
+      "https://placehold.co/1600x1000/58172a/ffffff?text=Coronado+Property",
+      "https://placehold.co/1600x1000/3d0f1d/ffffff?text=Ocean+View",
+      "https://placehold.co/1600x1000/2a0a14/ffffff?text=Kitchen",
+      "https://placehold.co/1600x1000/1a0810/ffffff?text=Pool+Terrace"
+    ],
+    "status": "active",
+    "hasDetailPage": true,
+    "listedBy": {
+      "agent": "Hedda Parashos",
+      "brokerage": "Palisade Realty"
+    }
+  },
+  {
+    "slug": "rancho-santa-fe-via",
+    "address": "6832 Via de la Valle",
+    "city": "Rancho Santa Fe",
+    "state": "CA",
+    "zip": "92067",
+    "lat": 33.0112,
+    "lng": -117.2042,
+    "neighborhood": "The Covenant",
+    "communitySlug": "rancho-santa-fe",
+    "price": 4150000,
+    "priceDisplay": "$4,150,000",
+    "beds": 5,
+    "baths": 5,
+    "sqft": 5500,
+    "lotSize": "2.1 acres",
+    "yearBuilt": 2016,
+    "mls": "240034567SD",
+    "ylopoDetailUrl": "https://search.palisaderealty.com/search",
+    "tagline": "A private Covenant estate on 2.1 acres of lush grounds, blending Spanish Colonial architecture with contemporary luxury.",
+    "description": "Set behind private gates in Rancho Santa Fe's storied Covenant, this Spanish Colonial estate commands 2.1 acres of mature-canopied grounds and delivers the unhurried luxury of village life at its finest. Red-tile roofs, hand-painted Talavera tile accents, and arched colonnades anchor the architecture in the Covenant's century-old design tradition, while the interiors have been completely reimagined with a refined contemporary lens.\n\nThe great room's vaulted, exposed-beam ceiling soars above wide-plank white oak floors and a double-sided fireplace that connects indoor and outdoor living spaces. The kitchen is equipped for serious entertaining: a 60-inch La Canche range, twin dishwashers, a separate prep kitchen, and a walk-in pantry. The primary wing — entirely private from the guest quarters — occupies the south end of the home with a bedroom that opens to a loggia, a sitting room, and a spa bath with garden courtyard views.\n\nOutdoors, a resort pool with grotto, a full outdoor kitchen with wood-fired pizza oven, a sport court, and a four-stall stable round out an estate built for both grand entertaining and quiet family living.",
+    "features": [
+      "Private gated Covenant estate on 2.1 acres",
+      "Spanish Colonial architecture with contemporary interiors",
+      "60-inch La Canche range and professional prep kitchen",
+      "Resort pool with grotto and outdoor kitchen",
+      "Sport court and four-stall stable",
+      "Primary wing with spa bath and private loggia",
+      "Guest casita with full kitchen and private entrance",
+      "Minutes from RSF Golf Club and Village shops"
+    ],
+    "heroImage": "https://placehold.co/1600x1000/58172a/ffffff?text=Rancho+Santa+Fe+Estate",
+    "gallery": [
+      "https://placehold.co/1600x1000/58172a/ffffff?text=Rancho+Santa+Fe+Estate",
+      "https://placehold.co/1600x1000/3d0f1d/ffffff?text=Great+Room",
+      "https://placehold.co/1600x1000/2a0a14/ffffff?text=Kitchen",
+      "https://placehold.co/1600x1000/1a0810/ffffff?text=Pool+%26+Grounds"
+    ],
+    "status": "active",
+    "hasDetailPage": true,
+    "listedBy": {
+      "agent": "Hedda Parashos",
+      "brokerage": "Palisade Realty"
+    }
+  }
+]
