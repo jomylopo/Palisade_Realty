@@ -1,8 +1,16 @@
 ﻿{
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "redirects": [
-    { "source": "/:file.html", "destination": "/:file", "permanent": true },
-    { "source": "/:dir/:file.html", "destination": "/:dir/:file", "permanent": true }
+  "routes": [
+    {
+      "src": "^/(.+)\\.html$",
+      "headers": { "Location": "/$1" },
+      "status": 308
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "^/([a-zA-Z0-9/_-]+)$",
+      "dest": "/$1.html"
+    }
   ]
 }
