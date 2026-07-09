@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -319,44 +319,49 @@
 <!-- ── HEADER ──────────────────────────────────────────────────────── -->
 <header class="site-header" id="site-header">
 
-  <!-- Left Nav -->
   <nav class="nav-links" aria-label="Primary navigation left">
     <a href="index.html#listings">Buy</a>
     <a href="index.html#about">Sell</a>
-    <div class="nav-dropdown" id="nav-communities-dropdown">
-      <button class="nav-dropdown-toggle" id="nav-communities-btn" aria-expanded="false" aria-haspopup="true">
-        Communities <span class="nav-dropdown-caret" aria-hidden="true">▾</span>
-      </button>
-      <div class="nav-dropdown-menu" id="nav-communities-menu" role="menu">
-        <a href="communities/downtown-san-diego-real-estate.html" role="menuitem">Downtown San Diego</a>
-        <a href="communities/mission-hills-real-estate.html" role="menuitem">Mission Hills</a>
-        <a href="communities/point-loma-real-estate.html" role="menuitem">Point Loma</a>
-        <a href="communities/coronado-real-estate.html" role="menuitem">Coronado</a>
-        <a href="communities/pacific-mission-beach-real-estate.html" role="menuitem">Pacific &amp; Mission Beach</a>
-        <a href="communities/mission-valley-real-estate.html" role="menuitem">Mission Valley</a>
-        <a href="communities/la-jolla-real-estate.html" role="menuitem">La Jolla</a>
-        <a href="communities/del-mar-real-estate.html" role="menuitem">Del Mar</a>
-        <a href="communities/carmel-valley-real-estate.html" role="menuitem">Carmel Valley</a>
-        <a href="communities/rancho-santa-fe-real-estate.html" role="menuitem">Rancho Santa Fe</a>
-        <a href="communities/solana-beach-real-estate.html" role="menuitem">Solana Beach</a>
-        <a href="communities/encinitas-real-estate.html" role="menuitem">Encinitas</a>
-        <a href="communities/carlsbad-real-estate.html" role="menuitem">Carlsbad</a>
-        <a href="communities/oceanside-real-estate.html" role="menuitem">Oceanside</a>
-        <a href="communities/spring-valley-real-estate.html" role="menuitem">Spring Valley</a>
-        <a href="communities/chula-vista-real-estate.html" role="menuitem">Chula Vista</a>
-        <a href="communities/la-mesa-real-estate.html" role="menuitem">La Mesa</a>
-        <a href="communities/el-cajon-real-estate.html" role="menuitem">El Cajon</a>
+    <div class="nav-dropdown">
+      <a href="communities.html" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+        Communities
+        <svg class="nav-dropdown-chevron" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5"/></svg>
+      </a>
+      <div class="nav-dropdown-panel" role="region" aria-label="Communities menu">
+        <span class="nav-dropdown-label">San Diego Communities</span>
+        <div class="nav-dropdown-grid">
+          <a class="nav-dropdown-item" href="communities/downtown-san-diego-real-estate.html"><span class="nav-dropdown-dot"></span>Downtown San Diego</a>
+          <a class="nav-dropdown-item" href="communities/mission-hills-real-estate.html"><span class="nav-dropdown-dot"></span>Mission Hills</a>
+          <a class="nav-dropdown-item" href="communities/point-loma-real-estate.html"><span class="nav-dropdown-dot"></span>Point Loma</a>
+          <a class="nav-dropdown-item" href="communities/coronado-real-estate.html"><span class="nav-dropdown-dot"></span>Coronado</a>
+          <a class="nav-dropdown-item" href="communities/pacific-mission-beach-real-estate.html"><span class="nav-dropdown-dot"></span>Pacific &amp; Mission Beach</a>
+          <a class="nav-dropdown-item" href="communities/mission-valley-real-estate.html"><span class="nav-dropdown-dot"></span>Mission Valley</a>
+          <a class="nav-dropdown-item" href="communities/la-jolla-real-estate.html"><span class="nav-dropdown-dot"></span>La Jolla</a>
+          <a class="nav-dropdown-item" href="communities/del-mar-real-estate.html"><span class="nav-dropdown-dot"></span>Del Mar</a>
+          <a class="nav-dropdown-item" href="communities/carmel-valley-real-estate.html"><span class="nav-dropdown-dot"></span>Carmel Valley</a>
+          <a class="nav-dropdown-item" href="communities/rancho-santa-fe-real-estate.html"><span class="nav-dropdown-dot"></span>Rancho Santa Fe</a>
+          <a class="nav-dropdown-item" href="communities/solana-beach-real-estate.html"><span class="nav-dropdown-dot"></span>Solana Beach</a>
+          <a class="nav-dropdown-item" href="communities/encinitas-real-estate.html"><span class="nav-dropdown-dot"></span>Encinitas</a>
+          <a class="nav-dropdown-item" href="communities/carlsbad-real-estate.html"><span class="nav-dropdown-dot"></span>Carlsbad</a>
+          <a class="nav-dropdown-item" href="communities/oceanside-real-estate.html"><span class="nav-dropdown-dot"></span>Oceanside</a>
+          <a class="nav-dropdown-item" href="communities/spring-valley-real-estate.html"><span class="nav-dropdown-dot"></span>Spring Valley</a>
+          <a class="nav-dropdown-item" href="communities/chula-vista-real-estate.html"><span class="nav-dropdown-dot"></span>Chula Vista</a>
+          <a class="nav-dropdown-item" href="communities/la-mesa-real-estate.html"><span class="nav-dropdown-dot"></span>La Mesa</a>
+          <a class="nav-dropdown-item" href="communities/el-cajon-real-estate.html"><span class="nav-dropdown-dot"></span>El Cajon</a>
+        </div>
+        <div class="nav-dropdown-divider"></div>
+        <div class="nav-dropdown-all">
+          <a href="communities.html">View All Communities <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h8"/><path d="M6 2.5 9.5 6 6 9.5"/></svg></a>
+        </div>
       </div>
     </div>
     <a href="index.html#testimonials">Testimonials</a>
   </nav>
 
-  <!-- Center Logo -->
   <a href="index.html" class="nav-logo" aria-label="Palisade Realty home">
     <img src="images/logo.png" alt="Palisade Realty">
   </a>
 
-  <!-- Right Nav -->
   <nav class="nav-links nav-links--right" aria-label="Primary navigation right">
     <a href="index.html#about">Financing</a>
     <a href="team.html">Team</a>
@@ -364,18 +369,16 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- Hamburger -->
   <button class="nav-hamburger" id="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 
 </header>
 
-<!-- Mobile drawer -->
 <div class="nav-mobile-drawer" id="nav-mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile navigation">
   <a href="index.html#listings">Buy</a>
   <a href="index.html#about">Sell</a>
-  <a href="communities.html" class="mobile-communities-toggle" id="mobile-communities-toggle" aria-expanded="false">Communities ▾</a>
+  <a href="communities.html" class="mobile-communities-toggle" id="mobile-communities-toggle" aria-expanded="false">Communities &#9662;</a>
   <div class="mobile-communities-list" id="mobile-communities-list">
     <a href="communities/downtown-san-diego-real-estate.html">Downtown San Diego</a>
     <a href="communities/mission-hills-real-estate.html">Mission Hills</a>
@@ -399,7 +402,7 @@
   <a href="index.html#testimonials">Testimonials</a>
   <a href="index.html#about">Financing</a>
   <a href="team.html">Team</a>
-  <a href="blog.html">Blog</a>
+  <a href="blog.html" aria-current="page">Blog</a>
   <a href="contact.html">Contact</a>
 </div>
 
