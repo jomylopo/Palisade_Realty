@@ -414,6 +414,65 @@
       object-position: center;
     }
 
+    /* ── FIX: community.css `footer {}` element selector conflicts ──
+       - adds padding: 76px 52px 40px (should be 0 / padding-bottom:40px only)
+       - adds border-top (homepage uses .footer-stripe div instead)
+       - .footer-copy  → pale near-invisible color on white
+       - .footer-links a → pale small no-underline on white                  ── */
+    body.property-page footer {
+      padding: 0;
+      padding-bottom: 40px;
+      border-top: none;
+      background: #ffffff;
+    }
+    body.property-page .footer-copy {
+      font-family: 'Manrope', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #000000;
+      line-height: 1.6;
+      white-space: normal;
+    }
+    body.property-page .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      list-style: none;
+    }
+    body.property-page .footer-links a,
+    body.property-page .footer-links span {
+      font-family: 'Manrope', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #58172a;
+      line-height: 33px;
+      text-decoration: underline;
+    }
+    body.property-page .footer-links a:hover { opacity: 0.7; }
+    body.property-page .footer-links span { text-decoration: none; cursor: default; }
+    body.property-page .footer-contact-line {
+      font-family: 'Manrope', sans-serif;
+      font-size: 15px;
+      line-height: 37px;
+      color: #000000;
+      display: block;
+    }
+    body.property-page .footer-contact-line--email { color: #58172a; }
+    body.property-page .footer-social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: #f2f2f2;
+      color: #58172a;
+      text-decoration: none;
+    }
+    body.property-page .footer-social a:hover {
+      background: #58172a;
+      color: #ffffff;
+    }
+
     /* Mobile */
     @media (max-width: 768px) {
       body.property-page .pp-tour { padding: 64px 20px; }
