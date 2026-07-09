@@ -1,4 +1,8 @@
 ﻿{
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/:file.html", "destination": "/:file", "permanent": true },
+    { "source": "/:dir/:file.html", "destination": "/:dir/:file", "permanent": true }
+  ]
 }
