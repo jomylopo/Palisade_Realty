@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'palisade-realty',
   title: 'Palisade Realty — Admin',
 
-  projectId: '9senj6qp',
+  projectId: 'qjhzi2t2',
   dataset: 'production',
 
   plugins: [
