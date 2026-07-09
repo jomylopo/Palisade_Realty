@@ -188,6 +188,46 @@
       blogCtaSub: "Whether you’re buying your first home or selling a prized property in San Diego, our team is here to help.",
       blogCtaPrimary: 'Talk to an Agent',
       blogCtaOutline: 'Meet Our Team',
+
+      /* COMMUNITY DETAIL PAGES */
+      cdStatActiveListings: 'Active Listings',
+      cdStatMedianPrice: 'Median Price',
+      cdStatPropertyTypes: 'Property Types',
+      cdStatUpdated: 'Updated',
+      cdEyebrowLocation: 'Location',
+      cdEyebrowDemographics: 'Community Demographics',
+      cdEyebrowHighlights: 'What Makes It Special',
+      cdEyebrowListings: 'Live MLS Data',
+      cdEyebrowHOA: 'What to Expect',
+      cdEyebrowParks: 'Outdoor Living',
+      cdEyebrowSchools: 'Education',
+      cdEyebrowComparisons: 'Comparisons',
+      cdEyebrowFAQ: 'Common Questions',
+      cdBtnConnect: 'Connect With Hedda',
+      cdBtnViewListings: 'View Listings ↓',
+      cdViewAllListings: 'View All Listings →',
+      cdSendMessage: 'Send a Message',
+      cdQuickFactsHeading: 'At a Glance',
+      cdFactCityType: 'City Type',
+      cdFactCounty: 'County',
+      cdFactPopulation: 'Population',
+      cdFactMedianPrice: 'Median Home Price',
+      cdFactArchitecture: 'Architecture',
+      cdFactWalkScore: 'Walk Score',
+      cdFactAirport: 'Airport',
+      cdDemoPopulation: 'Population',
+      cdDemoMedianAge: 'Median Age',
+      cdDemoAvgIncome: 'Avg Household Income',
+      cdDemoTotalHouseholds: 'Total Households',
+      cdDemoOwnershipRate: 'Ownership Rate',
+      cdDemoSource: 'Source: U.S. Census Bureau, ACS 5-Year Estimates',
+      cdHOAHaveQuestions: 'Have Questions?',
+      cdHOACoversTitle: 'What HOAs Typically Cover',
+      cdHOATableType: 'Community Type',
+      cdHOATableMonthly: 'Monthly HOA',
+      cdStatWalkScore: 'Walk Score',
+      cdStatSunnyDays: 'Sunny Days / Year',
+      cdNavFinancing: 'Financing',
     },
 
     es: {
@@ -370,6 +410,46 @@
       blogCtaSub: 'Ya sea que esté comprando su primera casa o vendiendo una propiedad en San Diego, nuestro equipo está aquí para ayudarle.',
       blogCtaPrimary: 'Hablar con un Agente',
       blogCtaOutline: 'Conocer al Equipo',
+
+      /* COMMUNITY DETAIL PAGES */
+      cdStatActiveListings: 'Propiedades Activas',
+      cdStatMedianPrice: 'Precio Medio',
+      cdStatPropertyTypes: 'Tipos de Propiedad',
+      cdStatUpdated: 'Actualizado',
+      cdEyebrowLocation: 'Ubicación',
+      cdEyebrowDemographics: 'Demografía de la Comunidad',
+      cdEyebrowHighlights: 'Lo Que La Hace Especial',
+      cdEyebrowListings: 'Datos MLS en Tiempo Real',
+      cdEyebrowHOA: 'Qué Esperar',
+      cdEyebrowParks: 'Vida al Aire Libre',
+      cdEyebrowSchools: 'Educación',
+      cdEyebrowComparisons: 'Comparaciones',
+      cdEyebrowFAQ: 'Preguntas Frecuentes',
+      cdBtnConnect: 'Conectar con Hedda',
+      cdBtnViewListings: 'Ver Propiedades ↓',
+      cdViewAllListings: 'Ver Todas las Propiedades →',
+      cdSendMessage: 'Enviar un Mensaje',
+      cdQuickFactsHeading: 'En Resumen',
+      cdFactCityType: 'Tipo de Ciudad',
+      cdFactCounty: 'Condado',
+      cdFactPopulation: 'Población',
+      cdFactMedianPrice: 'Precio Medio de Viviendas',
+      cdFactArchitecture: 'Arquitectura',
+      cdFactWalkScore: 'Puntuación de Caminata',
+      cdFactAirport: 'Aeropuerto',
+      cdDemoPopulation: 'Población',
+      cdDemoMedianAge: 'Edad Media',
+      cdDemoAvgIncome: 'Ingreso Familiar Promedio',
+      cdDemoTotalHouseholds: 'Total de Hogares',
+      cdDemoOwnershipRate: 'Tasa de Propiedad',
+      cdDemoSource: 'Fuente: Oficina del Censo de EE.UU., Estimaciones ACS de 5 Años',
+      cdHOAHaveQuestions: '¿Tiene Preguntas?',
+      cdHOACoversTitle: 'Qué Cubren los HOA Generalmente',
+      cdHOATableType: 'Tipo de Comunidad',
+      cdHOATableMonthly: 'HOA Mensual',
+      cdStatWalkScore: 'Puntuación de Caminata',
+      cdStatSunnyDays: 'Días Soleados / Año',
+      cdNavFinancing: 'Financiamiento',
     }
   };
 
@@ -818,6 +898,127 @@
 
     var bCtaO = document.querySelector('.blog-cta .btn-outline-white');
     if (bCtaO) bCtaO.textContent = d.blogCtaOutline;
+
+    /* ── COMMUNITY DETAIL PAGES ─────────────────────────────── */
+    if (document.body && document.body.classList.contains('comm-detail')) {
+
+      /* Community pages use relative hrefs — translate Buy/Sell/Testimonials/Financing by text */
+      document.querySelectorAll('a[href="/"]').forEach(function (el) {
+        var t = el.textContent.trim();
+        if (t === 'Buy' || t === 'Comprar') el.textContent = d.buy;
+      });
+      document.querySelectorAll('a[href="/#about"]').forEach(function (el) {
+        var t = el.textContent.trim();
+        if (t === 'Sell' || t === 'Vender') el.textContent = d.sell;
+        else if (t === 'Financing' || t === 'Financiamiento') el.textContent = d.cdNavFinancing;
+      });
+      document.querySelectorAll('a[href="/#testimonials"]').forEach(function (el) {
+        var t = el.textContent.trim();
+        if (t === 'Testimonials' || t === 'Testimonios') el.textContent = d.testimonials;
+      });
+
+      /* Hero stat labels */
+      var heroStatMap = {
+        'Active Listings': d.cdStatActiveListings, 'Propiedades Activas': d.cdStatActiveListings,
+        'Median Price': d.cdStatMedianPrice, 'Precio Medio': d.cdStatMedianPrice,
+        'Property Types': d.cdStatPropertyTypes, 'Tipos de Propiedad': d.cdStatPropertyTypes,
+        'Updated': d.cdStatUpdated, 'Actualizado': d.cdStatUpdated
+      };
+      document.querySelectorAll('.hero-stat-label').forEach(function (el) {
+        var t = el.textContent.trim(); if (heroStatMap[t]) el.textContent = heroStatMap[t];
+      });
+
+      /* Section eyebrows — generic ones only, community-specific text is left untouched */
+      var eyebrowMap = {
+        'Location': d.cdEyebrowLocation, 'Ubicación': d.cdEyebrowLocation,
+        'Community Demographics': d.cdEyebrowDemographics, 'Demografía de la Comunidad': d.cdEyebrowDemographics,
+        'What Makes It Special': d.cdEyebrowHighlights, 'Lo Que La Hace Especial': d.cdEyebrowHighlights,
+        'Live MLS Data': d.cdEyebrowListings, 'Datos MLS en Tiempo Real': d.cdEyebrowListings,
+        'What to Expect': d.cdEyebrowHOA, 'Qué Esperar': d.cdEyebrowHOA,
+        'Outdoor Living': d.cdEyebrowParks, 'Vida al Aire Libre': d.cdEyebrowParks,
+        'Education': d.cdEyebrowSchools, 'Educación': d.cdEyebrowSchools,
+        'Comparisons': d.cdEyebrowComparisons, 'Comparaciones': d.cdEyebrowComparisons,
+        'Common Questions': d.cdEyebrowFAQ, 'Preguntas Frecuentes': d.cdEyebrowFAQ
+      };
+      document.querySelectorAll('.section-eyebrow').forEach(function (el) {
+        var t = el.textContent.trim(); if (eyebrowMap[t]) el.textContent = eyebrowMap[t];
+      });
+
+      /* Overview CTA buttons */
+      document.querySelectorAll('.overview-cta .btn-primary').forEach(function (el) {
+        var t = el.textContent.trim();
+        if (t === 'Connect With Hedda' || t === 'Conectar con Hedda') el.textContent = d.cdBtnConnect;
+      });
+      document.querySelectorAll('.btn-text').forEach(function (el) {
+        var t = el.textContent.trim();
+        if (t === 'View Listings ↓' || t === 'Ver Propiedades ↓') el.textContent = d.cdBtnViewListings;
+      });
+      document.querySelectorAll('.view-all-link').forEach(function (el) {
+        var t = el.textContent.trim();
+        if (t === 'View All Listings →' || t === 'Ver Todas las Propiedades →') el.textContent = d.cdViewAllListings;
+      });
+      document.querySelectorAll('.cta-btns .btn-outline').forEach(function (el) {
+        var t = el.textContent.trim();
+        if (t === 'Send a Message' || t === 'Enviar un Mensaje') el.textContent = d.cdSendMessage;
+      });
+
+      /* Quick facts heading */
+      document.querySelectorAll('.quick-facts-heading').forEach(function (el) {
+        var t = el.textContent.trim();
+        if (t === 'At a Glance' || t === 'En Resumen') el.textContent = d.cdQuickFactsHeading;
+      });
+
+      /* Fact labels */
+      var factMap = {
+        'City Type': d.cdFactCityType, 'Tipo de Ciudad': d.cdFactCityType,
+        'County': d.cdFactCounty, 'Condado': d.cdFactCounty,
+        'Population': d.cdFactPopulation, 'Población': d.cdFactPopulation,
+        'Median Home Price': d.cdFactMedianPrice, 'Precio Medio de Viviendas': d.cdFactMedianPrice,
+        'Architecture': d.cdFactArchitecture, 'Arquitectura': d.cdFactArchitecture,
+        'Walk Score': d.cdFactWalkScore, 'Puntuación de Caminata': d.cdFactWalkScore,
+        'Airport': d.cdFactAirport, 'Aeropuerto': d.cdFactAirport
+      };
+      document.querySelectorAll('.fact-label').forEach(function (el) {
+        var t = el.textContent.trim(); if (factMap[t]) el.textContent = factMap[t];
+      });
+
+      /* Demographics labels */
+      var demoMap = {
+        'Population': d.cdDemoPopulation, 'Población': d.cdDemoPopulation,
+        'Median Age': d.cdDemoMedianAge, 'Edad Media': d.cdDemoMedianAge,
+        'Avg Household Income': d.cdDemoAvgIncome, 'Ingreso Familiar Promedio': d.cdDemoAvgIncome,
+        'Total Households': d.cdDemoTotalHouseholds, 'Total de Hogares': d.cdDemoTotalHouseholds,
+        'Ownership Rate': d.cdDemoOwnershipRate, 'Tasa de Propiedad': d.cdDemoOwnershipRate
+      };
+      document.querySelectorAll('.demo-label').forEach(function (el) {
+        var t = el.textContent.trim(); if (demoMap[t]) el.textContent = demoMap[t];
+      });
+      document.querySelectorAll('.demo-source').forEach(function (el) {
+        var t = el.textContent.trim();
+        if (t.indexOf('Source:') === 0 || t.indexOf('Fuente:') === 0) el.textContent = d.cdDemoSource;
+      });
+
+      /* City stat labels — only translate generic ones, leave community-specific ones */
+      var cityStatMap = {
+        'Walk Score': d.cdStatWalkScore, 'Puntuación de Caminata': d.cdStatWalkScore,
+        'Sunny Days / Year': d.cdStatSunnyDays, 'Días Soleados / Año': d.cdStatSunnyDays
+      };
+      document.querySelectorAll('.city-stat-label').forEach(function (el) {
+        var t = el.textContent.trim(); if (cityStatMap[t]) el.textContent = cityStatMap[t];
+      });
+
+      /* HOA section */
+      document.querySelectorAll('.hoa-aside-heading').forEach(function (el) {
+        var t = el.textContent.trim();
+        if (t === 'Have Questions?' || t === '¿Tiene Preguntas?') el.textContent = d.cdHOAHaveQuestions;
+        else if (t === 'What HOAs Typically Cover' || t === 'Qué Cubren los HOA Generalmente') el.textContent = d.cdHOACoversTitle;
+      });
+      document.querySelectorAll('.hoa-table th').forEach(function (el) {
+        var t = el.textContent.trim();
+        if (t === 'Community Type' || t === 'Tipo de Comunidad') el.textContent = d.cdHOATableType;
+        else if (t === 'Monthly HOA' || t === 'HOA Mensual') el.textContent = d.cdHOATableMonthly;
+      });
+    }
 
     /* ── TOGGLE BUTTON STATE ────────────────────────────────── */
     var btn = document.getElementById('lang-toggle');
