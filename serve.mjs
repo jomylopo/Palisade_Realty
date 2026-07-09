@@ -87,37 +87,68 @@ createServer(async (req, res) => {
       const html = await fetchUrl(listingUrl);
       const data = {};
 
-      // Try __NEXT_DATA__ (Ylopo / Next.js apps)
-      const ndMatch = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
-      if (ndMatch) {
+      // Try __YLOPO_APP_CONTEXT__ (Ylopo-hosted sites — search.palisaderealty.com etc.)
+      const ylopoMatch = html.match(/var __YLOPO_APP_CONTEXT__=(.+?);<\/script>/s);
+      if (ylopoMatch) {
         try {
-          const nd = JSON.parse(ndMatch[1]);
-          const pp = nd?.props?.pageProps || {};
-          const l = pp.listing || pp.property || pp.listingDetail?.listing
-               || pp.initialData?.listing || null;
+          const ctx = JSON.parse(ylopoMatch[1]);
+          const l = ctx?.prefetchData?.listing;
           if (l) {
-            const numMatch = (l.streetAddress || l.fullAddress || '').match(/^(\d+)\s+(.*)/);
-            data.addressNumber = l.streetNumber || (numMatch ? numMatch[1] : '');
-            data.street        = l.streetName   || (numMatch ? numMatch[2] : l.streetAddress || '');
-            data.city          = l.city || '';
-            data.state         = l.stateOrProvince || l.state || '';
-            data.zip           = l.postalCode || l.zipCode || '';
-            data.price         = l.listPrice || l.price || 0;
-            data.beds          = l.bedroomsTotal || l.bedrooms || 0;
-            data.baths         = l.bathroomsFull || l.bathrooms || 0;
-            data.sqft          = l.livingArea || l.squareFeet || 0;
-            data.lotSize       = l.lotSizeArea ? l.lotSizeArea + ' sqft' : (l.lotSizeAcres ? l.lotSizeAcres + ' acres' : '');
+            const addr = l.address || {};
+            const addrStr = addr.fullStreetAddress || '';
+            const numMatch = addrStr.match(/^(\d+)\s+(.*)/);
+            data.addressNumber = numMatch ? numMatch[1] : '';
+            data.street        = numMatch ? numMatch[2] : addrStr;
+            data.city          = addr.city || '';
+            data.state         = addr.stateOrProvince || '';
+            data.zip           = addr.postalCode || '';
+            data.price         = Math.round(parseFloat(l.price) || 0);
+            data.beds          = l.bedrooms || 0;
+            data.baths         = l.bathrooms || l.fullBathrooms || 0;
+            data.sqft          = l.livingAreaSqFt || 0;
             data.yearBuilt     = l.yearBuilt || 0;
-            data.mls           = l.mlsNumber || l.listingId || l.id || '';
-            data.description   = l.publicRemarks || l.description || '';
-            if (Array.isArray(l.features) && l.features.length) data.features = l.features;
-            if (Array.isArray(l.media)) {
-              data.photos = l.media.map(m => m.mediaURL || m.url || m.MediaURL || '').filter(Boolean).slice(0, 30);
-            } else if (Array.isArray(l.photos)) {
-              data.photos = l.photos.map(p => p.url || p.mediaURL || p).filter(s => typeof s === 'string').slice(0, 30);
+            data.mls           = l.mlsNumber || '';
+            data.description   = l.descriptions?.PUBLIC_REMARKS || '';
+            data.lat           = parseFloat(addr.mlsLatitude) || undefined;
+            data.lng           = parseFloat(addr.mlsLongitude) || undefined;
+            if (Array.isArray(l.largeListingPhotos) && l.largeListingPhotos.length) {
+              data.photos = l.largeListingPhotos.slice(0, 30);
             }
           }
         } catch { /* silently continue */ }
+      }
+
+      // Try __NEXT_DATA__ (other Next.js listing sites)
+      if (!data.price) {
+        const ndMatch = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
+        if (ndMatch) {
+          try {
+            const nd = JSON.parse(ndMatch[1]);
+            const pp = nd?.props?.pageProps || {};
+            const l = pp.listing || pp.property || pp.listingDetail?.listing
+                 || pp.initialData?.listing || null;
+            if (l) {
+              const numMatch = (l.streetAddress || l.fullAddress || '').match(/^(\d+)\s+(.*)/);
+              data.addressNumber = l.streetNumber || (numMatch ? numMatch[1] : '');
+              data.street        = l.streetName   || (numMatch ? numMatch[2] : l.streetAddress || '');
+              data.city          = l.city || '';
+              data.state         = l.stateOrProvince || l.state || '';
+              data.zip           = l.postalCode || l.zipCode || '';
+              data.price         = l.listPrice || l.price || 0;
+              data.beds          = l.bedroomsTotal || l.bedrooms || 0;
+              data.baths         = l.bathroomsFull || l.bathrooms || 0;
+              data.sqft          = l.livingArea || l.squareFeet || 0;
+              data.yearBuilt     = l.yearBuilt || 0;
+              data.mls           = l.mlsNumber || l.listingId || l.id || '';
+              data.description   = l.publicRemarks || l.description || '';
+              if (Array.isArray(l.media)) {
+                data.photos = l.media.map(m => m.mediaURL || m.url || m.MediaURL || '').filter(Boolean).slice(0, 30);
+              } else if (Array.isArray(l.photos)) {
+                data.photos = l.photos.map(p => p.url || p.mediaURL || p).filter(s => typeof s === 'string').slice(0, 30);
+              }
+            }
+          } catch { /* silently continue */ }
+        }
       }
 
       // Fallback: og:image, og:description
