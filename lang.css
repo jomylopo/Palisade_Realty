@@ -9,14 +9,14 @@
   gap: 4px;
   padding: 5px 13px;
   background: transparent;
-  border: 1.5px solid rgba(255, 255, 255, 0.22);
+  border: 1.5px solid rgba(88, 23, 42, 0.25);
   border-radius: 50px;
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(88, 23, 42, 0.45);
   cursor: pointer;
   transition: border-color 180ms ease, color 180ms ease, background 180ms ease;
   flex-shrink: 0;
@@ -25,12 +25,12 @@
 }
 
 .lang-toggle:hover {
-  border-color: rgba(238, 202, 0, 0.55);
-  color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(88, 23, 42, 0.55);
+  color: rgba(88, 23, 42, 0.7);
 }
 
 .lang-toggle:focus-visible {
-  outline: 2px solid rgba(238, 202, 0, 0.8);
+  outline: 2px solid rgba(88, 23, 42, 0.5);
   outline-offset: 2px;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .lang-toggle .lang-active {
-  color: #eeca00;
+  color: #58172a;
 }
 
 .lang-toggle .lang-sep {
@@ -47,17 +47,17 @@
   margin: 0 1px;
 }
 
-/* When the header has scrolled to a light background */
+/* Scrolled state — same brand colors, already visible on white bg */
 .site-header.is-scrolled .lang-toggle,
 .site-header.scrolled .lang-toggle {
-  border-color: rgba(88, 23, 42, 0.2);
-  color: rgba(88, 23, 42, 0.5);
+  border-color: rgba(88, 23, 42, 0.25);
+  color: rgba(88, 23, 42, 0.45);
 }
 
 .site-header.is-scrolled .lang-toggle:hover,
 .site-header.scrolled .lang-toggle:hover {
-  border-color: rgba(88, 23, 42, 0.6);
-  color: rgba(88, 23, 42, 0.75);
+  border-color: rgba(88, 23, 42, 0.55);
+  color: rgba(88, 23, 42, 0.7);
 }
 
 .site-header.is-scrolled .lang-toggle .lang-active,
@@ -65,8 +65,25 @@
   color: #58172a;
 }
 
-/* Mobile — keep toggle in header row */
+/* Mobile — nav-links are hidden but we need the toggle visible.
+   Keep .nav-links--right showing, hide its <a> links, show only the toggle. */
 @media (max-width: 767px) {
+  .nav-links--right {
+    display: flex !important;
+    position: absolute;
+    right: 58px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    width: auto;
+    gap: 0;
+    background: transparent;
+  }
+
+  .nav-links--right a {
+    display: none !important;
+  }
+
   .lang-toggle {
     padding: 4px 10px;
     font-size: 9px;
