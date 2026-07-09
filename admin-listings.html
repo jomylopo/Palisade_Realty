@@ -897,13 +897,20 @@ function populateFromScraped(d) {
 }
 
 /* ──────────────── SAVE ──────────────── */
+function authHeaders(extra) {
+  const h = Object.assign({ 'Content-Type': 'application/json' }, extra || {});
+  const secret = sessionStorage.getItem('adminSecret');
+  if (secret) h['X-Admin-Secret'] = secret;
+  return h;
+}
+
 async function saveToServer() {
   const btn = document.getElementById('saveBtn');
   btn.disabled = true; btn.textContent = 'Saving…';
   try {
     const json = JSON.stringify(listings, null, 2);
     const r = await fetch('/api/write-json?file=featured-properties&commit=Update%20featured%20listings%20via%20admin', {
-      method:'POST', headers:{'Content-Type':'application/json'}, body: json
+      method:'POST', headers: authHeaders(), body: json
     });
     const j = await r.json();
     if (j.ok) {
@@ -918,7 +925,7 @@ async function saveToServer() {
 async function saveQuiet() {
   try {
     await fetch('/api/write-json?file=featured-properties&commit=Update%20featured%20listings%20via%20admin', {
-      method:'POST', headers:{'Content-Type':'application/json'},
+      method:'POST', headers: authHeaders(),
       body: JSON.stringify(listings, null, 2)
     });
   } catch {}
