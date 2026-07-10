@@ -575,20 +575,15 @@ async function loadAgents() {
   const wrap = document.getElementById('fAgentList');
   if (!wrap) return;
   try {
-    const secret = sessionStorage.getItem('adminSecret');
-    const headers = secret ? { 'X-Admin-Secret': secret } : {};
-    const r = await fetch('/api/team?page=team', { headers });
+    const r = await fetch('/data/agents.json?t=' + Date.now());
     if (!r.ok) throw new Error(r.status);
-    const data = await r.json();
-    const members = Array.isArray(data) ? data : (data.members || []);
-    if (!members.length) return;
+    const agents = await r.json();
+    if (!agents.length) return;
     const checked = getCheckedAgents();
-    wrap.innerHTML = members
-      .filter(m => m.name)
-      .sort((a, b) => a.name.localeCompare(b.name))
-      .map(m => {
-        const isChecked = checked.includes(m.name) || (!checked.length && m.name === 'Hedda Parashos');
-        return `<label class="cbx-label"><input type="checkbox" name="fAgent" value="${esc(m.name)}"${isChecked ? ' checked' : ''}> ${esc(m.name)}</label>`;
+    wrap.innerHTML = agents
+      .map(a => {
+        const isChecked = checked.includes(a.name) || (!checked.length && a.name === 'Hedda Parashos');
+        return `<label class="cbx-label"><input type="checkbox" name="fAgent" value="${esc(a.name)}"${isChecked ? ' checked' : ''}> ${esc(a.name)}</label>`;
       })
       .join('');
   } catch {
