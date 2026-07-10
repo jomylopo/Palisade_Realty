@@ -7,6 +7,10 @@
     "status": "active",
     "hasDetailPage": true,
     "listedBy": {
+      "agents": [
+        "Hedda Parashos",
+        "Tom Parashos"
+      ],
       "agent": "Hedda Parashos",
       "brokerage": "Palisade Realty"
     },
