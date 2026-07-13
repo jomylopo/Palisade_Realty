@@ -81,6 +81,16 @@
       listingsHeading: 'Our Listings',
       listingsCta: 'View All Listings',
 
+      /* HOMEPAGE — featured listings carousel */
+      flHeading: 'Featured Properties',
+      flStatusActive: 'For Sale',
+      flStatusPending: 'Pending',
+      flStatusSold: 'Sold',
+      flBeds: 'Beds',
+      flBaths: 'Baths',
+      flSqft: 'Sq Ft',
+      flViewProp: 'View Property',
+
       /* HOMEPAGE — testimonials */
       testEyebrow: 'Client Reviews',
       testHeading: 'What Our Clients Say',
@@ -302,6 +312,16 @@
       listingsEyebrow: 'Seleccionados Especialmente para Usted',
       listingsHeading: 'Nuestras Propiedades',
       listingsCta: 'Ver Todas las Propiedades',
+
+      /* HOMEPAGE — featured listings carousel */
+      flHeading: 'Propiedades Destacadas',
+      flStatusActive: 'En Venta',
+      flStatusPending: 'Pendiente',
+      flStatusSold: 'Vendido',
+      flBeds: 'Rec.',
+      flBaths: 'Baños',
+      flSqft: 'Pie²',
+      flViewProp: 'Ver Propiedad',
 
       /* HOMEPAGE — testimonials */
       testEyebrow: 'Reseñas de Clientes',
@@ -1020,6 +1040,28 @@
       });
     }
 
+    /* ── FEATURED LISTINGS CAROUSEL ────────────────────────── */
+    var flTitle = document.querySelector('.fl-header-title');
+    if (flTitle) flTitle.textContent = d.flHeading;
+
+    document.querySelectorAll('.fl-status').forEach(function (el) {
+      var st = el.getAttribute('data-fl-status');
+      if (st === 'active')  el.textContent = d.flStatusActive;
+      else if (st === 'pending') el.textContent = d.flStatusPending;
+      else if (st === 'sold')    el.textContent = d.flStatusSold;
+    });
+
+    document.querySelectorAll('.fl-stat-label').forEach(function (el) {
+      var key = el.getAttribute('data-fl-key');
+      if (key === 'beds')  el.textContent = d.flBeds;
+      else if (key === 'baths') el.textContent = d.flBaths;
+      else if (key === 'sqft')  el.textContent = d.flSqft;
+    });
+
+    document.querySelectorAll('.fl-btn-label').forEach(function (el) {
+      el.textContent = d.flViewProp;
+    });
+
     /* ── TOGGLE BUTTON STATE ────────────────────────────────── */
     var btn = document.getElementById('lang-toggle');
     if (btn) {
@@ -1046,6 +1088,11 @@
   document.addEventListener('DOMContentLoaded', function () {
     applyLang(getLang());
     initToggle();
+  });
+
+  // Re-apply language once the featured listings carousel finishes rendering
+  window.addEventListener('fl-loaded', function () {
+    applyLang(getLang());
   });
 
 })();

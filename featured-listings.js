@@ -76,6 +76,7 @@
   /* ── Build one slide ── */
   function buildSlide(card, i, total) {
     var statusClass = 'fl-status' + (card.statusMod ? ' ' + card.statusMod : '');
+    var statusKey = card.statusMod === 'fl-status--pending' ? 'pending' : card.statusMod === 'fl-status--sold' ? 'sold' : 'active';
     var target = card.isInternal ? '' : ' target="_blank" rel="noopener noreferrer"';
     return (
       '<div class="fl-slide' + (i === 0 ? ' is-active' : '') + '" ' +
@@ -88,21 +89,21 @@
         '<div class="fl-slide-overlay"></div>' +
         '<div class="fl-slide-content">' +
           '<div class="fl-slide-info">' +
-            '<span class="' + statusClass + '">' + card.status + '</span>' +
+            '<span class="' + statusClass + '" data-fl-status="' + statusKey + '">' + card.status + '</span>' +
             '<p class="fl-address">' + card.address +
               '<span class="fl-address-city">' + card.city + '</span>' +
             '</p>' +
             '<p class="fl-price">' + card.price + '</p>' +
             '<div class="fl-meta">' +
-              '<div class="fl-meta-item">' + iconBeds()  + card.beds  + ' Beds</div>'  +
+              '<div class="fl-meta-item">' + iconBeds()  + card.beds  + ' <span class="fl-stat-label" data-fl-key="beds">Beds</span></div>'  +
               '<div class="fl-meta-divider"></div>' +
-              '<div class="fl-meta-item">' + iconBaths() + card.baths + ' Baths</div>' +
+              '<div class="fl-meta-item">' + iconBaths() + card.baths + ' <span class="fl-stat-label" data-fl-key="baths">Baths</span></div>' +
               '<div class="fl-meta-divider"></div>' +
-              '<div class="fl-meta-item">' + iconSqft()  + card.sqft  + ' Sq Ft</div>' +
+              '<div class="fl-meta-item">' + iconSqft()  + card.sqft  + ' <span class="fl-stat-label" data-fl-key="sqft">Sq Ft</span></div>' +
             '</div>' +
           '</div>' +
           '<a href="' + card.url + '"' + target + ' class="fl-view-btn">' +
-            'View Property ' + iconArrow() +
+            '<span class="fl-btn-label">View Property</span> ' + iconArrow() +
           '</a>' +
         '</div>' +
       '</div>'
@@ -284,6 +285,7 @@
       var section = buildSection(cards, heading);
       target.parentNode.insertBefore(section, target);
       initCarousel(section, cards.length);
+      window.dispatchEvent(new CustomEvent('fl-loaded'));
     }).catch(function (err) {
       console.warn('[featured-listings] Load error:', err);
     });
