@@ -234,7 +234,7 @@
       apFormOptSelect: 'Select one…',
       apFormOptBuying: 'Buying a Home',
       apFormOptSelling: 'Selling My Home',
-      apFormOptBoth: 'Buying &amp; Selling',
+      apFormOptBoth: 'Buying & Selling',
       apFormOptInvesting: 'Investment Property',
       apFormOptOther: 'Other',
       apFormLabelMessage: 'Message',
@@ -1136,12 +1136,17 @@
       var apSlug = window.location.pathname.replace(/.*\/([^\/]+?)(?:\.html)?$/, '$1');
       var apTrans = AGENT_TRANSLATIONS[apSlug] || {};
 
+      /* extract agent name for pattern-based auto-translations */
+      var apHeroNameEl = document.querySelector('.ap-hero-name');
+      var apFullName = apHeroNameEl ? apHeroNameEl.textContent.trim() : '';
+      var apFirstName = apFullName.split(' ')[0];
+
       /* helper: save EN innerHTML on first swap, then swap ES ↔ EN */
-      function apSwap(el, esContent) {
+      var apSwap = function(el, esContent) {
         if (!el) return;
         if (el.dataset.langEn === undefined) el.dataset.langEn = el.innerHTML;
         el.innerHTML = (lang === 'es' && esContent) ? esContent : el.dataset.langEn;
-      }
+      };
 
       /* breadcrumb */
       var apBcTeam = document.querySelector('.ap-breadcrumb a[href*="team.html"]');
@@ -1153,14 +1158,25 @@
       var apViewBtn = document.querySelector('.ap-hero-btn[href*="search.palisaderealty.com"]');
       if (apViewBtn) svgStart(apViewBtn, d.apHeroViewListings);
 
-      /* bio (per-agent) */
-      apSwap(document.querySelector('.ap-bio-eyebrow'), apTrans.bioEyebrow);
-      apSwap(document.querySelector('.ap-bio-h2'), apTrans.bioH2);
+      /* bio eyebrow — 2 known values across all 92 pages */
+      var bioEyMap = {'Agent': 'Agente', 'Leadership': 'Liderazgo'};
+      var bioEyEl = document.querySelector('.ap-bio-eyebrow');
+      if (bioEyEl) {
+        if (bioEyEl.dataset.langEn === undefined) bioEyEl.dataset.langEn = bioEyEl.textContent;
+        var bioEyFallback = bioEyMap[bioEyEl.dataset.langEn.trim()] || bioEyEl.dataset.langEn;
+        bioEyEl.textContent = lang === 'es' ? (apTrans.bioEyebrow || bioEyFallback) : bioEyEl.dataset.langEn;
+      }
+
+      /* bio h2 — always 'Meet <em>FirstName</em>' across all 92 pages */
+      var bioH2Fallback = 'Conozca a <em>' + apFirstName + '</em>';
+      apSwap(document.querySelector('.ap-bio-h2'), apTrans.bioH2 || bioH2Fallback);
+
+      /* bio body — unique per agent; only translates when in AGENT_TRANSLATIONS */
       document.querySelectorAll('.ap-bio-body').forEach(function(el, i) {
         apSwap(el, apTrans.bioBody && apTrans.bioBody[i]);
       });
 
-      /* bio sidebar */
+      /* contact sidebar */
       var apSdLbl = document.querySelector('.ap-contact-sidebar-label');
       if (apSdLbl) apSdLbl.textContent = d.apSidebarLabel;
       var apSdDtl = document.querySelectorAll('.ap-contact-sidebar-detail-label');
@@ -1170,9 +1186,28 @@
       if (apSdBtns[0]) apSdBtns[0].textContent = d.apSidebarMsg;
       if (apSdBtns[1]) apSdBtns[1].textContent = d.apSidebarVal;
 
-      /* awards (per-agent) */
-      apSwap(document.querySelector('.ap-awards-eyebrow'), apTrans.awardsEyebrow);
-      apSwap(document.querySelector('.ap-awards-h2'), apTrans.awardsH2);
+      /* awards eyebrow — 2 known values across all 92 pages */
+      var awEyMap = {'My Commitment': 'Mi Compromiso', 'Recognition': 'Reconocimientos'};
+      var awEyEl = document.querySelector('.ap-awards-eyebrow');
+      if (awEyEl) {
+        if (awEyEl.dataset.langEn === undefined) awEyEl.dataset.langEn = awEyEl.textContent;
+        var awEyFallback = awEyMap[awEyEl.dataset.langEn.trim()] || awEyEl.dataset.langEn;
+        awEyEl.textContent = lang === 'es' ? (apTrans.awardsEyebrow || awEyFallback) : awEyEl.dataset.langEn;
+      }
+
+      /* awards h2 — 2 known values across all 92 pages */
+      var awH2Map = {
+        'Built on <em>Trust</em>': 'Construída sobre la <em>Confianza</em>',
+        'A Record of <em>Excellence</em>': 'Un Historial de <em>Excelencia</em>'
+      };
+      var awH2El = document.querySelector('.ap-awards-h2');
+      if (awH2El) {
+        if (awH2El.dataset.langEn === undefined) awH2El.dataset.langEn = awH2El.innerHTML;
+        var awH2Fallback = awH2Map[awH2El.dataset.langEn.trim()] || awH2El.dataset.langEn;
+        awH2El.innerHTML = lang === 'es' ? (apTrans.awardsH2 || awH2Fallback) : awH2El.dataset.langEn;
+      }
+
+      /* award cards — unique per agent; only translates when in AGENT_TRANSLATIONS */
       document.querySelectorAll('.ap-award-name').forEach(function(el, i) {
         apSwap(el, apTrans.awardNames && apTrans.awardNames[i]);
       });
@@ -1193,12 +1228,15 @@
       if (apAllEyEl) apAllEyEl.textContent = d.apAllListingsEyebrow;
       var apAllH2El = document.querySelector('.ap-all-listings-h2');
       if (apAllH2El) apAllH2El.innerHTML = d.apAllListingsH2;
-      apSwap(document.querySelector('.ap-all-listings-sub'), apTrans.allListingsSub);
+      var allListingsFallback = 'Explore las propiedades actuales representadas por ' + apFullName + ' en el condado de San Diego.';
+      apSwap(document.querySelector('.ap-all-listings-sub'), apTrans.allListingsSub || allListingsFallback);
 
-      /* contact */
+      /* contact left */
       var apCtLEyEl = document.querySelector('.ap-contact-left-eyebrow');
       if (apCtLEyEl) apCtLEyEl.textContent = d.apContactLeftEyebrow;
-      apSwap(document.querySelector('.ap-contact-left-h2'), apTrans.contactH2);
+      /* contactH2 always '<em>Contact</em> FirstName' — auto-translate */
+      var ctH2Fallback = '<em>Contacte</em> a ' + apFirstName;
+      apSwap(document.querySelector('.ap-contact-left-h2'), apTrans.contactH2 || ctH2Fallback);
       var apCtBodyEl = document.querySelector('.ap-contact-left-body');
       if (apCtBodyEl) {
         if (apCtBodyEl.dataset.langEn === undefined) apCtBodyEl.dataset.langEn = apCtBodyEl.innerHTML;
@@ -1210,7 +1248,7 @@
       var fLblKeys = ['apFormLabelFirst','apFormLabelLast','apFormLabelEmail','apFormLabelPhone','apFormLabelInterest','apFormLabelMessage'];
       apFLbls.forEach(function(el, i) { if (fLblKeys[i]) el.textContent = d[fLblKeys[i]]; });
 
-      /* form inputs */
+      /* form inputs placeholders */
       var cfFirst = document.getElementById('cf-first');
       if (cfFirst) cfFirst.placeholder = lang === 'es' ? 'María' : 'Jane';
       var cfLast = document.getElementById('cf-last');
@@ -1218,7 +1256,7 @@
       var cfMsg = document.getElementById('cf-message');
       if (cfMsg) cfMsg.placeholder = d.apFormPlaceholderMsg;
 
-      /* form select */
+      /* form select options */
       var cfInt = document.getElementById('cf-interest');
       if (cfInt && cfInt.options.length >= 6) {
         var optKeys = ['apFormOptSelect','apFormOptBuying','apFormOptSelling','apFormOptBoth','apFormOptInvesting','apFormOptOther'];
@@ -1237,7 +1275,7 @@
         if (consentNode) consentNode.textContent = d.apFormConsentText;
       }
 
-      /* form submit */
+      /* form submit button */
       var apSubmitEl = document.querySelector('.ap-form-submit');
       if (apSubmitEl) svgEnd(apSubmitEl, d.apFormSubmit);
 
@@ -1255,8 +1293,11 @@
       if (apCtaEyEl) apCtaEyEl.textContent = d.teamCtaEyebrow;
       var apCtaH2El = document.querySelector('.tp-cta-h2');
       if (apCtaH2El) apCtaH2El.innerHTML = d.teamCtaTitle;
-      apSwap(document.querySelector('.tp-cta-sub'), apTrans.ctaSub);
-      apSwap(document.querySelector('.tp-cta .btn-brand'), apTrans.ctaPrimary);
+      /* ctaSub — auto-generate using first name */
+      var ctaSubFallback = apFirstName + ' está listo para guiarle — ya sea que esté comprando, vendiendo o explorando sus opciones. Contáctenos hoy para una conversación sin presiones.';
+      apSwap(document.querySelector('.tp-cta-sub'), apTrans.ctaSub || ctaSubFallback);
+      /* ctaPrimary always 'Contact FirstName' — auto-translate */
+      apSwap(document.querySelector('.tp-cta .btn-brand'), apTrans.ctaPrimary || ('Contactar a ' + apFirstName));
       var apCtaOutlineEl = document.querySelector('.tp-cta .btn-outline-white');
       if (apCtaOutlineEl) apCtaOutlineEl.textContent = d.teamCtaOutline;
     }
