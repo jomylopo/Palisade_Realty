@@ -854,6 +854,24 @@
     }
   };
 
+  var CAROUSEL_CARDS = [
+    { badge: "VENDEDOR", title: "Por Qué Tener Una Buena Entrada Para Autos Es Importante al Vender Su Casa", excerpt: "La entrada para autos suele ser lo primero con lo que los compradores interactúan físicamente. Descubra por qué su estado impacta directamente en la percepción del comprador y en el precio final de venta." },
+    { badge: "COMPRADOR", title: "Algo Que la Mayoría de los Compradores de Vivienda Olvidan Presupuestar: El Paisajismo", excerpt: "Los compradores por primera vez frecuentemente pasan por alto los costos de paisajismo. Comprender estos gastos continuos antes de comprar puede evitar sorpresas financieras en el futuro." },
+    { badge: "PROPIETARIO", title: "Guía Sencilla Para Elegir el Color de Pintura Ideal Para Su Espacio", excerpt: "Elegir el color de pintura correcto puede sentirse abrumador ante miles de opciones. Esta guía lo orienta a través de las consideraciones clave para encontrar el color perfecto para cualquier habitación." },
+    { badge: "COMPRADOR", title: "Entendiendo el Efectivo para el Cierre al Comprar Una Vivienda", excerpt: "Más allá del enganche, los compradores deben prepararse para decenas de cargos menores al momento del cierre. Aprenda qué significa el efectivo para el cierre y cómo presupuestarlo con suficiente anticipación." },
+    { badge: "VENDEDOR", title: "Mejoras Fáciles y Económicas al Baño Que Puede Hacer Antes de Vender Su Casa", excerpt: "Mejoras sencillas y asequibles en el baño pueden aumentar significativamente el atractivo de su hogar para los compradores, incluso con poca experiencia en bricolaje." },
+    { badge: "COMPRADOR", title: "Dónde Guardar Sus Ahorros para el Enganche de la Casa de Sus Sueños", excerpt: "El lugar donde guarda sus ahorros para el enganche puede marcar una diferencia importante en qué tan rápido alcanza su meta de ser propietario de vivienda." },
+    { badge: "PROPIETARIO", title: "5 Formas en Que Sus Vecinos Pueden Afectar el Valor de Su Casa", excerpt: "Sin importar qué tan bien mantenga su propiedad, las casas vecinas pueden influir en su valor. Comprender esta dinámica le ayuda a tomar decisiones inmobiliarias más inteligentes." },
+    { badge: "COMPRADOR", title: "De las Salidas Románticas a los Pagos de Hipoteca: Consejos para Parejas que Compran Su Primera Casa", excerpt: "Comprar una casa es una de las decisiones más importantes que las parejas toman juntas. Con la preparación adecuada, el proceso puede fortalecer tanto su relación como sus finanzas." },
+    { badge: "PROPIETARIO", title: "7 Hábitos Sencillos pero Efectivos Para un Hogar Más Limpio y Ordenado Todo el Año", excerpt: "Los hábitos pequeños y constantes marcan una mayor diferencia que las sesiones de limpieza maratónicas. Comience estas rutinas ahora para un hogar más organizado durante todo el año." },
+    { badge: "VENDEDOR", title: "Por Qué Debería Publicar Su Casa en Venta a Principios de Año", excerpt: "La mayoría de los vendedores esperan la primavera, pero publicar su propiedad a comienzos del año puede darle una ventaja competitiva con compradores motivados y mucha menos competencia." },
+    { badge: "GENERAL", title: "Guía Práctica de 7 Pasos para Desempacar Eficientemente Después de una Mudanza", excerpt: "Un enfoque sistemático para desempacar puede transformar una abrumadora pila de cajas en un hogar confortable en días, no en semanas." },
+    { badge: "VENDEDOR", title: "Su Comprador Quiere Extender la Fecha de Cierre — ¿Qué Hace Ahora? [Parte 2]", excerpt: "Cuando un comprador solicita más tiempo para cerrar, los vendedores se enfrentan a una decisión difícil. La Parte 2 cubre sus opciones, cómo negociar y cuándo tiene sentido retirarse del trato." },
+    { badge: "VENDEDOR", title: "Su Comprador Quiere Extender la Fecha de Cierre — ¿Qué Hace Ahora? [Parte 1]", excerpt: "Una extensión de la fecha de cierre puede ser frustrante cuando ya ha planeado su mudanza. Aprenda por qué los compradores piden más tiempo y cuáles son sus derechos como vendedor." },
+    { badge: "COMPRADOR", title: "Las Principales Señales de Alerta en una Inspección de Vivienda Antes de Comprar", excerpt: "Desde defectos estructurales hasta infestaciones de plagas, ciertos hallazgos en la inspección pueden revelar riesgos subyacentes graves que todo comprador debe vigilar antes del cierre." },
+    { badge: "PROPIETARIO", title: "5 Proyectos de Mejora del Hogar Económicos Perfectos para Realizar Este Otoño", excerpt: "El otoño es la temporada ideal para proyectos de mejora del hogar antes de que llegue el invierno. Estas actualizaciones asequibles agregan valor real sin requerir una gran inversión." }
+  ];
+
 var AGENT_TRANSLATIONS = {
     'tom-parashos': {
       bioEyebrow: 'Liderazgo',
@@ -2629,6 +2647,25 @@ var AGENT_TRANSLATIONS = {
     });
 
     /* ── BLOG POST PAGES ────────────────────────────────────────── */
+
+    /* ── HOMEPAGE BLOG CAROUSEL ───────────────────────────────────── */
+    if (document.querySelector('.blog-carousel')) {
+      var ccSwap = function(el, esText) {
+        if (!el) return;
+        if (el.dataset.langEn === undefined) el.dataset.langEn = el.textContent;
+        el.textContent = lang === 'es' ? esText : el.dataset.langEn;
+      };
+      var ccTitles  = document.querySelectorAll('.blog-card-title');
+      var ccExcerpts = document.querySelectorAll('.blog-card-excerpt');
+      var ccBadges  = document.querySelectorAll('.blog-card-badge');
+      var ccLinks   = document.querySelectorAll('.blog-card-link');
+      CAROUSEL_CARDS.forEach(function(card, i) {
+        ccSwap(ccTitles[i],   card.title);
+        ccSwap(ccExcerpts[i], card.excerpt);
+        ccSwap(ccBadges[i],   card.badge);
+        if (ccLinks[i]) ccLinks[i].textContent = d.blogReadMore;
+      });
+    }
     if (document.querySelector('.bp-hero')) {
       var bpBackEl = document.querySelector('.bp-back');
       if (bpBackEl) {
