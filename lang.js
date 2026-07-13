@@ -265,7 +265,7 @@
 
       /* BLOG PAGE */
       blogHeroEyebrow: 'Resources &amp; Insights',
-      blogHeroTitle: 'San Diego Real Estate Blog',
+      blogHeroTitle: 'San Diego Real Estate <em>Blog</em>',
       blogHeroSub: 'Expert tips, local market insights, and practical advice for buyers, sellers, and homeowners throughout San Diego County.',
       blogFilterAll: 'All Posts',
       blogFilterBuyer: 'Buyer',
@@ -273,10 +273,13 @@
       blogFilterHomeowner: 'Homeowner',
       blogFilterGeneral: 'General',
       blogCtaEyebrow: 'Ready to Make Your Move?',
-      blogCtaTitle: 'Expert Guidance for Every Step',
+      blogCtaTitle: 'Expert Guidance for <em>Every Step</em>',
       blogCtaSub: "Whether you’re buying your first home or selling a prized property in San Diego, our team is here to help.",
       blogCtaPrimary: 'Talk to an Agent',
       blogCtaOutline: 'Meet Our Team',
+      blogReadMore: 'Read More →',
+      bpBack: '← Back to Blog',
+      bpRelatedH2: 'More <em>Insights</em>',
 
       /* COMMUNITY DETAIL PAGES */
       cdStatActiveListings: 'Active Listings',
@@ -576,7 +579,7 @@
 
       /* BLOG PAGE */
       blogHeroEyebrow: 'Recursos y Perspectivas',
-      blogHeroTitle: 'Blog de Bienes Raíces en San Diego',
+      blogHeroTitle: 'Blog Inmobiliario de <em>San Diego</em>',
       blogHeroSub: 'Consejos de expertos, perspectivas del mercado local y asesoría práctica para compradores, vendedores y propietarios en todo el Condado de San Diego.',
       blogFilterAll: 'Todo',
       blogFilterBuyer: 'Compradores',
@@ -584,10 +587,13 @@
       blogFilterHomeowner: 'Propietarios',
       blogFilterGeneral: 'General',
       blogCtaEyebrow: '¿Listo para Dar el Siguiente Paso?',
-      blogCtaTitle: 'Asesoría Experta en Cada Etapa',
+      blogCtaTitle: 'Asesoría Experta en <em>Cada Etapa</em>',
       blogCtaSub: 'Ya sea que esté comprando su primera casa o vendiendo una propiedad en San Diego, nuestro equipo está aquí para ayudarle.',
       blogCtaPrimary: 'Hablar con un Agente',
       blogCtaOutline: 'Conocer al Equipo',
+      blogReadMore: 'Leer Más →',
+      bpBack: '← Volver al Blog',
+      bpRelatedH2: 'Más <em>Artículos</em>',
 
       /* COMMUNITY DETAIL PAGES */
       cdStatActiveListings: 'Propiedades Activas',
@@ -2410,7 +2416,7 @@
     if (bHeroEy) bHeroEy.innerHTML = d.blogHeroEyebrow;
 
     var bHeroT = document.querySelector('.blog-hero-title');
-    if (bHeroT) bHeroT.textContent = d.blogHeroTitle;
+    if (bHeroT) bHeroT.innerHTML = d.blogHeroTitle;
 
     var bHeroS = document.querySelector('.blog-hero-sub');
     if (bHeroS) bHeroS.textContent = d.blogHeroSub;
@@ -2423,7 +2429,7 @@
     if (bCtaEy) bCtaEy.textContent = d.blogCtaEyebrow;
 
     var bCtaT = document.querySelector('.blog-cta-title');
-    if (bCtaT) bCtaT.textContent = d.blogCtaTitle;
+    if (bCtaT) bCtaT.innerHTML = d.blogCtaTitle;
 
     var bCtaS = document.querySelector('.blog-cta-sub');
     if (bCtaS) bCtaS.textContent = d.blogCtaSub;
@@ -2433,6 +2439,30 @@
 
     var bCtaO = document.querySelector('.blog-cta .btn-outline-white');
     if (bCtaO) bCtaO.textContent = d.blogCtaOutline;
+
+    /* ── BLOG INDEX: Read More on generated cards ────────────────── */
+    document.querySelectorAll('.blog-listing .bc-read-more').forEach(function(el) {
+      el.textContent = d.blogReadMore;
+    });
+
+    /* ── BLOG POST PAGES ────────────────────────────────────────── */
+    if (document.querySelector('.bp-hero')) {
+      var bpBackEl = document.querySelector('.bp-back');
+      if (bpBackEl) {
+        if (bpBackEl.dataset.langEn === undefined) bpBackEl.dataset.langEn = bpBackEl.innerHTML;
+        bpBackEl.innerHTML = lang === 'es' ? d.bpBack : bpBackEl.dataset.langEn;
+      }
+
+      var bpRelH = document.querySelector('.bp-related-h');
+      if (bpRelH) {
+        if (bpRelH.dataset.langEn === undefined) bpRelH.dataset.langEn = bpRelH.innerHTML;
+        bpRelH.innerHTML = lang === 'es' ? d.bpRelatedH2 : bpRelH.dataset.langEn;
+      }
+
+      document.querySelectorAll('.bp-related .bc-read-more').forEach(function(el) {
+        el.textContent = d.blogReadMore;
+      });
+    }
 
     /* ── COMMUNITY DETAIL PAGES ─────────────────────────────── */
     if (document.body && document.body.classList.contains('comm-detail')) {

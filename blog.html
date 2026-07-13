@@ -630,7 +630,7 @@ function renderGrid() {
           </div>
           <h2 class="bc-title">${p.t}</h2>
           <p class="bc-excerpt">${p.x}</p>
-          <span class="bc-read-more" aria-hidden="true">Read More &#8594;</span>
+          <span class="bc-read-more" aria-hidden="true">${localStorage.getItem('pr-lang')==='es'?'Leer M\u00e1s':'Read More'} →</span>
         </div>
       </a>
     </article>
