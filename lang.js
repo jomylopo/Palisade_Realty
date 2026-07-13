@@ -737,6 +737,1062 @@
         'Una REALTOR® licenciada en California con Palisade Realty, Inc. — totalmente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.',
         'Respaldada por los sistemas, tecnología y equipo comprobados de Palisade Realty — brindando resultados consistentes y centrados en el cliente en todo el condado de San Diego.'
       ]
+    },
+    'alan-luken': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad de gran valor, estoy aquí para hacer el proceso tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — les brinda a los clientes una ventaja genuina en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — totalmente comprometido con representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'alexandra-polles': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté comprando su primera vivienda, realizando una inversión o vendiendo una propiedad de gran valor, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le da a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — totalmente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Con el respaldo de los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'allison-asher': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada paso del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad especial, estoy aquí para hacer el proceso lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional Certificada", "Respaldada por Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'andrew-lopez': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, estoy dedicado a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso de bienes raíces.",
+        "Desde su primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté comprando su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para hacer el proceso tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Certificado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un conocimiento profundo de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia de California a través de Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'anh-lam': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las agencias inmobiliarias de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, oriento a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy estimada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido con representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas probados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'atzay-estrada': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras inmobiliarias de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad apreciada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional con Licencia", "El Respaldo de Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometida con representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo probados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'aubrey-foulk': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a los clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad querida, estoy aquí para hacer el proceso tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Certificado", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le brinda a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo probados de Palisade Realty — brindando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'brandon-khieu': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experto Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un conocimiento profundo de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'brandon-le': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las firmas inmobiliarias más confiables de la región y un profundo conocimiento del mercado local, guío a compradores y vendedores en cada paso del proceso.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté comprando su primera vivienda, realizando una inversión o vendiendo una propiedad especial, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experto Local", "Profesional con Licencia", "Respaldado por Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le otorga a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas probados, la tecnología y el equipo de Palisade Realty — brindando resultados consistentes y enfocados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'brandy-bell': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy valorada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Certificado", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — les brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia de California con Palisade Realty, Inc. — plenamente comprometida con representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo probados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'casie-o-donnell': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso de bienes raíces.",
+        "Desde la primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para que el proceso sea tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional Licenciada", "Respaldada por Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le da a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — entregando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'chip-morgan': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías más reconocidas de la región y un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometido a representar sus intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas probados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'chittra-cruz': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, estoy dedicada a brindar resultados excepcionales a los clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad apreciada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Certificada", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — brindando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'chris-nguyen': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales a los clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, los consejos honestos y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad especial, estoy aquí para hacer el proceso tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Licenciado", "El Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — les brinda a los clientes una ventaja genuina en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — con resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'corinne-mauro': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para clientes en todo el Condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde su primera consulta hasta el cierre de la operación, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy especial, estoy aquí para hacer que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le brinda a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometida con representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el Condado de San Diego."
+      ]
+    },
+    'cynthia-mayorga': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, oriento a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad preciada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "El amplio conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California a través de Palisade Realty, Inc. — plenamente comprometida con representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'daniel-kappler': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las firmas de corretaje más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy apreciada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experto Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le brinda a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'danielle-patterson': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las firmas de corretaje más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para hacer el proceso lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional con Licencia", "Respaldada por Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'debbie-lawes': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a obtener resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy especial, estoy aquí para hacer el proceso tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional Certificado", "Respaldado por Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — otorga a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'debbie-no': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada paso del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es una comunicación clara, asesoramiento honesto y resultados en los que usted pueda confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad querida, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Licenciada", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le brinda a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California y agente de Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'deborah-trevino': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para que el proceso sea tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Experta Local", "Profesional Licenciada", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas probados, la tecnología y el equipo de Palisade Realty — entregando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'delilah-bejarano-armendariz': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las inmobiliarias más reconocidas de la región y acceso a un profundo conocimiento del mercado local, oriento a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la operación, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad de gran valor, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Certificada", "El Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Con el respaldo de los sistemas, la tecnología y el equipo probados de Palisade Realty — entregando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'devyn-iglehart': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, estoy dedicado a obtener resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las inmobiliarias más confiables de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde su primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté comprando su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Certificado", "Respaldado por Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® certificado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — entregando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'diana-beezley': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso de bienes raíces.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad preciada, estoy aquí para hacer que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego —desde la costa hasta las comunidades del interior— le brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. —plenamente comprometida con representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas comprobados, la tecnología y el equipo de Palisade Realty —ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'diane-van-korlaar': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a obtener resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las agencias inmobiliarias de mayor confianza en la región y un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso de bienes raíces.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté comprando su primera vivienda, realizando una inversión o vendiendo una propiedad muy preciada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional Licenciada", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una verdadera ventaja en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas probados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'edelia-eveland': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, los consejos honestos y los resultados en los que usted puede confiar. Ya sea que esté comprando su primera vivienda, realizando una inversión o vendiendo una propiedad especial, estoy aquí para hacer el proceso lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional Certificada", "Respaldada por Palisade"],
+      awardDescs: [
+        "Un conocimiento profundo de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — completamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'emma-dearing': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para los clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, los consejos honestos y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para hacer el proceso tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego —desde la costa hasta las comunidades del interior— le brinda a cada cliente una ventaja genuina en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. —plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas comprobados, la tecnología y el equipo de Palisade Realty —ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'eric-hayman': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a obtener resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las inmobiliarias de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté comprando su primera vivienda, realizando una inversión o vendiendo una propiedad querida, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Certificado", "Respaldado por Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometido a representar sus intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'fermin-perez': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales para los clientes en todo el condado de San Diego. Con el respaldo de una de las agencias inmobiliarias más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso de bienes raíces.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es una comunicación clara, asesoramiento honesto y resultados en los que pueda confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy especial, estoy aquí para que el proceso sea lo más sencillo y exitoso posible."
+      ],
+      awardNames: ["Experto Local", "Profesional con Licencia", "Respaldado por Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — brindando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'fia-ierino': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada paso del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es una comunicación clara, un asesoramiento honesto y resultados en los que usted pueda confiar. Ya sea que esté comprando su primera vivienda, realizando una inversión o vendiendo una propiedad muy apreciada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Certificado", "Respaldado por Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometido con representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo de Palisade Realty — brindando resultados consistentes y orientados al cliente en todo el condado de San Diego."
+      ]
+    },
+    'gina-romeo': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las firmas de bienes raíces más confiables de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy apreciada, estoy aquí para que el proceso sea tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Experta Local", "Profesional Licenciada", "Respaldada por Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le brinda a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida con representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'glennis-dawson': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad especial, estoy aquí para hacer el proceso tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Licenciada", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — otorga a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — completamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo probados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'greg-lathem': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso de bienes raíces.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para hacer el proceso lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le otorga a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'hannah-ohman': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para clientes en todo el Condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy apreciada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experta Local", "Profesional Licenciada", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas probados, la tecnología y el equipo de Palisade Realty — brindando resultados consistentes y centrados en el cliente en todo el Condado de San Diego."
+      ]
+    },
+    'hervin-ugalde': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad especial, estoy aquí para hacer que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Certificado", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido con representar sus intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — con resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'ivan-butrus': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad apreciada, estoy aquí para que el proceso sea tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'james-mcnab': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las firmas inmobiliarias de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso de bienes raíces.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté comprando su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para hacer el proceso tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le brinda a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® con licencia de California con Palisade Realty, Inc. — totalmente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'jared-lawrence': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad apreciada, estoy aquí para hacer el proceso tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional Licenciado", "Respaldado por Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le da a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas probados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'jarrod-norris': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy apreciada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometido con representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas probados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'jason-wallace': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad querida, estoy aquí para hacer el proceso lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experto Local", "Profesional con Licencia", "El Sello Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometido con representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'jaymie-santiago': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad entrañable, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometido con representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo probados de Palisade Realty — ofreciendo resultados consistentes centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'jennifer-crosby': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales para clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté comprando su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para hacer el proceso lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja genuina en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas probados, la tecnología y el equipo de Palisade Realty — brindando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'jeremy-mchone': {
+      bioBody: [
+        "Como REALTOR® en Palisade Realty, me dedico a brindar resultados excepcionales para los clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías más reconocidas de la región y acceso a un profundo conocimiento del mercado local, oriento a compradores y vendedores en cada paso del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté comprando su primera vivienda, realizando una inversión o vendiendo una propiedad de gran valor, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Certificado", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego —desde la costa hasta las comunidades del interior— le otorga a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California, afiliado a Palisade Realty, Inc., con pleno compromiso de representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo comprobados de Palisade Realty, ofrecemos resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'jim-stengel': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el Condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para hacer que el proceso sea lo más sencillo y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — brindando resultados consistentes y centrados en el cliente en todo el Condado de San Diego."
+      ]
+    },
+    'jodi-kirkwood': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la consulta inicial hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experta Local", "Profesional Licenciada", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — les brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'john-verdin': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, los consejos honestos y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para hacer el proceso tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Experto Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas probados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'jonathan-cohen-kurzrock': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad de gran valor, estoy aquí para hacer el proceso lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional con Licencia", "El Sello Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego —desde la costa hasta las comunidades del interior— ofrece a los clientes una verdadera ventaja en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. —plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo comprobados de Palisade Realty —brindando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'juanito-so-jr': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a obtener resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las firmas de bienes raíces más reconocidas de la región y un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es una comunicación clara, asesoramiento honesto y resultados en los que usted pueda confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy especial, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experto Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'jules-marchisio': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las firmas inmobiliarias de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso de bienes raíces.",
+        "Desde la consulta inicial hasta el cierre de la transacción, mi prioridad es una comunicación clara, asesoramiento honesto y resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy especial, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experto Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'kalen-esguerra': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el consejo honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para hacer el proceso tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Experto Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — completamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — brindando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'katie-lussier': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso de bienes raíces.",
+        "Desde la primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté comprando su primera vivienda, realizando una inversión o vendiendo una propiedad muy especial, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experta Local", "Profesional Licenciada", "Respaldada por Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — entregando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'katya-schumaker': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy especial, estoy aquí para hacer el proceso tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Certificada", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja genuina en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — totalmente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'keith-agnello': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para hacer el proceso tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Experto Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja genuina en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — completamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo probados de Palisade Realty — brindando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'kelly-chan': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad querida, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Licenciada", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja genuina en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo probados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'kelsey-barry-farnsworth': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso de bienes raíces.",
+        "Desde su primera consulta hasta el día del cierre, mi prioridad es una comunicación clara, consejos honestos y resultados en los que pueda confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para que el proceso sea lo más sencillo y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'kirsten-blessum': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a obtener resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza de la región y un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, los consejos honestos y los resultados en los que usted puede confiar. Ya sea que esté comprando su primera vivienda, realizando una inversión o vendiendo una propiedad preciada, estoy aquí para hacer el proceso lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le brinda a nuestros clientes una ventaja genuina en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo probados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'lacy-mcfarland': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las inmobiliarias más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso de bienes raíces.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad especial, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experta Local", "Profesional Licenciada", "Respaldada por Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — completamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas probados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'laura-pachlin': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es una comunicación clara, asesoramiento honesto y resultados en los que usted pueda confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad especial, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experto Local", "Profesional Certificado", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'lisa-florendo': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías más confiables de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde su primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad especial, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Licenciada", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas probados, la tecnología y el equipo de Palisade Realty — brindando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'louis-goletto': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, oriento a compradores y vendedores en cada paso del proceso de bienes raíces.",
+        "Desde la primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad especial, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido en representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'lyna-rawlings': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el Condado de San Diego. Con el respaldo de una de las agencias inmobiliarias de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy apreciada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Certificado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego —desde la costa hasta las comunidades del interior— brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. —totalmente comprometido en representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas comprobados, la tecnología y el equipo de Palisade Realty —ofreciendo resultados consistentes y centrados en el cliente en todo el Condado de San Diego."
+      ]
+    },
+    'mariko-tortolero': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las firmas inmobiliarias de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, acompaño a compradores y vendedores en cada etapa del proceso de bienes raíces.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté comprando su primera vivienda, realizando una inversión o vendiendo una propiedad apreciada, estoy aquí para hacer el proceso lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experta Local", "Profesional Licenciada", "El Sello Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le brinda a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'marla-drexler': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras inmobiliarias más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad especial, estoy aquí para hacer el proceso lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional con Licencia", "El Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — totalmente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo probados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'martina-toma': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Con el respaldo de los sistemas, la tecnología y el equipo probados de Palisade Realty — entregando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'meghan-mcnutt': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a obtener resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para hacer el proceso lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional con Licencia", "Respaldada por Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo de Palisade Realty — brindando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'melissa-campos': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — totalmente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'melissa-maxwell': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a los clientes en todo el Condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy valorada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experta Local", "Profesional Licenciada", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — completamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas probados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el Condado de San Diego."
+      ]
+    },
+    'michael-divita': {
+      bioBody: [
+        "Como Director de Operaciones en Palisade Realty, Michael DiVita conecta la estrategia con la ejecución diaria, garantizando que las operaciones de la correduría funcionen de manera eficiente para un equipo de más de 80 agentes y sus clientes en todo el condado de San Diego.",
+        "La experiencia de Michael en coordinación de procesos, sistemas de atención al cliente y gestión de equipos lo convierte en una pieza fundamental de la infraestructura de Palisade Realty en la que clientes y agentes confían cada día."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometido con representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas probados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y enfocados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'michael-guzman': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las firmas inmobiliarias de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso de bienes raíces.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para que el proceso sea tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional Certificado", "El Sello Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® certificado en California con Palisade Realty, Inc. — plenamente comprometido en representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'mona-hassan': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para hacer el proceso tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Certificada", "Respaldada por Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo probados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'nicole-ward': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las firmas inmobiliarias más confiables de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso de bienes raíces.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es una comunicación clara, asesoramiento honesto y resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy preciada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experto Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — completamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'patty-aguilar': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías más reconocidas de la región y acceso a un profundo conocimiento del mercado local, acompaño a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy apreciada, estoy aquí para hacer que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experta Local", "Profesional Certificada", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas probados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'patty-samii': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, acompaño a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad especial, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experta Local", "Profesional Licenciada", "Respaldada por Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — brindando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'piper-stein': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy apreciada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional con Licencia", "Respaldada por Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le brinda a nuestros clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California, afiliada a Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'rachel-ohara': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el Condado de San Diego. Con el respaldo de una de las corredurías más reconocidas de la región y un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy preciada, estoy aquí para hacer que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experta Local", "Profesional Licenciada", "Respaldada por Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le otorga a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo probados de Palisade Realty — brindando resultados consistentes y centrados en el cliente en todo el Condado de San Diego."
+      ]
+    },
+    'renata-rios': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, estoy dedicada a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es una comunicación clara, asesoramiento honesto y resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy especial, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experta Local", "Profesional Licenciada", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego —desde la costa hasta las comunidades del interior— le brinda a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas probados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'robby-gmur': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales para clientes en todo el condado de San Diego. Con el respaldo de una de las inmobiliarias más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, los consejos honestos y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional Licenciado", "Palisade Comprobado"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le brinda a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo probados de Palisade Realty — entregando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'ryan-stein': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de uno de los corredores de bienes raíces más confiables de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre del trato, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para hacer el proceso tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Experto Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un conocimiento profundo de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le brinda a nuestros clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas probados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'sabrina-alvarado': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a lograr resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde su primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad apreciada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'samuel-minero': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a lograr resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde su primera consulta hasta el cierre, mi prioridad es la comunicación clara, los consejos honestos y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy preciada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experto Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego —desde la costa hasta las comunidades del interior— brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. —plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas comprobados, la tecnología y el equipo de Palisade Realty —ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'sarah-bautista': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para los clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, oriento a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad preciada, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'sergio-yturralde': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el Condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada paso del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es la comunicación clara, el asesoramiento honesto y resultados en los que usted pueda confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad entrañable, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le brinda a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido con representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas probados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el Condado de San Diego."
+      ]
+    },
+    'taylor-schunk': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad valiosa, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experto Local", "Profesional Licenciado", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le brinda a cada cliente una ventaja genuina en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — brindando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'tristen-campanella': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, oriento a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la operación, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy especial, estoy aquí para hacer que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional con Licencia", "El Respaldo de Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja real en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometido con representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'vanda-fernandes': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales a mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la consulta inicial hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy valiosa para usted, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional Licenciada", "El Respaldo de Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'wally-dally': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredurías de mayor confianza en la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el día del cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy querida, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional con Licencia", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — ofrece a los clientes una ventaja genuina en cada transacción.",
+        "REALTOR® con licencia en California con Palisade Realty, Inc. — plenamente comprometido con representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas, la tecnología y el equipo probados de Palisade Realty — brindando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'yvonne-mulgrew': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a brindar resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las corredoras de bienes raíces más reconocidas de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre de la transacción, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad de gran valor, estoy aquí para que el proceso sea lo más fluido y exitoso posible."
+      ],
+      awardNames: ["Experiencia Local", "Profesional Licenciada", "Respaldo Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le brinda a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® licenciada en California con Palisade Realty, Inc. — plenamente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldada por los sistemas, la tecnología y el equipo comprobados de Palisade Realty — entregando resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
+    },
+    'zach-campbell': {
+      bioBody: [
+        "Como REALTOR® con Palisade Realty, me dedico a ofrecer resultados excepcionales para mis clientes en todo el condado de San Diego. Con el respaldo de una de las firmas más confiables de la región y acceso a un profundo conocimiento del mercado local, guío a compradores y vendedores en cada etapa del proceso inmobiliario.",
+        "Desde la primera consulta hasta el cierre, mi prioridad es la comunicación clara, el asesoramiento honesto y los resultados en los que usted puede confiar. Ya sea que esté adquiriendo su primera vivienda, realizando una inversión o vendiendo una propiedad muy apreciada, estoy aquí para hacer el proceso tan fluido y exitoso como sea posible."
+      ],
+      awardNames: ["Conocimiento Local", "Profesional Licenciado", "Respaldado por Palisade"],
+      awardDescs: [
+        "Un profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — le brinda a cada cliente una ventaja real en cada transacción.",
+        "REALTOR® licenciado en California con Palisade Realty, Inc. — plenamente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.",
+        "Respaldado por los sistemas comprobados, la tecnología y el equipo de Palisade Realty — ofreciendo resultados consistentes y centrados en el cliente en todo el condado de San Diego."
+      ]
     }
   };
 
