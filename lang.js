@@ -174,17 +174,39 @@
 
       /* TEAM PAGE */
       teamHeroEyebrow: 'San Diego Real Estate',
-      teamHeroTitle: 'Meet Our Team',
-      teamHeroSub: 'Palisade Realty is a team of experienced, licensed real estate professionals serving the San Diego metro and surrounding communities.',
+      teamHeroTitle: 'Meet Our <em>Team</em>',
+      teamHeroSub: 'Palisade Realty is a team of experienced, licensed real estate professionals serving the San Diego metro — with a proven track record and a direct line of communication at every step.',
       teamHeroPrimary: 'Connect With Us',
-      teamHeroOutline: 'Search Homes',
+      teamStatsAgents: 'Agents on the Team',
+      teamStatsYears: 'Years in San Diego',
+      teamStatsCommunities: 'Communities Served',
+      teamStatsFamilies: 'Families Helped',
+      teamIntroTag: 'Our Story',
+      teamIntroH2: 'Built on <em>Results.</em><br>Driven by People.',
+      teamIntroBody1: 'Palisade Realty, Inc. is a team of experienced, licensed real estate agents serving the San Diego, CA metro area. We\'ve built our reputation on one principle: the client comes first — always. From your first consultation to closing day and beyond, we deliver clear communication, market expertise, and results you can count on.',
+      teamIntroBody2: 'Our team spans every corner of San Diego County — from coastal communities like Point Loma and La Jolla to vibrant urban neighborhoods like Downtown and Mission Hills. No matter where you\'re looking, someone on our team knows that market intimately.',
+      teamIntroBody3: 'Led by Principal Broker Hedda Parashos, Palisade Realty continues to grow because our agents grow — through mentorship, cutting-edge technology, and a culture that puts integrity at the center of every transaction.',
+      teamIntroWork: 'Work With Us',
+      teamIntroSearch: 'Search Homes',
+      teamLeaderTag: 'Management &amp; Staff',
+      teamLeaderH2: 'The <em>Leadership</em> Behind Palisade',
+      teamAgentsTag: 'Licensed Real Estate Professionals',
+      teamAgentsH2: 'Meet Our <em>Real Estate</em> Advisors',
+      teamSearchPlaceholder: 'Search agents by name…',
+      teamNoResult: 'No agents found matching your search.',
+      teamWhyTag: 'Why Palisade Realty',
+      teamWhyH2: 'The Difference <em>You\'ll Feel</em>',
       teamWhyLocal: 'Local Expertise',
+      teamWhyLocalDesc: 'Our agents live and work in the communities they serve — from Downtown to Del Mar — giving you insider knowledge no algorithm can replicate.',
       teamWhyClient: 'Client-First Service',
+      teamWhyClientDesc: 'Every decision we make is filtered through one question: what\'s best for the client? That philosophy has earned us hundreds of five-star reviews and lifelong relationships.',
       teamWhyProven: 'Proven Results',
+      teamWhyProvenDesc: 'We have a proven track record of getting results quickly — properties positioned to sell, buyers guided to close, and negotiations handled with precision.',
       teamWhyReachable: 'Always Reachable',
+      teamWhyReachableDesc: 'A direct line of communication at all times — no gatekeepers, no lag, no uncertainty. You\'ll always know exactly where your transaction stands.',
       teamCtaEyebrow: 'Ready to Get Started?',
-      teamCtaTitle: "Let’s Find Your Dream Home",
-      teamCtaSub: 'Our team is ready to guide you through every step of the real estate process.',
+      teamCtaTitle: '<em>Let\'s Find</em> Your Dream Home',
+      teamCtaSub: 'Our team is ready to guide you — whether you\'re buying, selling, or simply exploring your options. Reach out today and connect with a Palisade expert.',
       teamCtaPrimary: 'Contact an Agent',
       teamCtaOutline: 'Search Properties',
 
@@ -426,17 +448,39 @@
 
       /* TEAM PAGE */
       teamHeroEyebrow: 'Bienes Raíces en San Diego',
-      teamHeroTitle: 'Conozca a Nuestro Equipo',
-      teamHeroSub: 'Palisade Realty es un equipo de profesionales inmobiliarios con licencia y experiencia que atiende al metro de San Diego y comunidades circundantes.',
+      teamHeroTitle: 'Conozca a Nuestro <em>Equipo</em>',
+      teamHeroSub: 'Palisade Realty es un equipo de profesionales inmobiliarios con licencia y experiencia que atiende al metro de San Diego — con un historial comprobado y comunicación directa en cada paso.',
       teamHeroPrimary: 'Contáctenos',
-      teamHeroOutline: 'Buscar Casas',
+      teamStatsAgents: 'Agentes en el Equipo',
+      teamStatsYears: 'Años en San Diego',
+      teamStatsCommunities: 'Comunidades Atendidas',
+      teamStatsFamilies: 'Familias Ayudadas',
+      teamIntroTag: 'Nuestra Historia',
+      teamIntroH2: 'Construido sobre <em>Resultados.</em><br>Impulsado por las Personas.',
+      teamIntroBody1: 'Palisade Realty, Inc. es un equipo de agentes inmobiliarios con licencia y experiencia que atiende al área metropolitana de San Diego, CA. Hemos construido nuestra reputación sobre un principio: el cliente siempre es primero. Desde su primera consulta hasta el día del cierre y más allá, brindamos comunicación clara, experiencia en el mercado y resultados en los que puede confiar.',
+      teamIntroBody2: 'Nuestro equipo abarca cada rincón del condado de San Diego — desde comunidades costeras como Point Loma y La Jolla hasta vibrantes vecindarios urbanos como Downtown y Mission Hills. No importa dónde esté buscando, alguien en nuestro equipo conoce ese mercado íntimamente.',
+      teamIntroBody3: 'Bajo el liderazgo de la Corredora Principal Hedda Parashos, Palisade Realty continúa creciendo porque nuestros agentes crecen — a través de la tutoría, tecnología de vanguardia y una cultura que pone la integridad en el centro de cada transacción.',
+      teamIntroWork: 'Trabaje con Nosotros',
+      teamIntroSearch: 'Buscar Casas',
+      teamLeaderTag: 'Gerencia y Personal',
+      teamLeaderH2: 'El <em>Liderazgo</em> Detrás de Palisade',
+      teamAgentsTag: 'Profesionales Inmobiliarios con Licencia',
+      teamAgentsH2: 'Conozca a Nuestros <em>Asesores Inmobiliarios</em>',
+      teamSearchPlaceholder: 'Buscar agentes por nombre…',
+      teamNoResult: 'No se encontraron agentes que coincidan con su búsqueda.',
+      teamWhyTag: 'Por Qué Palisade Realty',
+      teamWhyH2: 'La Diferencia que <em>Sentirá</em>',
       teamWhyLocal: 'Experiencia Local',
+      teamWhyLocalDesc: 'Nuestros agentes viven y trabajan en las comunidades que sirven — desde Downtown hasta Del Mar — briндándole conocimiento interno que ningún algoritmo puede replicar.',
       teamWhyClient: 'Servicio Centrado en el Cliente',
+      teamWhyClientDesc: 'Cada decisión que tomamos se filtra a través de una pregunta: ¿qué es lo mejor para el cliente? Esa filosofía nos ha ganado cientos de reseñas de cinco estrellas y relaciones duraderas.',
       teamWhyProven: 'Resultados Comprobados',
+      teamWhyProvenDesc: 'Tenemos un historial comprobado de obtener resultados rápidamente — propiedades posicionadas para vender, compradores guiados hasta el cierre y negociaciones manejadas con precisión.',
       teamWhyReachable: 'Siempre Disponibles',
+      teamWhyReachableDesc: 'Una línea directa de comunicación en todo momento — sin intermediarios, sin demoras, sin incertidumbre. Siempre sabrá exactamente dónde se encuentra su transacción.',
       teamCtaEyebrow: '¿Listo para Comenzar?',
-      teamCtaTitle: 'Encontremos su Hogar Ideal',
-      teamCtaSub: 'Nuestro equipo está listo para guiarle en cada paso del proceso inmobiliario.',
+      teamCtaTitle: '<em>Encontremos</em> su Hogar Ideal',
+      teamCtaSub: 'Nuestro equipo está listo para guiarle — ya sea que esté comprando, vendiendo o simplemente explorando sus opciones. Contáctenos hoy y conéctese con un experto de Palisade.',
       teamCtaPrimary: 'Contactar a un Agente',
       teamCtaOutline: 'Buscar Propiedades',
 
@@ -883,7 +927,7 @@
     if (tpHeroEy) tpHeroEy.textContent = d.teamHeroEyebrow;
 
     var tpHeroT = document.querySelector('.tp-hero-h1');
-    if (tpHeroT) tpHeroT.textContent = d.teamHeroTitle;
+    if (tpHeroT) tpHeroT.innerHTML = d.teamHeroTitle;
 
     var tpHeroS = document.querySelector('.tp-hero-sub');
     if (tpHeroS) tpHeroS.textContent = d.teamHeroSub;
@@ -891,18 +935,52 @@
     var tpHeroP = document.querySelector('.tp-hero .btn-brand');
     if (tpHeroP) tpHeroP.textContent = d.teamHeroPrimary;
 
-    var tpHeroO = document.querySelector('.tp-hero .btn-outline-brand');
-    if (tpHeroO) tpHeroO.textContent = d.teamHeroOutline;
+    var statLabels = document.querySelectorAll('.tp-stat-label');
+    var statKeys = ['teamStatsAgents', 'teamStatsYears', 'teamStatsCommunities', 'teamStatsFamilies'];
+    statLabels.forEach(function (el, i) { if (statKeys[i]) el.textContent = d[statKeys[i]]; });
+
+    var tpIntroTag = document.querySelector('.tp-intro-tag');
+    if (tpIntroTag) tpIntroTag.textContent = d.teamIntroTag;
+
+    var tpIntroH2 = document.querySelector('.tp-intro-h2');
+    if (tpIntroH2) tpIntroH2.innerHTML = d.teamIntroH2;
+
+    var tpIntroBodies = document.querySelectorAll('.tp-intro-body');
+    var introBodyKeys = ['teamIntroBody1', 'teamIntroBody2', 'teamIntroBody3'];
+    tpIntroBodies.forEach(function (el, i) { if (introBodyKeys[i]) el.textContent = d[introBodyKeys[i]]; });
+
+    var tpIntroWork = document.querySelector('.tp-intro-grid .btn-brand');
+    if (tpIntroWork) tpIntroWork.textContent = d.teamIntroWork;
+
+    var tpIntroSrch = document.querySelector('.tp-intro-grid .btn-outline-brand');
+    if (tpIntroSrch) tpIntroSrch.textContent = d.teamIntroSearch;
+
+    var tpSecTags = document.querySelectorAll('.tp-sec-tag');
+    var tpSecH2s = document.querySelectorAll('.tp-sec-h2');
+    var secTagKeys = ['teamLeaderTag', 'teamAgentsTag', 'teamWhyTag'];
+    var secH2Keys = ['teamLeaderH2', 'teamAgentsH2', 'teamWhyH2'];
+    tpSecTags.forEach(function (el, i) { if (secTagKeys[i]) el.innerHTML = d[secTagKeys[i]]; });
+    tpSecH2s.forEach(function (el, i) { if (secH2Keys[i]) el.innerHTML = d[secH2Keys[i]]; });
+
+    var tpSearch = document.getElementById('agents-search');
+    if (tpSearch) tpSearch.placeholder = d.teamSearchPlaceholder;
+
+    var tpNoRes = document.getElementById('agents-no-result');
+    if (tpNoRes) tpNoRes.textContent = d.teamNoResult;
 
     var whyTitles = document.querySelectorAll('.tp-why-title');
     var whyKeys = ['teamWhyLocal', 'teamWhyClient', 'teamWhyProven', 'teamWhyReachable'];
     whyTitles.forEach(function (el, i) { if (whyKeys[i]) el.textContent = d[whyKeys[i]]; });
 
+    var whyDescs = document.querySelectorAll('.tp-why-desc');
+    var whyDescKeys = ['teamWhyLocalDesc', 'teamWhyClientDesc', 'teamWhyProvenDesc', 'teamWhyReachableDesc'];
+    whyDescs.forEach(function (el, i) { if (whyDescKeys[i]) el.textContent = d[whyDescKeys[i]]; });
+
     var tpCtaEy = document.querySelector('.tp-cta .tp-eyebrow');
     if (tpCtaEy) tpCtaEy.textContent = d.teamCtaEyebrow;
 
     var tpCtaT = document.querySelector('.tp-cta-h2');
-    if (tpCtaT) tpCtaT.textContent = d.teamCtaTitle;
+    if (tpCtaT) tpCtaT.innerHTML = d.teamCtaTitle;
 
     var tpCtaS = document.querySelector('.tp-cta-sub');
     if (tpCtaS) tpCtaS.textContent = d.teamCtaSub;
