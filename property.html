@@ -810,6 +810,7 @@
         '<p class="ph-empty-sub">Try a different status filter or check back soon for new listings.</p>';
       grid.appendChild(empty);
       counter.textContent = '0 listings';
+      if (window.__prApplyLang) { if ((localStorage.getItem('pr-lang')||'en') === 'es') window.__prApplyLang(); }
       return;
     }
 
@@ -821,6 +822,7 @@
       /* staggered fade-in */
       setTimeout(function () { card.classList.add('is-visible'); }, 40 + i * 65);
     });
+    if (window.__prApplyLang) { if ((localStorage.getItem('pr-lang')||'en') === 'es') window.__prApplyLang(); }
   }
 
   /* ── filter chips ─────────────────────────── */

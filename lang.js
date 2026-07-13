@@ -90,6 +90,54 @@
       flBaths: 'Baths',
       flSqft: 'Sq Ft',
       flViewProp: 'View Property',
+      /* PROPERTY GRID PAGE (property.html) */
+      propGridEyebrow: 'Palisade Realty Exclusives',
+      propGridTitle:   'Featured Properties',
+      propGridSub:     'Discover San Diego\u2019s finest luxury homes, personally curated by the Palisade Realty team.',
+      propChipAll:     'All',
+      propChipSale:    'For Sale',
+      propChipPending: 'Pending',
+      propChipSold:    'Sold',
+      propSortNew:     'Newest',
+      propSortAsc:     'Price: Low to High',
+      propSortDesc:    'Price: High to Low',
+      propViewBtn:     'View Property',
+      propCtaEyebrow:  'We\u2019re Here to Help',
+      propCtaTitle:    'Looking for Something Specific?',
+      propCtaBody:     'Our agents have deep knowledge of every San Diego neighborhood. Tell us what you\u2019re looking for and we\u2019ll find it.',
+      propCtaContact:  'Contact an Agent',
+      propCtaAll:      'View All Listings',
+      propListings:    'listings',
+      propListing:     'listing',
+      propEmptyTitle:  'No listings match this filter',
+      propEmptySub:    'Try a different status filter or check back soon for new listings.',
+      /* PROPERTY DETAIL PAGES (properties/*.html) */
+      ppAttribution:   'Featured by Hedda Parashos \xb7 Palisade Realty',
+      ppFeaturesTitle: 'Property Features',
+      ppLocationTitle: 'Location',
+      ppExploreArea:   'Explore the Area',
+      ppLivingIn:      'Living in',
+      ppHighlights:    'Why You\u2019ll Love It Here',
+      ppSchoolsTitle:  'Schools Serving the Area',
+      ppSchoolPublic:  'Public',
+      ppSchoolPrivate: 'Private \x26 Charter',
+      ppSchoolDisclaim:'School assignments are address-specific and subject to change. Verify enrollment zoning directly with the district.',
+      ppParksTitle:    'Parks \x26 Recreation',
+      ppTourTitle:     'Want to See This Home in Person?',
+      ppTourBody:      'Reach out anytime \u2014 I\u2019ll set up a private tour at a time that works for you and walk through every detail of the property.',
+      ppTourRequest:   'Request a Tour',
+      ppTourCall:      'Call (619) 794-0218',
+      ppOthersTitle:   'Other Featured Listings',
+      ppStatBeds:      'Beds',
+      ppStatBaths:     'Baths',
+      ppStatLiving:    'Living Area',
+      ppStatLot:       'Lot',
+      ppStatBuilt:     'Built',
+      ppOpenHouse:     'Open House',
+      ppSchoolCol:     'School',
+      ppGradesCol:     'Grades',
+      ppDistrictCol:   'District',
+      ppTypeCol:       'Type',
 
       /* HOMEPAGE — testimonials */
       testEyebrow: 'Client Reviews',
@@ -404,6 +452,54 @@
       flBaths: 'Baños',
       flSqft: 'Pie²',
       flViewProp: 'Ver Propiedad',
+      /* PROPERTY GRID PAGE (property.html) */
+      propGridEyebrow: 'Exclusivos de Palisade Realty',
+      propGridTitle:   'Propiedades Destacadas',
+      propGridSub:     'Descubre las mejores propiedades de lujo en San Diego, seleccionadas personalmente por el equipo de Palisade Realty.',
+      propChipAll:     'Todas',
+      propChipSale:    'En Venta',
+      propChipPending: 'Pendiente',
+      propChipSold:    'Vendido',
+      propSortNew:     'M\xe1s Reciente',
+      propSortAsc:     'Precio: Menor a Mayor',
+      propSortDesc:    'Precio: Mayor a Menor',
+      propViewBtn:     'Ver Propiedad',
+      propCtaEyebrow:  'Estamos Para Ayudarte',
+      propCtaTitle:    '\xbfBuscas Algo en Particular?',
+      propCtaBody:     'Nuestros agentes conocen a fondo cada vecindario de San Diego. Cu\xe9ntanos lo que buscas y lo encontramos.',
+      propCtaContact:  'Contactar a un Agente',
+      propCtaAll:      'Ver Todas las Propiedades',
+      propListings:    'propiedades',
+      propListing:     'propiedad',
+      propEmptyTitle:  'Ninguna propiedad coincide con este filtro',
+      propEmptySub:    'Prueba con otro filtro de estado o vuelve pronto para ver nuevas propiedades.',
+      /* PROPERTY DETAIL PAGES (properties/*.html) */
+      ppAttribution:   'Destacada por Hedda Parashos \xb7 Palisade Realty',
+      ppFeaturesTitle: 'Caracter\xedsticas de la Propiedad',
+      ppLocationTitle: 'Ubicaci\xf3n',
+      ppExploreArea:   'Explora la Zona',
+      ppLivingIn:      'Vivir en',
+      ppHighlights:    'Por Qu\xe9 Te Encantar\xe1 Vivir Aqu\xed',
+      ppSchoolsTitle:  'Escuelas en la Zona',
+      ppSchoolPublic:  'P\xfablicas',
+      ppSchoolPrivate: 'Privadas y Charter',
+      ppSchoolDisclaim:'La asignaci\xf3n de escuelas depende de la direcci\xf3n y puede cambiar. Verifica la zona de inscripci\xf3n directamente con el distrito.',
+      ppParksTitle:    'Parques y Recreaci\xf3n',
+      ppTourTitle:     '\xbfQuieres Ver Esta Casa en Persona?',
+      ppTourBody:      'Cont\xe1ctame cuando quieras \u2014 coordinar\xe9 un recorrido privado a tu conveniencia y te explicar\xe9 cada detalle de la propiedad.',
+      ppTourRequest:   'Solicitar un Recorrido',
+      ppTourCall:      'Llamar al (619) 794-0218',
+      ppOthersTitle:   'Otras Propiedades Destacadas',
+      ppStatBeds:      'Rec\xe1maras',
+      ppStatBaths:     'Ba\xf1os',
+      ppStatLiving:    '\xc1rea Habitable',
+      ppStatLot:       'Terreno',
+      ppStatBuilt:     'A\xf1o Construido',
+      ppOpenHouse:     'Casa Abierta',
+      ppSchoolCol:     'Escuela',
+      ppGradesCol:     'Grados',
+      ppDistrictCol:   'Distrito',
+      ppTypeCol:       'Tipo',
 
       /* HOMEPAGE — testimonials */
       testEyebrow: 'Reseñas de Clientes',
@@ -2877,6 +2973,144 @@ var AGENT_TRANSLATIONS = {
       el.textContent = d.flViewProp;
     });
 
+    /* ── PROPERTY GRID PAGE (property.html) ────────────────── */
+    if (document.querySelector('.ph-hero')) {
+      var phSwap = function(sel, key) {
+        var el = document.querySelector(sel);
+        if (!el) return;
+        if (el.dataset.langEn === undefined) el.dataset.langEn = el.textContent;
+        el.textContent = lang === 'es' ? d[key] : el.dataset.langEn;
+      };
+      phSwap('.ph-eyebrow',    'propGridEyebrow');
+      phSwap('.ph-title',      'propGridTitle');
+      phSwap('.ph-sub',        'propGridSub');
+      phSwap('.ph-cta-eyebrow','propCtaEyebrow');
+      phSwap('.ph-cta-title',  'propCtaTitle');
+      phSwap('.ph-cta-body',   'propCtaBody');
+      /* filter chips */
+      var chipMap = { all: 'propChipAll', active: 'propChipSale', pending: 'propChipPending', sold: 'propChipSold' };
+      document.querySelectorAll('.ph-chip').forEach(function(btn) {
+        var key = chipMap[btn.getAttribute('data-filter')];
+        if (!key) return;
+        if (btn.dataset.langEn === undefined) btn.dataset.langEn = btn.textContent;
+        btn.textContent = lang === 'es' ? d[key] : btn.dataset.langEn;
+      });
+      /* sort select options */
+      var phSort = document.getElementById('ph-sort');
+      if (phSort) {
+        var sortMap = [{ val:'default', key:'propSortNew' }, { val:'price-asc', key:'propSortAsc' }, { val:'price-desc', key:'propSortDesc' }];
+        sortMap.forEach(function(m) {
+          var opt = phSort.querySelector('option[value="' + m.val + '"]');
+          if (!opt) return;
+          if (!opt.dataset.langEn) opt.dataset.langEn = opt.textContent;
+          opt.textContent = lang === 'es' ? d[m.key] : opt.dataset.langEn;
+        });
+      }
+      /* CTA buttons (SVG inside — swap first text node) */
+      [{ sel: '.ph-cta-btn--gold', key: 'propCtaContact' }, { sel: '.ph-cta-btn--outline', key: 'propCtaAll' }].forEach(function(item) {
+        var el = document.querySelector(item.sel);
+        if (!el) return;
+        var tn = el.childNodes[0];
+        if (!tn || tn.nodeType !== 3) return;
+        if (!el.dataset.langEn) el.dataset.langEn = tn.nodeValue.trim();
+        tn.nodeValue = (lang === 'es' ? d[item.key] : el.dataset.langEn) + ' ';
+      });
+      /* rendered card badges */
+      var phBadgeMap = { 'For Sale': d.propChipSale, 'Pending': d.propChipPending, 'Sold': d.propChipSold };
+      document.querySelectorAll('.ph-badge').forEach(function(el) {
+        if (!el.dataset.langEn) el.dataset.langEn = el.textContent.trim();
+        el.textContent = lang === 'es' ? (phBadgeMap[el.dataset.langEn] || el.dataset.langEn) : el.dataset.langEn;
+      });
+      /* rendered card View Property buttons */
+      document.querySelectorAll('.ph-card-btn').forEach(function(el) {
+        var tn = el.childNodes[0];
+        if (!tn || tn.nodeType !== 3) return;
+        if (!el.dataset.langEn) el.dataset.langEn = tn.nodeValue.trim();
+        tn.nodeValue = (lang === 'es' ? d.propViewBtn : el.dataset.langEn) + ' ';
+      });
+      /* count text */
+      var phCount = document.getElementById('ph-count');
+      if (phCount && phCount.textContent) {
+        var phMatch = phCount.textContent.match(/^(\d+)/);
+        if (phMatch) {
+          var phNum = parseInt(phMatch[1]);
+          phCount.textContent = phNum + ' ' + (phNum === 1 ? d.propListing : d.propListings);
+        }
+      }
+      /* empty state */
+      var phETitle = document.querySelector('.ph-empty-title');
+      var phESub   = document.querySelector('.ph-empty-sub');
+      if (phETitle) { if (!phETitle.dataset.langEn) phETitle.dataset.langEn = phETitle.textContent; phETitle.textContent = lang === 'es' ? d.propEmptyTitle : phETitle.dataset.langEn; }
+      if (phESub)   { if (!phESub.dataset.langEn)   phESub.dataset.langEn   = phESub.textContent;   phESub.textContent   = lang === 'es' ? d.propEmptySub   : phESub.dataset.langEn; }
+    }
+
+    /* ── PROPERTY DETAIL PAGES (properties/*.html) ────────────── */
+    if (document.body && document.body.classList.contains('property-page')) {
+      var ppS = function(sel, esText) {
+        var el = document.querySelector(sel);
+        if (!el) return;
+        if (el.dataset.langEn === undefined) el.dataset.langEn = el.textContent;
+        el.textContent = lang === 'es' ? esText : el.dataset.langEn;
+      };
+      ppS('.pp-attribution',                   d.ppAttribution);
+      ppS('#pp-features-section h2',            d.ppFeaturesTitle);
+      ppS('.pp-map-section h2',                 d.ppLocationTitle);
+      ppS('.pp-neighborhood-card .overline',    d.ppExploreArea);
+      ppS('.pp-tour h2',                        d.ppTourTitle);
+      ppS('.pp-tour > p',                       d.ppTourBody);
+      ppS('#pp-others-section h2',              d.ppOthersTitle);
+      ppS('#pp-community-highlights-block h3',  d.ppHighlights);
+      ppS('#pp-community-schools-block h3',     d.ppSchoolsTitle);
+      ppS('.pp-schools-disclaimer',             d.ppSchoolDisclaim);
+      ppS('#pp-community-parks-block h3',       d.ppParksTitle);
+      /* Open House label */
+      ppS('.pp-openhouse-label', d.ppOpenHouse);
+      /* Tour buttons */
+      var ppReqBtn = document.getElementById('pp-tour-mailto');
+      if (ppReqBtn) { if (!ppReqBtn.dataset.langEn) ppReqBtn.dataset.langEn = ppReqBtn.textContent.trim(); ppReqBtn.textContent = lang === 'es' ? d.ppTourRequest : ppReqBtn.dataset.langEn; }
+      var ppCallBtn = document.querySelector('.pp-cta-btn-outline[href^="tel:"]');
+      if (ppCallBtn) { if (!ppCallBtn.dataset.langEn) ppCallBtn.dataset.langEn = ppCallBtn.textContent.trim(); ppCallBtn.textContent = lang === 'es' ? d.ppTourCall : ppCallBtn.dataset.langEn; }
+      /* Stat labels */
+      var ppStatMap = { 'Beds': d.ppStatBeds, 'Baths': d.ppStatBaths, 'Living Area': d.ppStatLiving, 'Lot': d.ppStatLot, 'Built': d.ppStatBuilt };
+      document.querySelectorAll('.pp-stat span').forEach(function(el) {
+        if (!el.dataset.langEn) el.dataset.langEn = el.textContent.trim();
+        el.textContent = (lang === 'es' && ppStatMap[el.dataset.langEn]) ? ppStatMap[el.dataset.langEn] : el.dataset.langEn;
+      });
+      /* Schools column headings */
+      var ppSchMap = { 'Public': d.ppSchoolPublic, 'Private \x26 Charter': d.ppSchoolPrivate };
+      document.querySelectorAll('.pp-schools-col h4').forEach(function(el) {
+        if (!el.dataset.langEn) el.dataset.langEn = el.textContent.trim();
+        el.textContent = (lang === 'es' && ppSchMap[el.dataset.langEn]) ? ppSchMap[el.dataset.langEn] : el.dataset.langEn;
+      });
+      /* Schools table headers */
+      var ppThMap = { 'School': d.ppSchoolCol, 'Grades': d.ppGradesCol, 'District': d.ppDistrictCol, 'Type': d.ppTypeCol };
+      document.querySelectorAll('.pp-schools-table th').forEach(function(el) {
+        if (!el.dataset.langEn) el.dataset.langEn = el.textContent.trim();
+        el.textContent = (lang === 'es' && ppThMap[el.dataset.langEn]) ? ppThMap[el.dataset.langEn] : el.dataset.langEn;
+      });
+      /* 'Living in' prefix text node */
+      var ppLiEl = document.querySelector('.pp-community-title');
+      if (ppLiEl) {
+        ppLiEl.childNodes.forEach(function(n) {
+          if (n.nodeType === 3 && n.nodeValue.trim()) {
+            if (!ppLiEl.dataset.liEn) ppLiEl.dataset.liEn = n.nodeValue.trim();
+            n.nodeValue = (lang === 'es' ? d.ppLivingIn : ppLiEl.dataset.liEn) + ' ';
+          }
+        });
+      }
+      /* Neighborhood community guide link */
+      var ppNhLink = document.getElementById('pp-neighborhood-link');
+      if (ppNhLink && ppNhLink.textContent && ppNhLink.textContent !== '\u2192') {
+        if (!ppNhLink.dataset.langEn) ppNhLink.dataset.langEn = ppNhLink.textContent.trim();
+        if (lang === 'es') {
+          var ppComName = ppNhLink.dataset.langEn.replace(' Community Guide \u2192', '').trim();
+          ppNhLink.textContent = 'Gu\xeda de Comunidad: ' + ppComName + ' \u2192';
+        } else {
+          ppNhLink.textContent = ppNhLink.dataset.langEn;
+        }
+      }
+    }
+
     /* ── TOGGLE BUTTON STATE ────────────────────────────────── */
     var btn = document.getElementById('lang-toggle');
     if (btn) {
@@ -2909,5 +3143,8 @@ var AGENT_TRANSLATIONS = {
   window.addEventListener('fl-loaded', function () {
     applyLang(getLang());
   });
+
+  /* Expose for async re-apply (used by property detail pages after data binding) */
+  window.__prApplyLang = function () { applyLang(getLang()); };
 
 })();

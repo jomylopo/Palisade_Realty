@@ -1095,6 +1095,7 @@
             updateArrows()
           })
         }
+      window.__prApplyLang && window.__prApplyLang();
       })
       .catch(function (err) {
         $('pp-body').innerHTML = '<p>Couldn&rsquo;t load this property. <a href="/" style="color:var(--bronze);">&larr; Back to home</a></p>'
