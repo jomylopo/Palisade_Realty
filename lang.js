@@ -210,6 +210,43 @@
       teamCtaPrimary: 'Contact an Agent',
       teamCtaOutline: 'Search Properties',
 
+      /* AGENT PAGES */
+      apBreadcrumbTeam: 'Our Team',
+      apHeroEmail: 'Send an Email',
+      apHeroViewListings: 'View Listings',
+      apSidebarLabel: 'Get in Touch',
+      apSidebarPhone: 'Phone',
+      apSidebarEmail: 'Email',
+      apSidebarMsg: 'Send a Message',
+      apSidebarVal: 'Get a Home Valuation',
+      apAreasEyebrow: 'Coverage',
+      apAreasH2: 'Areas I <em>Serve</em>',
+      apAreasSub: 'With deep roots across San Diego County, I bring local expertise to every corner of the region — from the coast to the inland communities.',
+      apAllListingsEyebrow: 'Palisade Realty',
+      apAllListingsH2: 'All <em>Listings</em>',
+      apContactLeftEyebrow: 'Direct Contact',
+      apContactLeftBody: "Ready to buy, sell, or just explore your options? I'm here to guide you with honest advice, deep market knowledge, and a commitment to results at every step of the process.",
+      apFormLabelFirst: 'First Name',
+      apFormLabelLast: 'Last Name',
+      apFormLabelEmail: 'Email Address',
+      apFormLabelPhone: 'Phone Number',
+      apFormLabelInterest: "I'm Interested In",
+      apFormOptSelect: 'Select one…',
+      apFormOptBuying: 'Buying a Home',
+      apFormOptSelling: 'Selling My Home',
+      apFormOptBoth: 'Buying &amp; Selling',
+      apFormOptInvesting: 'Investment Property',
+      apFormOptOther: 'Other',
+      apFormLabelMessage: 'Message',
+      apFormPlaceholderMsg: 'Tell me about your real estate goals…',
+      apFormConsentText: 'By providing your telephone number, you are consenting to allow Palisade Realty, Inc. to contact you with informational communications via voice call, AI voice call, and/or text message for real estate services. Message and data rates may apply. Reply STOP to opt out. See our ',
+      apFormConsentLink: 'Privacy Policy',
+      apFormSubmit: 'Send Message',
+      apRelatedEyebrow: 'The Team',
+      apRelatedH2: 'Meet More of Our <em>Agents</em>',
+      apRelatedViewProfile: 'View Profile',
+      apRelatedViewAll: 'View All Agents',
+
       /* TESTIMONIALS PAGE */
       testiHeroEyebrow: 'Trusted by Hundreds of Families',
       testiHeroTitle: 'Client Testimonials',
@@ -484,6 +521,43 @@
       teamCtaPrimary: 'Contactar a un Agente',
       teamCtaOutline: 'Buscar Propiedades',
 
+      /* AGENT PAGES */
+      apBreadcrumbTeam: 'Nuestro Equipo',
+      apHeroEmail: 'Enviar un Correo',
+      apHeroViewListings: 'Ver Propiedades',
+      apSidebarLabel: 'Contáctenos',
+      apSidebarPhone: 'Teléfono',
+      apSidebarEmail: 'Correo Electrónico',
+      apSidebarMsg: 'Enviar un Mensaje',
+      apSidebarVal: 'Obtener una Valoración',
+      apAreasEyebrow: 'Cobertura',
+      apAreasH2: 'Áreas que <em>Sirvo</em>',
+      apAreasSub: 'Con profundas raíces en el condado de San Diego, brindo experiencia local a cada rincón de la región — desde la costa hasta las comunidades del interior.',
+      apAllListingsEyebrow: 'Palisade Realty',
+      apAllListingsH2: 'Todas las <em>Propiedades</em>',
+      apContactLeftEyebrow: 'Contacto Directo',
+      apContactLeftBody: '¿Listo para comprar, vender o explorar sus opciones? Estoy aquí para orientarle con consejos honestos, profundo conocimiento del mercado y un compromiso de resultados en cada paso del proceso.',
+      apFormLabelFirst: 'Nombre',
+      apFormLabelLast: 'Apellido',
+      apFormLabelEmail: 'Correo Electrónico',
+      apFormLabelPhone: 'Número de Teléfono',
+      apFormLabelInterest: 'Me Interesa',
+      apFormOptSelect: 'Seleccione una opción…',
+      apFormOptBuying: 'Comprar una Casa',
+      apFormOptSelling: 'Vender mi Casa',
+      apFormOptBoth: 'Comprar y Vender',
+      apFormOptInvesting: 'Propiedad de Inversión',
+      apFormOptOther: 'Otro',
+      apFormLabelMessage: 'Mensaje',
+      apFormPlaceholderMsg: 'Cuénteme sobre sus objetivos inmobiliarios…',
+      apFormConsentText: 'Al proporcionar su número de teléfono, usted consiente que Palisade Realty, Inc. se comunique con usted con comunicaciones informativas por llamada de voz, llamada de voz con IA y/o mensaje de texto para servicios inmobiliarios. Se pueden aplicar tarifas de mensajes y datos. Responda STOP para cancelar. Consulte nuestra ',
+      apFormConsentLink: 'Política de Privacidad',
+      apFormSubmit: 'Enviar Mensaje',
+      apRelatedEyebrow: 'El Equipo',
+      apRelatedH2: 'Conozca a Más de Nuestros <em>Agentes</em>',
+      apRelatedViewProfile: 'Ver Perfil',
+      apRelatedViewAll: 'Ver Todos los Agentes',
+
       /* TESTIMONIALS PAGE */
       testiHeroEyebrow: 'La Confianza de Cientos de Familias',
       testiHeroTitle: 'Testimonios de Clientes',
@@ -590,6 +664,70 @@
   }
 
   /* ── Core translate function ─────────────────────────────── */
+  /* --- Per-agent ES translations (EN is read from the DOM on first swap) --- */
+  var AGENT_TRANSLATIONS = {
+    'tom-parashos': {
+      bioEyebrow: 'Liderazgo',
+      bioH2: 'Conozca a <em>Tom</em>',
+      bioBody: [
+        'Como Principal y Co-Propietario de Palisade Realty, Tom Parashos aporta una profunda experiencia en bienes raíces y una mentalidad centrada en el cliente a cada transacción. Trabajando junto a la CEO Hedda Parashos, Tom ha sido fundamental en el crecimiento de Palisade Realty hasta convertirla en una correduría con más de 80 agentes que sirven a todos los rincones del condado de San Diego.',
+        'El compromiso de Tom con la excelencia operativa y las relaciones genuinas con los clientes le ha ganado una reputación como uno de los profesionales inmobiliarios más confiables de San Diego. Ya sea que esté comprando su primera casa o vendiendo una propiedad que ha tenido por mucho tiempo, Tom y el equipo de Palisade están aquí para guiarle en cada paso.'
+      ],
+      awardsEyebrow: 'Mi Compromiso',
+      awardsH2: 'Construido sobre la <em>Confianza</em>',
+      awardNames: ['Experiencia Local', 'Profesional Licenciado', 'Palisade Comprobado'],
+      awardDescs: [
+        'Profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una verdadera ventaja en cada transacción.',
+        'Un REALTOR® licenciado en California con Palisade Realty, Inc. — totalmente comprometido a representar sus mejores intereses desde la búsqueda hasta el cierre.',
+        'Respaldado por los sistemas, tecnología y equipo comprobados de Palisade Realty — brindando resultados consistentes centrados en el cliente en todo el condado de San Diego.'
+      ],
+      allListingsSub: 'Explore las propiedades actuales representadas por Tom Parashos en el condado de San Diego.',
+      contactH2: '<em>Contacte</em> a Tom',
+      ctaSub: 'Tom está listo para guiarle — ya sea que esté comprando, vendiendo o explorando sus opciones. Contáctenos hoy para una conversación sin presiones.',
+      ctaPrimary: 'Contactar a Tom'
+    },
+    'erick-salgado': {
+      bioEyebrow: 'Agente',
+      bioH2: 'Conozca a <em>Erick</em>',
+      bioBody: [
+        'Con tanto en juego en el sector inmobiliario, con quién trabaja es especialmente crítico. Ya sea que esté comprando su primera casa o vendiendo su hogar familiar de 30 años, puede esperar un alto nivel de dedicación y desempeño de mi parte como REALTOR®. Educarme constantemente a mí mismo y a mis clientes sobre las tendencias de vivienda y la salud del mercado es fundamental para tomar decisiones críticas en bienes raíces. Mi experiencia en el análisis, la comercialización y las transacciones de bienes raíces residenciales me permite ayudar a mis clientes a alcanzar sus metas inmobiliarias.',
+        'Desde 2014, he sido parte de la creación y el crecimiento del equipo en Palisade Realty. Mi experiencia en tecnología inmobiliaria y el excepcional servicio al cliente ha ayudado a elevar nuestra correduría en la industria. En 2017, gané el premio de Agente Destacado en Palisade Realty, seguido del premio de Productor Principal en 2018. Ese año obtuve Excelencia en Servicio al Cliente de Homesnap + Google. Cientos de transacciones representando a clientes locales e internacionales en todo el condado de San Diego le ha dado a todo nuestro equipo un conocimiento íntimo del proceso de compra y venta para brindar resultados consistentes. Además, mis años de experiencia como paralegal les brindan a mis clientes una comprensión más clara de sus acuerdos.'
+      ],
+      awardsEyebrow: 'Reconocimientos',
+      awardsH2: 'Un Historial de <em>Excelencia</em>',
+      awardNames: ['Agente Destacado', 'Productor Principal', 'Excelencia en Servicio'],
+      awardDescs: [
+        'Reconocido como el agente de mejor desempeño en Palisade Realty por su excelente volumen de ventas y satisfacción del cliente en todo el condado de San Diego.',
+        'Obtuvo la designación de Productor Principal en Palisade Realty, reflejando un volumen de transacciones excepcional y resultados consistentes para los clientes.',
+        'Galardonado con Excelencia en Servicio al Cliente por Homesnap + Google — un testimonio del enfoque centrado en el cliente en cada etapa de la transacción.'
+      ],
+      allListingsSub: 'Explore las propiedades actuales representadas por Erick Salgado en el condado de San Diego.',
+      contactH2: '<em>Contacte</em> a Erick',
+      ctaSub: 'Erick está listo para guiarle — ya sea que esté comprando, vendiendo o explorando sus opciones. Contáctenos hoy para una conversación sin presiones.',
+      ctaPrimary: 'Contactar a Erick'
+    },
+    'hedda-parashos': {
+      bioEyebrow: 'Liderazgo',
+      bioH2: 'Conozca a <em>Hedda</em>',
+      bioBody: [
+        'Con más de 15 años de experiencia en bienes raíces en San Diego, Hedda Parashos ha construido Palisade Realty como una de las corredurías más reconocidas del condado. Como CEO y Corredora Principal (CA DRE #01773167), lidera un equipo de más de 80 profesionales licenciados dedicados a brindar resultados excepcionales para compradores y vendedores en todo el condado de San Diego. La profunda experiencia de Hedda en el mercado y su compromiso con el servicio centrado en el cliente son el fundamento de todo lo que Palisade Realty representa.',
+        'Desde comunidades costeras como La Jolla y Coronado hasta vecindarios vibrantes como Downtown y Mission Hills, los agentes de Hedda cubren cada rincón del condado de San Diego. Bajo su liderazgo, Palisade Realty ha ayudado a más de 1,000 familias a encontrar su hogar perfecto — con consejos honestos, comunicación clara y un historial que habla por sí solo.'
+      ],
+      awardsEyebrow: 'Reconocimientos',
+      awardsH2: 'Un Historial de <em>Excelencia</em>',
+      awardNames: ['Años en San Diego', 'Agentes Liderados', 'Familias Ayudadas'],
+      awardDescs: [
+        'Más de 15 años de experiencia en bienes raíces en el condado de San Diego, construyendo una de las corredurías más respetadas de la región desde cero.',
+        'Como Corredora Principal y CEO, Hedda ha reclutado y orientado a un equipo de más de 80 profesionales licenciados que sirven a todos los rincones del condado de San Diego.',
+        'Más de 1,000 familias guiadas en la compra, venta e inversión en bienes raíces en San Diego — con una cultura centrada en el cliente en el centro de cada transacción.'
+      ],
+      allListingsSub: 'Explore las propiedades actuales representadas por Hedda Parashos en el condado de San Diego.',
+      contactH2: '<em>Contacte</em> a Hedda',
+      ctaSub: 'Hedda está lista para guiarle — ya sea que esté comprando, vendiendo o explorando sus opciones. Contáctenos hoy para una conversación sin presiones.',
+      ctaPrimary: 'Contactar a Hedda'
+    }
+  };
+
   function applyLang(lang) {
     var d = DICT[lang];
     document.documentElement.lang = lang;
@@ -923,6 +1061,7 @@
     cmTiles.forEach(function (el, i) { if (tileKeys[i]) el.textContent = d[tileKeys[i]]; });
 
     /* ── TEAM PAGE ──────────────────────────────────────────── */
+    if (document.querySelector('.tp-hero')) {
     var tpHeroEy = document.querySelector('.tp-hero .tp-eyebrow');
     if (tpHeroEy) tpHeroEy.textContent = d.teamHeroEyebrow;
 
@@ -990,6 +1129,137 @@
 
     var tpCtaO = document.querySelector('.tp-cta .btn-outline-white');
     if (tpCtaO) tpCtaO.textContent = d.teamCtaOutline;
+    } /* end .tp-hero guard */
+
+    /* ── AGENT PAGES (team-page/*.html) ────────────────────────── */
+    if (document.querySelector('.ap-hero')) {
+      var apSlug = window.location.pathname.replace(/.*\/([^\/]+?)(?:\.html)?$/, '$1');
+      var apTrans = AGENT_TRANSLATIONS[apSlug] || {};
+
+      /* helper: save EN innerHTML on first swap, then swap ES ↔ EN */
+      function apSwap(el, esContent) {
+        if (!el) return;
+        if (el.dataset.langEn === undefined) el.dataset.langEn = el.innerHTML;
+        el.innerHTML = (lang === 'es' && esContent) ? esContent : el.dataset.langEn;
+      }
+
+      /* breadcrumb */
+      var apBcTeam = document.querySelector('.ap-breadcrumb a[href*="team.html"]');
+      if (apBcTeam) apBcTeam.textContent = d.apBreadcrumbTeam;
+
+      /* hero buttons */
+      var apEmailBtn = document.querySelector('.ap-hero-btn[href^="mailto:"]');
+      if (apEmailBtn) svgStart(apEmailBtn, d.apHeroEmail);
+      var apViewBtn = document.querySelector('.ap-hero-btn[href*="search.palisaderealty.com"]');
+      if (apViewBtn) svgStart(apViewBtn, d.apHeroViewListings);
+
+      /* bio (per-agent) */
+      apSwap(document.querySelector('.ap-bio-eyebrow'), apTrans.bioEyebrow);
+      apSwap(document.querySelector('.ap-bio-h2'), apTrans.bioH2);
+      document.querySelectorAll('.ap-bio-body').forEach(function(el, i) {
+        apSwap(el, apTrans.bioBody && apTrans.bioBody[i]);
+      });
+
+      /* bio sidebar */
+      var apSdLbl = document.querySelector('.ap-contact-sidebar-label');
+      if (apSdLbl) apSdLbl.textContent = d.apSidebarLabel;
+      var apSdDtl = document.querySelectorAll('.ap-contact-sidebar-detail-label');
+      if (apSdDtl[0]) apSdDtl[0].textContent = d.apSidebarPhone;
+      if (apSdDtl[1]) apSdDtl[1].textContent = d.apSidebarEmail;
+      var apSdBtns = document.querySelectorAll('.ap-contact-sidebar-btn');
+      if (apSdBtns[0]) apSdBtns[0].textContent = d.apSidebarMsg;
+      if (apSdBtns[1]) apSdBtns[1].textContent = d.apSidebarVal;
+
+      /* awards (per-agent) */
+      apSwap(document.querySelector('.ap-awards-eyebrow'), apTrans.awardsEyebrow);
+      apSwap(document.querySelector('.ap-awards-h2'), apTrans.awardsH2);
+      document.querySelectorAll('.ap-award-name').forEach(function(el, i) {
+        apSwap(el, apTrans.awardNames && apTrans.awardNames[i]);
+      });
+      document.querySelectorAll('.ap-award-desc').forEach(function(el, i) {
+        apSwap(el, apTrans.awardDescs && apTrans.awardDescs[i]);
+      });
+
+      /* areas */
+      var apAreasEyEl = document.querySelector('.ap-areas-eyebrow');
+      if (apAreasEyEl) apAreasEyEl.textContent = d.apAreasEyebrow;
+      var apAreasH2El = document.querySelector('.ap-areas-h2');
+      if (apAreasH2El) apAreasH2El.innerHTML = d.apAreasH2;
+      var apAreasSubEl = document.querySelector('.ap-areas-sub');
+      if (apAreasSubEl) apAreasSubEl.textContent = d.apAreasSub;
+
+      /* all listings */
+      var apAllEyEl = document.querySelector('.ap-all-listings-eyebrow');
+      if (apAllEyEl) apAllEyEl.textContent = d.apAllListingsEyebrow;
+      var apAllH2El = document.querySelector('.ap-all-listings-h2');
+      if (apAllH2El) apAllH2El.innerHTML = d.apAllListingsH2;
+      apSwap(document.querySelector('.ap-all-listings-sub'), apTrans.allListingsSub);
+
+      /* contact */
+      var apCtLEyEl = document.querySelector('.ap-contact-left-eyebrow');
+      if (apCtLEyEl) apCtLEyEl.textContent = d.apContactLeftEyebrow;
+      apSwap(document.querySelector('.ap-contact-left-h2'), apTrans.contactH2);
+      var apCtBodyEl = document.querySelector('.ap-contact-left-body');
+      if (apCtBodyEl) {
+        if (apCtBodyEl.dataset.langEn === undefined) apCtBodyEl.dataset.langEn = apCtBodyEl.innerHTML;
+        apCtBodyEl.textContent = lang === 'es' ? d.apContactLeftBody : apCtBodyEl.dataset.langEn;
+      }
+
+      /* form labels */
+      var apFLbls = document.querySelectorAll('.ap-form-label');
+      var fLblKeys = ['apFormLabelFirst','apFormLabelLast','apFormLabelEmail','apFormLabelPhone','apFormLabelInterest','apFormLabelMessage'];
+      apFLbls.forEach(function(el, i) { if (fLblKeys[i]) el.textContent = d[fLblKeys[i]]; });
+
+      /* form inputs */
+      var cfFirst = document.getElementById('cf-first');
+      if (cfFirst) cfFirst.placeholder = lang === 'es' ? 'María' : 'Jane';
+      var cfLast = document.getElementById('cf-last');
+      if (cfLast) cfLast.placeholder = lang === 'es' ? 'García' : 'Smith';
+      var cfMsg = document.getElementById('cf-message');
+      if (cfMsg) cfMsg.placeholder = d.apFormPlaceholderMsg;
+
+      /* form select */
+      var cfInt = document.getElementById('cf-interest');
+      if (cfInt && cfInt.options.length >= 6) {
+        var optKeys = ['apFormOptSelect','apFormOptBuying','apFormOptSelling','apFormOptBoth','apFormOptInvesting','apFormOptOther'];
+        for (var oi = 0; oi < 6; oi++) { cfInt.options[oi].textContent = d[optKeys[oi]]; }
+      }
+
+      /* form consent */
+      var apConsentEl = document.querySelector('.ap-form-consent');
+      if (apConsentEl) {
+        var privacyAnchor = apConsentEl.querySelector('a');
+        if (privacyAnchor) privacyAnchor.textContent = d.apFormConsentLink;
+        var consentNode = null;
+        for (var cn = 0; cn < apConsentEl.childNodes.length; cn++) {
+          if (apConsentEl.childNodes[cn].nodeType === 3) { consentNode = apConsentEl.childNodes[cn]; break; }
+        }
+        if (consentNode) consentNode.textContent = d.apFormConsentText;
+      }
+
+      /* form submit */
+      var apSubmitEl = document.querySelector('.ap-form-submit');
+      if (apSubmitEl) svgEnd(apSubmitEl, d.apFormSubmit);
+
+      /* related agents */
+      var apRelEyEl = document.querySelector('.ap-related-eyebrow');
+      if (apRelEyEl) apRelEyEl.textContent = d.apRelatedEyebrow;
+      var apRelH2El = document.querySelector('.ap-related-h2');
+      if (apRelH2El) apRelH2El.innerHTML = d.apRelatedH2;
+      document.querySelectorAll('.agent-card-link').forEach(function(el) { svgEnd(el, d.apRelatedViewProfile); });
+      var apViewAllEl = document.querySelector('.ap-related .btn-outline-brand');
+      if (apViewAllEl) apViewAllEl.textContent = d.apRelatedViewAll;
+
+      /* CTA section */
+      var apCtaEyEl = document.querySelector('.tp-cta .tp-eyebrow');
+      if (apCtaEyEl) apCtaEyEl.textContent = d.teamCtaEyebrow;
+      var apCtaH2El = document.querySelector('.tp-cta-h2');
+      if (apCtaH2El) apCtaH2El.innerHTML = d.teamCtaTitle;
+      apSwap(document.querySelector('.tp-cta-sub'), apTrans.ctaSub);
+      apSwap(document.querySelector('.tp-cta .btn-brand'), apTrans.ctaPrimary);
+      var apCtaOutlineEl = document.querySelector('.tp-cta .btn-outline-white');
+      if (apCtaOutlineEl) apCtaOutlineEl.textContent = d.teamCtaOutline;
+    }
 
     /* ── TESTIMONIALS PAGE ──────────────────────────────────── */
     var tHeroEy = document.querySelector('.test-hero-eyebrow');
