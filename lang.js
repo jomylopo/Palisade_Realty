@@ -725,6 +725,18 @@
       contactH2: '<em>Contacte</em> a Hedda',
       ctaSub: 'Hedda está lista para guiarle — ya sea que esté comprando, vendiendo o explorando sus opciones. Contáctenos hoy para una conversación sin presiones.',
       ctaPrimary: 'Contactar a Hedda'
+    },
+    'britney-bartlett': {
+      bioBody: [
+        'Como Directora de Operaciones de Palisade Realty, Britney Bartlett mantiene a todo nuestro equipo funcionando con precisión y dedicación. Su experiencia detrás de escena garantiza que cada transacción se maneje de manera profesional, cada cliente reciba el apoyo necesario y cada agente tenga las herramientas y recursos para ofrecer resultados sobresalientes.',
+        'La excelencia operativa de Britney y su dedicación a los estándares de servicio han sido fundamentales para la reputación de Palisade Realty en cuanto a consistencia y calidad en todo el condado de San Diego. Ella es la mano firme que permite a nuestros agentes concentrarse por completo en sus clientes.'
+      ],
+      awardNames: ['Experiencia Local', 'Profesional Licenciada', 'Palisade Comprobado'],
+      awardDescs: [
+        'El profundo conocimiento de los diversos vecindarios de San Diego — desde la costa hasta las comunidades del interior — brinda a los clientes una ventaja real en cada transacción.',
+        'Una REALTOR® licenciada en California con Palisade Realty, Inc. — totalmente comprometida a representar sus mejores intereses desde la búsqueda hasta el cierre.',
+        'Respaldada por los sistemas, tecnología y equipo comprobados de Palisade Realty — brindando resultados consistentes y centrados en el cliente en todo el condado de San Diego.'
+      ]
     }
   };
 
