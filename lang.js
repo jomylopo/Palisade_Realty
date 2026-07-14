@@ -2142,7 +2142,7 @@ var AGENT_TRANSLATIONS = {
     document.querySelectorAll('.nav-links a[href*="testimonials"]').forEach(function (el) {
       el.textContent = d.testimonials;
     });
-    document.querySelectorAll('.nav-links a[href*="fl-section"], .nav-links a[href="/#listings"]').forEach(function (el) {
+    document.querySelectorAll('.nav-links a[href*="fl-section"], .nav-links a[href="/#listings"], .nav-links a[href*="property.html"]').forEach(function (el) {
       el.textContent = d.properties;
     });
     document.querySelectorAll('.nav-links a[href*="team.html"], .nav-links a[href*="#team-carousel"]').forEach(function (el) {
@@ -2168,7 +2168,7 @@ var AGENT_TRANSLATIONS = {
     document.querySelectorAll('.nav-mobile-drawer a[href*="testimonials"]').forEach(function (el) {
       el.textContent = d.testimonials;
     });
-    document.querySelectorAll('.nav-mobile-drawer a[href*="fl-section"], .nav-mobile-drawer a[href="/#listings"]').forEach(function (el) {
+    document.querySelectorAll('.nav-mobile-drawer a[href*="fl-section"], .nav-mobile-drawer a[href="/#listings"], .nav-mobile-drawer a[href*="property.html"]').forEach(function (el) {
       el.textContent = d.properties;
     });
     document.querySelectorAll('.nav-mobile-drawer a[href*="team.html"], .nav-mobile-drawer a[href*="#team-carousel"]').forEach(function (el) {
