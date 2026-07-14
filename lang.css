@@ -66,18 +66,19 @@
 }
 
 /* Mobile — nav-links are hidden but we need the toggle visible.
-   Keep .nav-links--right showing, hide its <a> links, show only the toggle. */
+   Keep .nav-links--right in flow (not absolute) so it sits between the logo
+   and the hamburger. margin-left: auto pushes the whole group to the right. */
 @media (max-width: 767px) {
   .nav-links--right {
     display: flex !important;
-    position: absolute;
-    right: 58px;
-    top: 50%;
-    transform: translateY(-50%);
+    position: static !important;
+    transform: none !important;
+    margin-left: auto;
     padding: 0;
     width: auto;
     gap: 0;
     background: transparent;
+    align-items: center;
   }
 
   .nav-links--right a {
@@ -87,5 +88,6 @@
   .lang-toggle {
     padding: 4px 10px;
     font-size: 9px;
+    margin-right: 8px;
   }
 }
