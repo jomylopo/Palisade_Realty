@@ -1944,7 +1944,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     height: 58px;
     border-radius: 0 0 14px 14px;
   }
-  .hero { min-height: 700px; padding-bottom: 32px; align-items: flex-end; }
+  .hero { min-height: 700px; padding-bottom: 32px; align-items: flex-end; display: inline-block;}
 
   .communities { padding: 48px 20px; }
   .communities-cards { height: auto; }
